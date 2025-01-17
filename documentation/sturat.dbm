@@ -1,0 +1,4765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+ Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="1.1.2" use-changelog="false" max-obj-count="219"
+	 last-position="-18,965" last-zoom="0.65" scene-rect="-28,-30,2908.19,4169.92"
+	 default-owner="postgres"
+	 layers="Default"
+	 active-layers="0"
+	 layer-name-colors="#000000"
+	 layer-rect-colors="#b4b4b4"
+	 show-layer-names="false" show-layer-rects="false">
+<role name="alain.lechene"
+ inherit="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="aurelie.echard"
+ inherit="true"
+ login="true"
+ validity="2015-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="charlotte.scordia"
+ inherit="true"
+ login="true"
+ validity="2020-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="chimitheque"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="christian.rigaud"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="christophe.laplace-treyture"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="clarisse.cazals"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="collec"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+	<comment> <![CDATA[Compte de connexion de l'application collec]]> </comment>
+</role>
+
+<role name="collec_rw"
+ inherit="true"
+ password="********">
+	<roles names="collec" role-type="member" />
+</role>
+
+<role name="diadanalyse_eelgen_owner"
+ inherit="true"
+ password="********">
+</role>
+
+<role name="diadanalyse_gacl"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="diadanalyse_sturgen_r"
+ inherit="true"
+ password="********">
+</role>
+
+<role name="eric.quinton"
+ superuser="true"
+ createdb="true"
+ createrole="true"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="eric.rochard"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="flore.rimond"
+ inherit="true"
+ login="true"
+ validity="2016-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="francoise.daverat"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="frederic.zahm"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="frederique.bau"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="geraldine.lassalle"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="gerard.castelnaud"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="gilles.veyssiere"
+ superuser="true"
+ createdb="true"
+ replication="true"
+ createrole="true"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="girpech_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;gerard.castelnaud&quot;" role-type="member" />
+</role>
+
+<role name="gitlab"
+ createdb="true"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="hilaire.drouineau"
+ superuser="true"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="indidraaf_owner"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Proprietaire de la base de donnees indidraaf]]> </comment>
+	<roles names="&quot;charlotte.scordia&quot;" role-type="member" />
+</role>
+
+<role name="indidraaf_r"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Droits de lecture sur la base de données indidraaf]]> </comment>
+	<roles names="&quot;frederic.zahm&quot;" role-type="member" />
+</role>
+
+<role name="jacques.foury"
+ superuser="true"
+ createdb="true"
+ replication="true"
+ createrole="true"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="jean.martin"
+ inherit="true"
+ login="true"
+ validity="2014-12-10 00:00:00"
+ password="********">
+</role>
+
+<role name="jeremy.lobry"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="jim.carbonel-rabocelli"
+ inherit="true"
+ login="true"
+ validity="2015-06-30 00:00:00"
+ password="********">
+</role>
+
+<role name="joana.bongiovanni"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="jocelyn.domange"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="lacs_aquitains_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;christophe.laplace-treyture&quot;" role-type="member" />
+</role>
+
+<role name="lacs_aquitains_r"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Accès en lecture à la base Lacs Aquitains]]> </comment>
+</role>
+
+<role name="marais_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;alain.lechene&quot;" role-type="member" />
+</role>
+
+<role name="marais_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;flore.rimond&quot;" role-type="member" />
+</role>
+
+<role name="marie-laure.acolas"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="mario.lepage"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="marion.philippon"
+ inherit="true"
+ login="true"
+ validity="2016-09-01 00:00:00"
+ password="********">
+</role>
+
+<role name="marqu_civelle_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;christian.rigaud&quot;,&quot;frederique.bau&quot;" role-type="member" />
+</role>
+
+<role name="marqu_civelle_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;joana.bongiovanni&quot;" role-type="member" />
+</role>
+
+<role name="maud.pierre"
+ inherit="true"
+ login="true"
+ validity="2016-06-06 00:00:00"
+ password="********">
+</role>
+
+<role name="maxime.vaugeois"
+ inherit="true"
+ login="true"
+ validity="2016-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="nicolas.deligne"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="nils.teichert"
+ inherit="true"
+ login="true"
+ validity="2016-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="otolithe"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="patrick.lambert"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="philippe.jatteau"
+ inherit="true"
+ login="true"
+ validity="2050-12-10 00:00:00"
+ password="********">
+</role>
+
+<role name="pomet"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="pomet_gacl"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="pomet_travaux_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;mario.lepage&quot;,&quot;nils.teichert&quot;" role-type="member" />
+</role>
+
+<role name="pometweb"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+	<comment> <![CDATA[Compte de connexion pour l'application pomet.irstea.fr]]> </comment>
+</role>
+
+<role name="pometwebacl"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="referentiel"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="referentiel_appli"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="referentiel_consult"
+ inherit="true"
+ password="********">
+	<roles names="referentiel" role-type="member" />
+</role>
+
+<role name="referentiel_gacl"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="referentiel_gacl_rw"
+ inherit="true"
+ password="********">
+	<roles names="referentiel_gacl" role-type="member" />
+</role>
+
+<role name="referentiel_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;hilaire.drouineau&quot;" role-type="member" />
+</role>
+
+<role name="referentiel_public_rw"
+ inherit="true"
+ password="********">
+	<roles names="referentiel_appli" role-type="member" />
+</role>
+
+<role name="romaric.lebarh"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="sandrine.lyser"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="severine.roques"
+ inherit="true"
+ login="true"
+ validity="2017-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="sturio_appli"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="sturio_gacl"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="sturio_gacl_g"
+ inherit="true"
+ password="********">
+	<roles names="sturio_gacl" role-type="member" />
+</role>
+
+<role name="sturio_owner"
+ inherit="true"
+ password="********">
+</role>
+
+<role name="sturio_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;marie-laure.acolas&quot;,&quot;maxime.vaugeois&quot;,&quot;patrick.lambert&quot;,&quot;severine.roques&quot;" role-type="member" />
+</role>
+
+<role name="sturio_rw"
+ inherit="true"
+ password="********">
+	<roles names="sturio_appli" role-type="member" />
+</role>
+
+<role name="sturio_sturat_r"
+ inherit="true"
+ validity="2015-03-31 00:00:00"
+ password="********">
+	<roles names="&quot;maxime.vaugeois&quot;,&quot;patrick.lambert&quot;,&quot;severine.roques&quot;" role-type="member" />
+</role>
+
+<role name="sturio_sturat_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;marie-laure.acolas&quot;" role-type="member" />
+</role>
+
+<role name="sturio_sturwild_r"
+ inherit="true"
+ validity="2015-10-01 00:00:00"
+ password="********">
+	<roles names="&quot;marie-laure.acolas&quot;" role-type="member" />
+</role>
+
+<role name="sturio_travaux"
+ inherit="true"
+ password="********">
+	<roles names="&quot;marie-laure.acolas&quot;,&quot;patrick.lambert&quot;" role-type="member" />
+</role>
+
+<role name="sturwild_appli"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="sturwild_gacl"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="test_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;eric.quinton&quot;" role-type="member" />
+</role>
+
+<role name="transect"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="transect_gacl"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="transect_gacl_g"
+ inherit="true"
+ password="********">
+	<roles names="transect_gacl" role-type="member" />
+</role>
+
+<role name="transect_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;eric.quinton&quot;,&quot;maud.pierre&quot;,transect" role-type="member" />
+</role>
+
+<role name="usact_appli"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="usact_gacl"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="usact_gacl_rw"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Groupe de gestion des droits dans l'application usact]]> </comment>
+	<roles names="usact_gacl" role-type="member" />
+</role>
+
+<role name="usact_rw"
+ inherit="true"
+ password="********">
+	<roles names="usact_appli" role-type="member" />
+</role>
+
+<role name="usactarc_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;clarisse.cazals&quot;,&quot;sandrine.lyser&quot;" role-type="member" />
+</role>
+
+<role name="usactarc_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;sandrine.lyser&quot;" role-type="member" />
+</role>
+
+<role name="usactcal_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;sandrine.lyser&quot;" role-type="member" />
+</role>
+
+<role name="usactcal_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;sandrine.lyser&quot;" role-type="member" />
+</role>
+
+<role name="usactreu_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;sandrine.lyser&quot;" role-type="member" />
+</role>
+
+<role name="usactreu_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;sandrine.lyser&quot;" role-type="member" />
+</role>
+
+<role name="virginie.bornarel"
+ inherit="true"
+ login="true"
+ validity="2016-09-01 00:00:00"
+ password="********">
+</role>
+
+<role name="wgeel_rw"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Groupe en accès total pour la base wgeel]]> </comment>
+	<roles names="&quot;hilaire.drouineau&quot;,&quot;patrick.lambert&quot;,&quot;virginie.bornarel&quot;" role-type="member" />
+</role>
+
+<role name="xavier.chevillot"
+ inherit="true"
+ login="true"
+ validity="2016-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="docmap"
+ inherit="true"
+ login="true"
+ validity="2050-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="rep"
+ replication="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="christophe.boschet"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="nathalie.reynaud"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="collecdemo"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="dylaq_rw"
+ inherit="true"
+ password="********">
+</role>
+
+<role name="aurelien.jamoneau"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="alexis.paumier"
+ inherit="true"
+ login="true"
+ validity="2020-06-30 12:26:53"
+ password="********">
+</role>
+
+<role name="camille.poulet"
+ inherit="true"
+ login="true"
+ validity="2018-07-01 10:52:47"
+ password="********">
+</role>
+
+<role name="dvfadmin_obsolete"
+ password="********">
+</role>
+
+<role name="dvfuser_obsolete"
+ inherit="true"
+ password="********">
+</role>
+
+<role name="jeanne.dachary-bernard"
+ inherit="true"
+ login="true"
+ validity="2050-03-30 11:03:55"
+ password="********">
+</role>
+
+<role name="florian.vergneau"
+ inherit="true"
+ login="true"
+ validity="2018-10-06 08:59:19"
+ password="********">
+</role>
+
+<role name="guillaume.lefebvre"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="cs_banquise"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="csbanquise_admin"
+ inherit="true"
+ password="********">
+	<roles names="cs_banquise" role-type="member" />
+</role>
+
+<role name="loic.baumann"
+ inherit="true"
+ login="true"
+ validity="2020-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="joris.philip"
+ inherit="true"
+ login="true"
+ validity="2019-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="mathis.cambreling"
+ inherit="true"
+ login="true"
+ validity="2019-08-31 19:16:05"
+ password="********">
+</role>
+
+<role name="lucas.mignien"
+ inherit="true"
+ login="true"
+ validity="2019-12-31 12:02:16"
+ password="********">
+</role>
+
+<role name="kevin.petit"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="filo"
+ login="true"
+ password="********">
+</role>
+
+<role name="filodemo"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="elorri.arevalo"
+ inherit="true"
+ login="true"
+ validity="2025-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="qualitto"
+ inherit="true"
+ login="true"
+ password="********">
+	<comment> <![CDATA[Compte de connexion pour interrogation via Shiny
+Connexion exclusivement depuis bx-qualitto]]> </comment>
+</role>
+
+<role name="betsy.barber"
+ inherit="true"
+ login="true"
+ validity="2020-12-31 00:00:00"
+ password="********">
+</role>
+
+<role name="marie.vanacker"
+ inherit="true"
+ login="true"
+ validity="2020-11-07 09:55:28"
+ password="********">
+</role>
+
+<role name="qgisform"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="sebastien.boutry"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="vincent.bertrin"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="jacky.vedrenne"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="soizic.morin"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="juliette.rosebery"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="filo_eabx_r"
+ inherit="true"
+ password="********">
+</role>
+
+<role name="vanessa.kuentz-simonet"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="collectest"
+ superuser="true"
+ createdb="true"
+ createrole="true"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="eurodiad_neamerica_rw"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Eurodiad schema northeastamerica]]> </comment>
+	<roles names="&quot;geraldine.lassalle&quot;,&quot;guillaume.lefebvre&quot;,&quot;camille.poulet&quot;,&quot;betsy.barber&quot;,&quot;patrick.lambert&quot;" role-type="member" />
+</role>
+
+<role name="alosa_owner"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Owner of the database alosa]]> </comment>
+	<roles names="&quot;eric.quinton&quot;" role-type="member" />
+</role>
+
+<role name="salome.mialon"
+ inherit="true"
+ login="true"
+ validity="2020-09-01 09:02:55"
+ password="********">
+</role>
+
+<role name="alosa_obsmer_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;camille.poulet&quot;,&quot;geraldine.lassalle&quot;,&quot;patrick.lambert&quot;,&quot;salome.mialon&quot;" role-type="member" />
+</role>
+
+<role name="herve.pella"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="chalut_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;mario.lepage&quot;" role-type="member" />
+</role>
+
+<role name="chalut_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;xavier.chevillot&quot;" role-type="member" />
+</role>
+
+<role name="deveel_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;hilaire.drouineau&quot;,&quot;nicolas.deligne&quot;" role-type="member" />
+</role>
+
+<role name="deveel_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;frederique.bau&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_aloson_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;flore.rimond&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_aloson_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;flore.rimond&quot;,&quot;patrick.lambert&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_appli_gacl"
+ inherit="true"
+ validity="1970-01-01 00:00:00"
+ password="********">
+	<roles names="diadanalyse_gacl" role-type="member" />
+</role>
+
+<role name="diadanalyse_appli_otolihte"
+ inherit="true"
+ password="********">
+	<roles names="otolithe" role-type="member" />
+</role>
+
+<role name="diadanalyse_otolithe_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;nathalie.reynaud&quot;,&quot;flore.rimond&quot;,&quot;francoise.daverat&quot;,&quot;marie-laure.acolas&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_public_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;flore.rimond&quot;,&quot;francoise.daverat&quot;,&quot;jean.martin&quot;,&quot;jim.carbonel-rabocelli&quot;,&quot;marie-laure.acolas&quot;,&quot;philippe.jatteau&quot;,&quot;severine.roques&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_public_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;patrick.lambert&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;jean.martin&quot;,&quot;jim.carbonel-rabocelli&quot;,&quot;philippe.jatteau&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_sturgen_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;marie-laure.acolas&quot;,&quot;severine.roques&quot;" role-type="member" />
+</role>
+
+<role name="diadanalyse_travaux_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;flore.rimond&quot;,&quot;francoise.daverat&quot;,&quot;marie-laure.acolas&quot;,&quot;patrick.lambert&quot;,&quot;severine.roques&quot;" role-type="member" />
+</role>
+
+<role name="doeda_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;hilaire.drouineau&quot;,&quot;jocelyn.domange&quot;,&quot;patrick.lambert&quot;" role-type="member" />
+</role>
+
+<role name="estuaire_phy_consult"
+ inherit="true"
+ password="********">
+	<roles names="referentiel,&quot;maxime.vaugeois&quot;,&quot;patrick.lambert&quot;" role-type="member" />
+</role>
+
+<role name="estuaire_phy_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;eric.quinton&quot;,&quot;mario.lepage&quot;" role-type="member" />
+</role>
+
+<role name="eurodiad_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;geraldine.lassalle&quot;,&quot;patrick.lambert&quot;,&quot;betsy.barber&quot;" role-type="member" />
+</role>
+
+<role name="eurodiad_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;eric.rochard&quot;,&quot;francoise.daverat&quot;,&quot;hilaire.drouineau&quot;,&quot;patrick.lambert&quot;,&quot;guillaume.lefebvre&quot;" role-type="member" />
+</role>
+
+<role name="girpech_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;romaric.lebarh&quot;" role-type="member" />
+</role>
+
+<role name="ichtyoplancton_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;mario.lepage&quot;" role-type="member" />
+</role>
+
+<role name="indicolang_rw"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Droits généraux d'accès à la base indicolang]]> </comment>
+	<roles names="&quot;christian.rigaud&quot;,&quot;marion.philippon&quot;,&quot;maud.pierre&quot;" role-type="member" />
+</role>
+
+<role name="marqu_civelle_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;hilaire.drouineau&quot;,&quot;nicolas.deligne&quot;" role-type="member" />
+</role>
+
+<role name="pomet_appli"
+ inherit="true"
+ password="********">
+	<roles names="pomet,pometweb" role-type="member" />
+</role>
+
+<role name="pomet_appli_gacl"
+ inherit="true"
+ password="********">
+	<roles names="pomet_gacl" role-type="member" />
+</role>
+
+<role name="pomet_public_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;mario.lepage&quot;,pometweb" role-type="member" />
+</role>
+
+<role name="pomet_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;alain.lechene&quot;,&quot;mario.lepage&quot;,&quot;nils.teichert&quot;,&quot;guillaume.lefebvre&quot;,&quot;lucas.mignien&quot;" role-type="member" />
+</role>
+
+<role name="pomet_webacl_rw"
+ inherit="true"
+ password="********">
+	<roles names="pometweb,pometwebacl" role-type="member" />
+</role>
+
+<role name="sturio_sturwild_gacl"
+ inherit="true"
+ validity="2015-10-01 00:00:00"
+ password="********">
+	<roles names="sturwild_gacl" role-type="member" />
+</role>
+
+<role name="sturio_sturwild_rw"
+ inherit="true"
+ validity="2015-10-01 00:00:00"
+ password="********">
+	<roles names="sturwild_appli" role-type="member" />
+</role>
+
+<role name="transect_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;aurelie.echard&quot;,&quot;hilaire.drouineau&quot;,&quot;jeremy.lobry&quot;,&quot;mario.lepage&quot;,&quot;maud.pierre&quot;,&quot;patrick.lambert&quot;,&quot;xavier.chevillot&quot;,&quot;mathis.cambreling&quot;" role-type="member" />
+</role>
+
+<role name="girpech_r"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Droits de lecture dans la base girpeche]]> </comment>
+	<roles names="&quot;alexis.paumier&quot;,&quot;patrick.lambert&quot;,&quot;camille.poulet&quot;,&quot;hilaire.drouineau&quot;,&quot;elorri.arevalo&quot;" role-type="member" />
+</role>
+
+<role name="docmap_g"
+ inherit="true"
+ password="********">
+	<roles names="docmap" role-type="member" />
+</role>
+
+<role name="alosa_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;francoise.daverat&quot;,&quot;marie-laure.acolas&quot;,&quot;patrick.lambert&quot;,&quot;philippe.jatteau&quot;,&quot;severine.roques&quot;,&quot;salome.mialon&quot;,&quot;camille.poulet&quot;,&quot;geraldine.lassalle&quot;" role-type="member" />
+</role>
+
+<role name="alosa_fauna_forum_r"
+ inherit="true"
+ password="********">
+	<comment> <![CDATA[Groupe de lecture des données sur les forums Fauna - pêche à la mouche]]> </comment>
+	<roles names="&quot;christophe.boschet&quot;" role-type="member" />
+</role>
+
+<role name="dylaq_r"
+ inherit="true"
+ password="********">
+	<roles names="&quot;aurelien.jamoneau&quot;,dylaq_rw" role-type="member" />
+</role>
+
+<role name="dvfadmins"
+ inherit="true"
+ password="********">
+	<roles names="&quot;jeanne.dachary-bernard&quot;,&quot;sandrine.lyser&quot;" role-type="member" />
+</role>
+
+<role name="dvf_osquar2"
+ inherit="true"
+ password="********">
+	<roles names="&quot;vanessa.kuentz-simonet&quot;" role-type="member" />
+</role>
+
+<role name="dvf_urbest"
+ inherit="true"
+ password="********">
+	<roles names="&quot;florian.vergneau&quot;,&quot;vanessa.kuentz-simonet&quot;" role-type="member" />
+</role>
+
+<role name="shadjuv_video_rw"
+ inherit="true"
+ password="********">
+	<roles names="&quot;loic.baumann&quot;,&quot;joris.philip&quot;" role-type="member" />
+</role>
+
+<role name="qualittodb_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;sandrine.lyser&quot;,&quot;kevin.petit&quot;,&quot;vanessa.kuentz-simonet&quot;" role-type="member" />
+</role>
+
+<role name="qualittodb_r"
+ inherit="true"
+ password="********">
+	<roles names="qualitto" role-type="member" />
+</role>
+
+<role name="sudoang_w"
+ inherit="true"
+ password="********">
+	<roles names="&quot;hilaire.drouineau&quot;,&quot;marie.vanacker&quot;,&quot;herve.pella&quot;" role-type="member" />
+</role>
+
+<role name="qgisformusers"
+ inherit="true"
+ password="********">
+	<roles names="qgisform" role-type="member" />
+</role>
+
+<role name="multimaillon_owner"
+ inherit="true"
+ password="********">
+	<roles names="&quot;aurelien.jamoneau&quot;,&quot;sebastien.boutry&quot;" role-type="member" />
+</role>
+
+<role name="multimaillon_read"
+ inherit="true"
+ password="********">
+	<roles names="&quot;christophe.laplace-treyture&quot;,&quot;vincent.bertrin&quot;,&quot;jacky.vedrenne&quot;,&quot;soizic.morin&quot;,&quot;juliette.rosebery&quot;" role-type="member" />
+</role>
+
+<role name="collec_cp"
+ superuser="true"
+ createdb="true"
+ createrole="true"
+ inherit="true"
+ login="true"
+ password="collecPassword">
+</role>
+
+<role name="quinton"
+ superuser="true"
+ createdb="true"
+ createrole="true"
+ inherit="true"
+ login="true"
+ password="********">
+	<roles names="alosa_r" role-type="member" />
+</role>
+
+<database name="sturio" encoding="UTF8" lc-collate="fr_FR.UTF-8" lc-ctype="fr_FR.UTF-8" is-template="false" allow-conns="true">
+	<role name="postgres"/>
+	<tablespace name="pg_default"/>
+</database>
+
+<schema name="public" layers="0" fill-color="#e1e1e1" name-color="#000000" sql-disabled="true">
+</schema>
+
+<schema name="sturat" layers="0" rect-visible="true" fill-color="#987c97" name-color="#000000">
+	<role name="&quot;eric.quinton&quot;"/>
+</schema>
+
+<schema name="sturatgacl" layers="0" rect-visible="true" fill-color="#abc198" name-color="#000000">
+	<role name="quinton"/>
+</schema>
+
+<tag name="trait">
+	<style id="table-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-ext-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-name" colors="#000000"/>
+	<style id="table-schema-name" colors="#000000"/>
+	<style id="table-title" colors="#00aa7f,#00aa7f,#20486f"/>
+	<style id="table-toggler-body" colors="#ffffff,#ffffff,#000000"/>
+	<style id="table-toggler-btns" colors="#ffffff,#ffffff,#000000"/>
+</tag>
+<tag name="sample">
+	<style id="table-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-ext-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-name" colors="#000000"/>
+	<style id="table-schema-name" colors="#000000"/>
+	<style id="table-title" colors="#aa0000,#aa0000,#20486f"/>
+	<style id="table-toggler-body" colors="#ffffff,#ffffff,#000000"/>
+	<style id="table-toggler-btns" colors="#ffffff,#ffffff,#000000"/>
+</tag>
+<tag name="sturio">
+	<style id="table-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-ext-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-name" colors="#000000"/>
+	<style id="table-schema-name" colors="#000000"/>
+	<style id="table-title" colors="#ff5500,#ff5500,#20486f"/>
+	<style id="table-toggler-body" colors="#ffffff,#ffffff,#000000"/>
+	<style id="table-toggler-btns" colors="#ffffff,#ffffff,#000000"/>
+</tag>
+<tag name="eel">
+	<style id="table-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-ext-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-name" colors="#000000"/>
+	<style id="table-schema-name" colors="#000000"/>
+	<style id="table-title" colors="#ff00ff,#ff00ff,#20486f"/>
+	<style id="table-toggler-body" colors="#ffffff,#ffffff,#000000"/>
+	<style id="table-toggler-btns" colors="#ffffff,#ffffff,#000000"/>
+</tag>
+<tag name="utils">
+	<style id="table-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-ext-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-name" colors="#000000"/>
+	<style id="table-schema-name" colors="#000000"/>
+	<style id="table-title" colors="#55aaff,#55aaff,#20486f"/>
+	<style id="table-toggler-body" colors="#ffffff,#ffffff,#000000"/>
+	<style id="table-toggler-btns" colors="#ffffff,#ffffff,#000000"/>
+</tag>
+<tag name="acl">
+	<style id="table-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-ext-body" colors="#fcfcfc,#fcfcfc,#808080"/>
+	<style id="table-name" colors="#000000"/>
+	<style id="table-schema-name" colors="#000000"/>
+	<style id="table-title" colors="#aa0000,#aa0000,#20486f"/>
+	<style id="table-toggler-body" colors="#ffffff,#ffffff,#000000"/>
+	<style id="table-toggler-btns" colors="#ffffff,#ffffff,#000000"/>
+</tag>
+<tag name="public">
+	<style id="table-body" colors="#fcfcfc,#fcfcfc,#d7d7d7"/>
+	<style id="table-ext-body" colors="#fcfcfc,#fcfcfc,#d7d7d7"/>
+	<style id="table-name" colors="#000000"/>
+	<style id="table-schema-name" colors="#000000"/>
+	<style id="table-title" colors="#ffbe6f,#ffbe6f,#ffbe6f"/>
+	<style id="table-toggler-body" colors="#fcfcfc,#fcfcfc,#d7d7d7"/>
+	<style id="table-toggler-btns" colors="#f3f3f3,#e1e1e1,#bebebe"/>
+</tag>
+<extension name="postgis" cur-version="2.2.1">
+	<schema name="public"/>
+	<comment> <![CDATA[PostGIS geometry, geography, and raster spatial types and functions]]> </comment>
+</extension>
+
+<extension name="tablefunc" cur-version="1.0">
+	<schema name="public"/>
+	<comment> <![CDATA[functions that manipulate whole tables, including crosstab]]> </comment>
+</extension>
+
+<sequence name="cohorte_determination_cohorte_determination_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="cohorte_determination" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Définit les niveaux de fiabilité de la détermination de la cohorte]]> </comment>
+	<tag name="sturio"/>
+	<position x="1160" y="1960"/>
+	<column name="cohorte_determination_id" not-null="true" sequence="sturat.cohorte_determination_cohorte_determination_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cohorte_determination_name" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Libellé correspondant]]> </comment>
+	</column>
+	<constraint name="cohorte_determination_pk" type="pk-constr" table="sturat.cohorte_determination">
+		<columns names="cohorte_determination_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="debris_debris_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="debris" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des débris pêchés]]> </comment>
+	<tag name="trait"/>
+	<position x="420" y="440"/>
+	<column name="debris_id" not-null="true" sequence="sturat.debris_debris_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="debris_nature_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="unite_comptage">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Unité utilisée pour compter les débris (volume, poids, nombre de caisses, etc.)]]> </comment>
+	</column>
+	<column name="debris_name" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom du débris]]> </comment>
+	</column>
+	<constraint name="debris_pk" type="pk-constr" table="sturat.debris">
+		<columns names="debris_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="debris_nature_debris_nature_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="debris_nature" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Nature des débris pêchés (entropiques, végétaux)]]> </comment>
+	<tag name="trait"/>
+	<position x="0" y="440"/>
+	<column name="debris_nature_id" not-null="true" sequence="sturat.debris_nature_debris_nature_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="debris_nature_name" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="debris_nature_pk" type="pk-constr" table="sturat.debris_nature">
+		<columns names="debris_nature_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="echantillon_echantillon_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="echantillon" layers="0" collapse-mode="2" max-obj-count="12" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des échantillons capturés]]> </comment>
+	<tag name="sample"/>
+	<position x="760" y="1120"/>
+	<column name="echantillon_id" not-null="true" sequence="sturat.echantillon_echantillon_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="trait_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="espece_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="weight">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Masse totale de l'échantillon]]> </comment>
+	</column>
+	<column name="total_number">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[Nombre total d'individus]]> </comment>
+	</column>
+	<column name="total_measured_number">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[Nombre total d'individus mesurés]]> </comment>
+	</column>
+	<column name="total_death">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[Nombre total de poissons morts pendant la pêche]]> </comment>
+	</column>
+	<column name="total_sample">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[Nombre de poissons prélevés pour d'autres manips]]> </comment>
+	</column>
+	<column name="sample_comment">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Destination des prélèvements complémentaires]]> </comment>
+	</column>
+	<column name="weight_comment">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Poids noté sous la forme de commentaire (ex : 300 Kg)]]> </comment>
+	</column>
+	<constraint name="echantillon_pk" type="pk-constr" table="sturat.echantillon">
+		<columns names="echantillon_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="eel_stade_eel_stade_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="eel_stade" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Stade de l'anguille]]> </comment>
+	<tag name="eel"/>
+	<position x="0" y="1500"/>
+	<column name="eel_stade_id" not-null="true" sequence="sturat.eel_stade_eel_stade_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="eel_stade_name" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="eel_stade_pk" type="pk-constr" table="sturat.eel_stade">
+		<columns names="eel_stade_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="engin_type_engin_type_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="engin_type" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des types d'engin]]> </comment>
+	<tag name="trait"/>
+	<position x="0" y="640"/>
+	<column name="engin_type_id" not-null="true" sequence="sturat.engin_type_engin_type_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="engin_type_libelle" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom de l'engin de pêche]]> </comment>
+	</column>
+	<column name="engin_type_description">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Description technique de l'engin de pêche]]> </comment>
+	</column>
+	<constraint name="engin_type_pk" type="pk-constr" table="sturat.engin_type">
+		<columns names="engin_type_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="espece_espece_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="espece" layers="0" collapse-mode="2" max-obj-count="15" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sample"/>
+	<position x="760" y="1700"/>
+	<column name="espece_id" not-null="true" sequence="sturat.espece_espece_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="nom">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="nom_fr">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="auteur">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="phylum">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="subphylum">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="classe">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="ordre">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="famille">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="genre">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="code_perm_ifremer">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="code_sandre">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="nom_import_excel">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom utilisé dans les fichiers Excel, pour importation]]> </comment>
+	</column>
+	<constraint name="pk_espece" type="pk-constr" table="sturat.espece">
+		<columns names="espece_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="gps" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Points GPS enregistres par Maxsea]]> </comment>
+	<tag name="utils"/>
+	<position x="0" y="1700"/>
+	<column name="gpsdate" not-null="true">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[date - heure exacte de la mesure]]> </comment>
+	</column>
+	<column name="longitude" not-null="true">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longitude]]> </comment>
+	</column>
+	<column name="latitude" not-null="true">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Latidude]]> </comment>
+	</column>
+	<column name="guid">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[Valeur fournie par le GPS Maxsea pour numéroter la trace]]> </comment>
+	</column>
+	<constraint name="gps_pk" type="pk-constr" table="sturat.gps">
+		<columns names="gpsdate" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="individu_individu_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<sequence name="individu_eel_individu_eel_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="individu_eel" layers="0" collapse-mode="2" max-obj-count="16" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des anguilles capturées]]> </comment>
+	<tag name="eel"/>
+	<position x="0" y="1120"/>
+	<column name="individu_eel_id" not-null="true" sequence="sturat.individu_eel_individu_eel_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="trait_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="total_length">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longueur totale, en mm]]> </comment>
+	</column>
+	<column name="hori_diam_eyepiece">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[diamètre occulaire horizontal, en mm]]> </comment>
+	</column>
+	<column name="vert_diam_eyepiece">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Diamètre vertical occulaire, en mm]]> </comment>
+	</column>
+	<column name="pectoral_length">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longueur de la nageoire pectorale, en mm]]> </comment>
+	</column>
+	<column name="observation">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Observation terrain]]> </comment>
+	</column>
+	<column name="val_oi">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Valeur OI calculée]]> </comment>
+	</column>
+	<column name="val_iln">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Valeur ILN calculée]]> </comment>
+	</column>
+	<column name="val_j">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Valeur J calculée]]> </comment>
+	</column>
+	<column name="val_a">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Valeur A calculée]]> </comment>
+	</column>
+	<column name="eel_stade_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="fork_length">
+		<type name="double precision" length="0"/>
+	</column>
+	<column name="weight">
+		<type name="double precision" length="0"/>
+	</column>
+	<constraint name="individu_eel_pkey" type="pk-constr" table="sturat.individu_eel">
+		<columns names="individu_eel_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="individu" layers="0" collapse-mode="2" max-obj-count="6" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des individus mesurés]]> </comment>
+	<tag name="sample"/>
+	<position x="760" y="1500"/>
+	<column name="individu_id" not-null="true" sequence="sturat.individu_individu_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="echantillon_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="fork_length">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longueur à la fourche, en cm]]> </comment>
+	</column>
+	<column name="total_length">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longueur totale, en cm]]> </comment>
+	</column>
+	<column name="weight">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Poids, en grammes]]> </comment>
+	</column>
+	<constraint name="individu_pk" type="pk-constr" table="sturat.individu">
+		<columns names="individu_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="individu_sturio_individu_sturio_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="individu_sturio" layers="0" collapse-mode="2" max-obj-count="38" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des esturgeons d'Europe capturés]]> </comment>
+	<tag name="sturio"/>
+	<position x="1160" y="1120"/>
+	<column name="individu_sturio_id" not-null="true" sequence="sturat.individu_sturio_individu_sturio_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="trait_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="pittag">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Pittag du poisson]]> </comment>
+	</column>
+	<column name="hp_tag">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Marque de type HP]]> </comment>
+	</column>
+	<column name="implanted_hp_tag" default-value="0">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[HP Tag implanté]]> </comment>
+	</column>
+	<column name="dst_tag">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[N° de la marque DST (enregistreuse) implantée]]> </comment>
+	</column>
+	<column name="implanted_dst_tag" default-value="0">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[DST tag implanté]]> </comment>
+	</column>
+	<column name="age">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Age du poisson]]> </comment>
+	</column>
+	<column name="cohort">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Cohorte déterminée]]> </comment>
+	</column>
+	<column name="cohorte_determination_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="commentaire">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Commentaires généraux sur le poisson]]> </comment>
+	</column>
+	<column name="living">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Individu vivant au moment de la pêche ?]]> </comment>
+	</column>
+	<column name="capture_nb">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Numéro de capture (Nfois capturé)]]> </comment>
+	</column>
+	<column name="state">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[État du poisson]]> </comment>
+	</column>
+	<column name="parent">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Poisson au stade géniteur]]> </comment>
+	</column>
+	<column name="tetracycline_treatment">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Traitement à la tétracycline]]> </comment>
+	</column>
+	<column name="campaign_date">
+		<type name="date" length="0"/>
+	</column>
+	<column name="campaign_name">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom de la campagne et lieu de pêche si capture hors STURAT]]> </comment>
+	</column>
+	<column name="cohorte_determination_reliability">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Fiabilité de la détermination de la cohorte]]> </comment>
+	</column>
+	<column name="fork_length">
+		<type name="double precision" length="0"/>
+	</column>
+	<column name="parasite">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="total_length">
+		<type name="double precision" length="0"/>
+	</column>
+	<column name="weight">
+		<type name="double precision" length="0"/>
+	</column>
+	<column name="implanted_pittag">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="pittag_read">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="release_age">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Age au lâcher]]> </comment>
+	</column>
+	<column name="hp_tag_read">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[HP Tag lu]]> </comment>
+	</column>
+	<column name="dst_tag_read">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[DST tag lu]]> </comment>
+	</column>
+	<column name="release_stage_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="sortie_lieu_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="father_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="mother_id">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="individu_sturio_pkey" type="pk-constr" table="sturat.individu_sturio">
+		<columns names="individu_sturio_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="manipulateur_manipulateur_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="manipulateur" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des opérateurs de peche]]> </comment>
+	<tag name="trait"/>
+	<position x="0" y="920"/>
+	<column name="manipulateur_id" not-null="true" sequence="sturat.manipulateur_manipulateur_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="name" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom du manipulateur]]> </comment>
+	</column>
+	<column name="firstname">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Prénom du manipulateur]]> </comment>
+	</column>
+	<column name="actif" not-null="true" default-value="1">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Manipulateur encore susceptible de participer aux pêches]]> </comment>
+	</column>
+	<constraint name="manipulateur_pk" type="pk-constr" table="sturat.manipulateur">
+		<columns names="manipulateur_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="maree_maree_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="maree" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Marée montante ou descendante]]> </comment>
+	<tag name="trait"/>
+	<position x="420" y="640"/>
+	<column name="maree_id" not-null="true" sequence="sturat.maree_maree_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="maree_libelle" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="maree_pk" type="pk-constr" table="sturat.maree">
+		<columns names="maree_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="nageoire_fin_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="nageoire" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Nom des nageoires]]> </comment>
+	<tag name="sturio"/>
+	<position x="0" y="2260"/>
+	<column name="fin_id" not-null="true" sequence="sturat.nageoire_fin_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="fin_name" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="nageoire_pk" type="pk-constr" table="sturat.nageoire">
+		<columns names="fin_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="physicochimie" layers="0" collapse-mode="2" max-obj-count="14" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Parametres physico-chimiques du trait]]> </comment>
+	<tag name="trait"/>
+	<position x="1160" y="780"/>
+	<column name="trait_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="temperature">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Température, en °C]]> </comment>
+	</column>
+	<column name="conductivity">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Conductivité, en mS/cm]]> </comment>
+	</column>
+	<column name="conductivity_specific">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Conductivité spécifique (à  25° C), en mS/cm]]> </comment>
+	</column>
+	<column name="salinity">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Salinité, en ppt]]> </comment>
+	</column>
+	<column name="depth">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Profondeur, en mètre]]> </comment>
+	</column>
+	<column name="depth_probe">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Profondeur de la sonde, en mètre]]> </comment>
+	</column>
+	<column name="oxygen_ppt">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Oxygène dissous, en pourcentage]]> </comment>
+	</column>
+	<column name="oxygen_mgl">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Oxygène, en mg/l]]> </comment>
+	</column>
+	<column name="turbidity">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Turbidité, en NTU]]> </comment>
+	</column>
+	<column name="ph">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[pH,]]> </comment>
+	</column>
+	<column name="comment">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Remarques]]> </comment>
+	</column>
+	<constraint name="physicochimie_pk" type="pk-constr" table="sturat.physicochimie">
+		<columns names="trait_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="prelevement_prelevement_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<sequence name="prelevement_localisation_prelevement_localisation_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="prelevement_localisation" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table permettant de savoir où sont les prélèvements]]> </comment>
+	<tag name="sturio"/>
+	<position x="0" y="2420"/>
+	<column name="prelevement_localisation_id" not-null="true" sequence="sturat.prelevement_localisation_prelevement_localisation_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="prelevement_localisation_name" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="prelevement_localisation_pk" type="pk-constr" table="sturat.prelevement_localisation">
+		<columns names="prelevement_localisation_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="prelevement" layers="0" collapse-mode="2" max-obj-count="10" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des prélèvements réalisés sur le poisson]]> </comment>
+	<tag name="sturio"/>
+	<position x="400" y="2100"/>
+	<column name="prelevement_id" not-null="true" sequence="sturat.prelevement_prelevement_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="individu_sturio_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="prelevement_type_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="prelevement_localisation_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="fin_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="prelevement_ref">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Référence du prélèvement]]> </comment>
+	</column>
+	<column name="prelevement_comment">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Commentaire]]> </comment>
+	</column>
+	<column name="blood_quantity">
+		<type name="double precision" length="0"/>
+	</column>
+	<column name="mucus_sampling">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Prélèvement de mucus :
+0 : non
+1 : oui]]> </comment>
+	</column>
+	<constraint name="prelevement_pk" type="pk-constr" table="sturat.prelevement">
+		<columns names="prelevement_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="prelevement_type_prelevement_type_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="prelevement_type" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des types de prélèvement
+1 : rayon
+2 : DNA
+3 : PSIa
+4 : contenu stomacal]]> </comment>
+	<tag name="sturio"/>
+	<position x="0" y="2100"/>
+	<column name="prelevement_type_id" not-null="true" sequence="sturat.prelevement_type_prelevement_type_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="prelevement_type_name" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="prelevement_type_pk" type="pk-constr" table="sturat.prelevement_type">
+		<columns names="prelevement_type_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="release_stage_release_stage_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="release_stage" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des stades de lâcher]]> </comment>
+	<tag name="sturio"/>
+	<position x="760" y="2100"/>
+	<column name="release_stage_id" not-null="true" sequence="sturat.release_stage_release_stage_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="release_stage_name" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="release_stage_pk" type="pk-constr" table="sturat.release_stage">
+		<columns names="release_stage_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="sonde_sonde_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="sonde" layers="0" collapse-mode="2" max-obj-count="14" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Données brutes fournies par la sonde]]> </comment>
+	<tag name="trait"/>
+	<position x="1160" y="440"/>
+	<column name="sonde_id" not-null="true" sequence="sturat.sonde_sonde_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="trait_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="probe_date" not-null="true">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[date - heure de prélèvement]]> </comment>
+	</column>
+	<column name="depth" not-null="true">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Profondeur, en m]]> </comment>
+	</column>
+	<column name="conductivity">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Conductivité, en ms/cm]]> </comment>
+	</column>
+	<column name="conductivity_specific">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Conductivité spécifique, en ms/cm]]> </comment>
+	</column>
+	<column name="salinity">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Salinité, en ppt]]> </comment>
+	</column>
+	<column name="oxygen_ppt">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Oxygène en ppt]]> </comment>
+	</column>
+	<column name="oxygen_mgl">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[taux d'oxygene, en mg/l]]> </comment>
+	</column>
+	<column name="turbidity">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Turbidité, en NTU]]> </comment>
+	</column>
+	<column name="ph">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[pH]]> </comment>
+	</column>
+	<column name="temperature">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Température, en °C]]> </comment>
+	</column>
+	<constraint name="sonde_pk" type="pk-constr" table="sturat.sonde">
+		<columns names="sonde_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="station_station_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="station" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des stations de pêche]]> </comment>
+	<tag name="trait"/>
+	<position x="760" y="640"/>
+	<column name="station_id" not-null="true" sequence="sturat.station_station_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="station_code" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Code de la station]]> </comment>
+	</column>
+	<column name="geom">
+		<type name="geometry" length="0" spatial-type="MULTIPOLYGON" variation="0" srid="4326"/>
+	</column>
+	<constraint name="station_pk" type="pk-constr" table="sturat.station">
+		<columns names="station_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="trait_trait_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<sequence name="trait_debris_trait_debit_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="trait_debris" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des débris pêchés pendant le trait]]> </comment>
+	<tag name="trait"/>
+	<position x="760" y="440"/>
+	<column name="trait_debit_id" not-null="true" sequence="sturat.trait_debris_trait_debit_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="trait_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="debris_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="debris_quantite">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Quantité de débris récoltés, selon l'unité de comptage utilisée]]> </comment>
+	</column>
+	<constraint name="trait_debris_pk" type="pk-constr" table="sturat.trait_debris">
+		<columns names="trait_debit_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<usertype name="geometry" configuration="base"
+ internal-length="0" by-value="false"
+ alignment="double precision" storage="main"
+ delimiter=":"
+ category="U" sql-disabled="true">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<comment> <![CDATA[postgis type: Planar spatial data type.]]> </comment>
+</usertype>
+
+<table name="trait_geom" layers="0" collapse-mode="2" max-obj-count="14" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Données géographiques concernant le trait]]> </comment>
+	<tag name="trait"/>
+	<position x="400" y="1120"/>
+	<column name="trait_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="longitude_start">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longitude du point de départ du trait WGS84, en degrés pseudo-décimaux]]> </comment>
+	</column>
+	<column name="latitude_start">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Latitude du point de départ du trait WGS84, en degrés pseudo-décimaux]]> </comment>
+	</column>
+	<column name="longitude_end">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longitude du point d'arrivée du trait, en WGS84 pseudo-décimal]]> </comment>
+	</column>
+	<column name="latitude_end">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Latitude du point d'arrivée du trait, en WGS84 pseudo-décimal]]> </comment>
+	</column>
+	<column name="trait_length">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longueur réelle du trait, en mille nautique]]> </comment>
+	</column>
+	<column name="long_sexa_start">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="lat_sexa_start">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="long_sexa_end">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="lat_sexa_end">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="geom_point">
+		<type name="public.geometry" length="0"/>
+	</column>
+	<column name="geom_segment">
+		<type name="public.geometry" length="0"/>
+	</column>
+	<constraint name="trait_geom_pk" type="pk-constr" table="sturat.trait_geom">
+		<columns names="trait_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="trait_manipulateur" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table de relation entre les manipulateurs et les traits de pêche]]> </comment>
+	<tag name="trait"/>
+	<position x="0" y="780"/>
+	<column name="trait_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="manipulateur_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="trait_manipulateur_pk" type="pk-constr" table="sturat.trait_manipulateur">
+		<columns names="trait_id,manipulateur_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="trait_trace" layers="0" collapse-mode="2" max-obj-count="2" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table contenant les traces des traits]]> </comment>
+	<tag name="trait"/>
+	<position x="760" y="920"/>
+	<column name="trait_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="trace_geom" not-null="true">
+		<type name="public.geometry" length="0"/>
+		<comment> <![CDATA[Objet postgis contenant la trace du trait, sous forme de ligne]]> </comment>
+	</column>
+	<constraint name="trait_trace_pk" type="pk-constr" table="sturat.trait_trace">
+		<columns names="trait_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="trait" layers="0" collapse-mode="2" max-obj-count="10" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Traits de pêche]]> </comment>
+	<tag name="trait"/>
+	<position x="420" y="780"/>
+	<column name="trait_id" not-null="true" sequence="sturat.trait_trait_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="trait_start" not-null="true">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date/heure de début de pêche (heure officielle si notée)]]> </comment>
+	</column>
+	<column name="trait_end">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date/heure de fin de pêche (heure officielle)]]> </comment>
+	</column>
+	<column name="duration">
+		<type name="time" length="0"/>
+		<comment> <![CDATA[Durée du trait]]> </comment>
+	</column>
+	<column name="engin_type_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="station_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="maree_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="maree_coef">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[Coefficient de marée]]> </comment>
+	</column>
+	<column name="remarks">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Remarques concernant le trait de pêche]]> </comment>
+	</column>
+	<constraint name="trait_pk" type="pk-constr" table="sturat.trait">
+		<columns names="trait_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="poisson_poisson_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="public"/>
+	<role name="quinton"/>
+</sequence>
+
+<sequence name="sortie_lieu_sortie_lieu_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="public"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="poisson" layers="0" collapse-mode="2" max-obj-count="13" z-value="0">
+	<schema name="public"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="public"/>
+	<position x="1620" y="1120"/>
+	<column name="poisson_id" not-null="true" sequence="public.poisson_poisson_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="poisson_statut_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="sexe_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="matricule">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="prenom">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="cohorte">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Année de naissance ou de capture]]> </comment>
+	</column>
+	<column name="capture_date">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date de la capture]]> </comment>
+	</column>
+	<column name="date_naissance">
+		<type name="date" length="0"/>
+		<comment> <![CDATA[Date de naissance du poisson]]> </comment>
+	</column>
+	<column name="categorie_id" not-null="true" default-value="2">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="commentaire">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Commentaire général concernant le poisson]]> </comment>
+	</column>
+	<column name="vie_modele_id">
+		<type name="integer" length="0"/>
+	</column>
+</table>
+
+<view name="v_trait_geom" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="trait"/>
+	<position x="1620" y="440"/>
+	<simplecol name="trait_id" type="integer"/>
+	<simplecol name="trait_start" type="timestamp"/>
+	<simplecol name="trait_end" type="timestamp"/>
+	<simplecol name="duration" type="time"/>
+	<simplecol name="engin_type_id" type="integer"/>
+	<simplecol name="engin_type_libelle" type="character varying"/>
+	<simplecol name="station_id" type="integer"/>
+	<simplecol name="station_code" type="character varying"/>
+	<simplecol name="maree_id" type="integer"/>
+	<simplecol name="maree_libelle" type="character varying"/>
+	<simplecol name="maree_coef" type="integer"/>
+	<simplecol name="geom_point" type="public.geometry"/>
+	<simplecol name="geom_segment" type="public.geometry"/>
+	<simplecol name="longitude_start" type="double precision"/>
+	<simplecol name="latitude_start" type="double precision"/>
+	<simplecol name="longitude_end" type="double precision"/>
+	<simplecol name="latitude_end" type="double precision"/>
+	<simplecol name="trait_length" type="double precision"/>
+	<definition> <![CDATA[SELECT t.trait_id,
+    t.trait_start,
+    t.trait_end,
+    t.duration,
+    t.engin_type_id,
+    et.engin_type_libelle,
+    t.station_id,
+    station.station_code,
+    t.maree_id,
+    m.maree_libelle,
+    t.maree_coef,
+    trait_geom.geom_point,
+    trait_geom.geom_segment,
+    trait_geom.longitude_start,
+    trait_geom.latitude_start,
+    trait_geom.longitude_end,
+    trait_geom.latitude_end,
+    trait_geom.trait_length
+   FROM ((((sturat.trait t
+     JOIN sturat.trait_geom USING (trait_id))
+     JOIN sturat.station USING (station_id))
+     LEFT JOIN sturat.engin_type et ON ((t.engin_type_id = et.engin_type_id)))
+     LEFT JOIN sturat.maree m ON ((m.maree_id = t.maree_id)));;]]> </definition>
+</view>
+
+<view name="v_trait_sturio" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="1160" y="2740"/>
+	<simplecol name="trait_id" type="integer"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="pittag" type="character varying"/>
+	<simplecol name="hp_tag" type="character varying"/>
+	<simplecol name="implanted_hp_tag" type="character varying"/>
+	<simplecol name="dst_tag" type="character varying"/>
+	<simplecol name="implanted_dst_tag" type="character varying"/>
+	<simplecol name="age" type="smallint"/>
+	<simplecol name="cohort" type="character varying"/>
+	<simplecol name="cohorte_determination_id" type="integer"/>
+	<simplecol name="commentaire" type="character varying"/>
+	<simplecol name="living" type="smallint"/>
+	<simplecol name="capture_nb" type="smallint"/>
+	<simplecol name="state" type="character varying"/>
+	<simplecol name="parent" type="smallint"/>
+	<simplecol name="tetracycline_treatment" type="smallint"/>
+	<simplecol name="other_remarks" type="character varying"/>
+	<simplecol name="campaign_date" type="date"/>
+	<simplecol name="campaign_name" type="character varying"/>
+	<simplecol name="cohorte_determination_reliability" type="character varying"/>
+	<simplecol name="fork_length" type="double precision"/>
+	<simplecol name="parasite" type="smallint"/>
+	<simplecol name="total_length" type="double precision"/>
+	<simplecol name="weight" type="double precision"/>
+	<simplecol name="implanted_pittag" type="character varying"/>
+	<simplecol name="pittag_read" type="character varying"/>
+	<simplecol name="release_age" type="character varying"/>
+	<simplecol name="hp_tag_read" type="character varying"/>
+	<simplecol name="dst_tag_read" type="character varying"/>
+	<simplecol name="release_stage_id" type="integer"/>
+	<simplecol name="sortie_lieu_id" type="integer"/>
+	<simplecol name="father_id" type="integer"/>
+	<simplecol name="mother_id" type="integer"/>
+	<simplecol name="trait_start" type="timestamp"/>
+	<simplecol name="trait_end" type="timestamp"/>
+	<simplecol name="duration" type="time"/>
+	<simplecol name="engin_type_id" type="integer"/>
+	<simplecol name="station_id" type="integer"/>
+	<simplecol name="maree_id" type="integer"/>
+	<simplecol name="maree_coef" type="integer"/>
+	<simplecol name="remarks" type="character varying"/>
+	<definition> <![CDATA[SELECT individu_sturio.trait_id,
+    individu_sturio.individu_sturio_id,
+    individu_sturio.pittag,
+    individu_sturio.hp_tag,
+    individu_sturio.implanted_hp_tag,
+    individu_sturio.dst_tag,
+    individu_sturio.implanted_dst_tag,
+    individu_sturio.age,
+    individu_sturio.cohort,
+    individu_sturio.cohorte_determination_id,
+    individu_sturio.commentaire,
+    individu_sturio.living,
+    individu_sturio.capture_nb,
+    individu_sturio.state,
+    individu_sturio.parent,
+    individu_sturio.tetracycline_treatment,
+    individu_sturio.other_remarks,
+    individu_sturio.campaign_date,
+    individu_sturio.campaign_name,
+    individu_sturio.cohorte_determination_reliability,
+    individu_sturio.fork_length,
+    individu_sturio.parasite,
+    individu_sturio.total_length,
+    individu_sturio.weight,
+    individu_sturio.implanted_pittag,
+    individu_sturio.pittag_read,
+    individu_sturio.release_age,
+    individu_sturio.hp_tag_read,
+    individu_sturio.dst_tag_read,
+    individu_sturio.release_stage_id,
+    individu_sturio.sortie_lieu_id,
+    individu_sturio.father_id,
+    individu_sturio.mother_id,
+    trait.trait_start,
+    trait.trait_end,
+    trait.duration,
+    trait.engin_type_id,
+    trait.station_id,
+    trait.maree_id,
+    trait.maree_coef,
+    trait.remarks
+   FROM (sturat.individu_sturio
+     JOIN sturat.trait USING (trait_id));;]]> </definition>
+</view>
+
+<view name="v_trait_trace" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="trait"/>
+	<position x="400" y="1500"/>
+	<simplecol name="trait_id" type="integer"/>
+	<simplecol name="trait_start" type="timestamp"/>
+	<simplecol name="trait_end" type="timestamp"/>
+	<simplecol name="duration" type="time"/>
+	<simplecol name="engin_type_id" type="integer"/>
+	<simplecol name="engin_type_libelle" type="character varying"/>
+	<simplecol name="station_id" type="integer"/>
+	<simplecol name="station_code" type="character varying"/>
+	<simplecol name="maree_id" type="integer"/>
+	<simplecol name="maree_libelle" type="character varying"/>
+	<simplecol name="maree_coef" type="integer"/>
+	<simplecol name="trace_geom" type="public.geometry"/>
+	<definition> <![CDATA[SELECT t.trait_id,
+    t.trait_start,
+    t.trait_end,
+    t.duration,
+    t.engin_type_id,
+    et.engin_type_libelle,
+    t.station_id,
+    station.station_code,
+    t.maree_id,
+    m.maree_libelle,
+    t.maree_coef,
+    trait_trace.trace_geom
+   FROM ((((sturat.trait t
+     JOIN sturat.trait_trace USING (trait_id))
+     JOIN sturat.station USING (station_id))
+     LEFT JOIN sturat.engin_type et ON ((t.engin_type_id = et.engin_type_id)))
+     LEFT JOIN sturat.maree m ON ((m.maree_id = t.maree_id)));;]]> </definition>
+</view>
+
+<view name="vis_nombre" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<position x="820" y="3520"/>
+	<simplecol name="trait_id" type="integer"/>
+	<simplecol name="sturio_nb" type="bigint"/>
+	<definition> <![CDATA[SELECT individu_sturio.trait_id,
+    count(*) AS sturio_nb
+   FROM sturat.individu_sturio
+  GROUP BY individu_sturio.trait_id;;]]> </definition>
+</view>
+
+<view name="vp_dna" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="0" y="2540"/>
+	<simplecol name="prelevement_id" type="integer"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="prelevement_ref" type="character varying"/>
+	<simplecol name="prelevement_comment" type="character varying"/>
+	<simplecol name="blood_quantity" type="double precision"/>
+	<simplecol name="mucus_sampling" type="smallint"/>
+	<simplecol name="prelevement_type_name" type="character varying"/>
+	<simplecol name="fin_name" type="character varying"/>
+	<simplecol name="prelevement_localisation_name" type="character varying"/>
+	<definition> <![CDATA[SELECT p.prelevement_id,
+    p.individu_sturio_id,
+    p.prelevement_ref,
+    p.prelevement_comment,
+    p.blood_quantity,
+    p.mucus_sampling,
+    prelevement_type.prelevement_type_name,
+    nageoire.fin_name,
+    prelevement_localisation.prelevement_localisation_name
+   FROM (((sturat.prelevement p
+     JOIN sturat.prelevement_type USING (prelevement_type_id))
+     LEFT JOIN sturat.nageoire USING (fin_id))
+     LEFT JOIN sturat.prelevement_localisation USING (prelevement_localisation_id))
+  WHERE (p.prelevement_type_id = 2);;]]> </definition>
+</view>
+
+<view name="vp_psia" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="0" y="2880"/>
+	<simplecol name="prelevement_id" type="integer"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="prelevement_ref" type="character varying"/>
+	<simplecol name="prelevement_comment" type="character varying"/>
+	<simplecol name="blood_quantity" type="double precision"/>
+	<simplecol name="mucus_sampling" type="smallint"/>
+	<simplecol name="prelevement_type_name" type="character varying"/>
+	<simplecol name="fin_name" type="character varying"/>
+	<simplecol name="prelevement_localisation_name" type="character varying"/>
+	<definition> <![CDATA[SELECT p.prelevement_id,
+    p.individu_sturio_id,
+    p.prelevement_ref,
+    p.prelevement_comment,
+    p.blood_quantity,
+    p.mucus_sampling,
+    prelevement_type.prelevement_type_name,
+    nageoire.fin_name,
+    prelevement_localisation.prelevement_localisation_name
+   FROM (((sturat.prelevement p
+     JOIN sturat.prelevement_type USING (prelevement_type_id))
+     LEFT JOIN sturat.nageoire USING (fin_id))
+     LEFT JOIN sturat.prelevement_localisation USING (prelevement_localisation_id))
+  WHERE (p.prelevement_type_id = 3);;]]> </definition>
+</view>
+
+<view name="vp_rayon" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="0" y="3520"/>
+	<simplecol name="prelevement_id" type="integer"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="prelevement_ref" type="character varying"/>
+	<simplecol name="prelevement_comment" type="character varying"/>
+	<simplecol name="blood_quantity" type="double precision"/>
+	<simplecol name="mucus_sampling" type="smallint"/>
+	<simplecol name="prelevement_type_name" type="character varying"/>
+	<simplecol name="fin_name" type="character varying"/>
+	<simplecol name="prelevement_localisation_name" type="character varying"/>
+	<definition> <![CDATA[SELECT p.prelevement_id,
+    p.individu_sturio_id,
+    p.prelevement_ref,
+    p.prelevement_comment,
+    p.blood_quantity,
+    p.mucus_sampling,
+    prelevement_type.prelevement_type_name,
+    nageoire.fin_name,
+    prelevement_localisation.prelevement_localisation_name
+   FROM (((sturat.prelevement p
+     JOIN sturat.prelevement_type USING (prelevement_type_id))
+     LEFT JOIN sturat.nageoire USING (fin_id))
+     LEFT JOIN sturat.prelevement_localisation USING (prelevement_localisation_id))
+  WHERE (p.prelevement_type_id = 1);;]]> </definition>
+</view>
+
+<view name="vp_stomacal" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="400" y="3520"/>
+	<simplecol name="prelevement_id" type="integer"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="prelevement_ref" type="character varying"/>
+	<simplecol name="prelevement_comment" type="character varying"/>
+	<simplecol name="blood_quantity" type="double precision"/>
+	<simplecol name="mucus_sampling" type="smallint"/>
+	<simplecol name="prelevement_type_name" type="character varying"/>
+	<simplecol name="fin_name" type="character varying"/>
+	<simplecol name="prelevement_localisation_name" type="character varying"/>
+	<definition> <![CDATA[SELECT p.prelevement_id,
+    p.individu_sturio_id,
+    p.prelevement_ref,
+    p.prelevement_comment,
+    p.blood_quantity,
+    p.mucus_sampling,
+    prelevement_type.prelevement_type_name,
+    nageoire.fin_name,
+    prelevement_localisation.prelevement_localisation_name
+   FROM (((sturat.prelevement p
+     JOIN sturat.prelevement_type USING (prelevement_type_id))
+     LEFT JOIN sturat.nageoire USING (fin_id))
+     LEFT JOIN sturat.prelevement_localisation USING (prelevement_localisation_id))
+  WHERE (p.prelevement_type_id = 4);;]]> </definition>
+</view>
+
+<view name="vp_sturtop" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="1620" y="2740"/>
+	<simplecol name="prelevement_id" type="integer"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="prelevement_ref" type="character varying"/>
+	<simplecol name="prelevement_comment" type="character varying"/>
+	<simplecol name="blood_quantity" type="double precision"/>
+	<simplecol name="mucus_sampling" type="smallint"/>
+	<simplecol name="prelevement_type_name" type="character varying"/>
+	<simplecol name="fin_name" type="character varying"/>
+	<simplecol name="prelevement_localisation_name" type="character varying"/>
+	<definition> <![CDATA[SELECT p.prelevement_id,
+    p.individu_sturio_id,
+    p.prelevement_ref,
+    p.prelevement_comment,
+    p.blood_quantity,
+    p.mucus_sampling,
+    prelevement_type.prelevement_type_name,
+    nageoire.fin_name,
+    prelevement_localisation.prelevement_localisation_name
+   FROM (((sturat.prelevement p
+     JOIN sturat.prelevement_type USING (prelevement_type_id))
+     LEFT JOIN sturat.nageoire USING (fin_id))
+     LEFT JOIN sturat.prelevement_localisation USING (prelevement_localisation_id))
+  WHERE (p.prelevement_type_id = 5);;]]> </definition>
+</view>
+
+<sequence name="genetique_genetique_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+</sequence>
+
+<table name="genetique" layers="0" collapse-mode="2" max-obj-count="30" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des analyses genetiques effectuees sur les esturgeons]]> </comment>
+	<tag name="sturio"/>
+	<position x="1160" y="2100"/>
+	<column name="genetique_id" not-null="true" sequence="sturat.genetique_genetique_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="hptag">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Marque HP TAG]]> </comment>
+	</column>
+	<column name="nom">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom complementaire du poisson]]> </comment>
+	</column>
+	<column name="matricule">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Matricule du poisson (elevage)]]> </comment>
+	</column>
+	<column name="pittag">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Pit tag pose]]> </comment>
+	</column>
+	<column name="pittag2">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Second pittag pose]]> </comment>
+	</column>
+	<column name="capture_date">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date de capture du poisson lors de l'analyse]]> </comment>
+	</column>
+	<column name="mst_ho">
+		<type name="real" length="0"/>
+		<comment> <![CDATA[Micro-satellite HO]]> </comment>
+	</column>
+	<column name="mst_hl">
+		<type name="real" length="0"/>
+		<comment> <![CDATA[Micro-satellite HL]]> </comment>
+	</column>
+	<column name="mst_ir">
+		<type name="real" length="0"/>
+		<comment> <![CDATA[Micro-satellite IR]]> </comment>
+	</column>
+	<column name="mst_coef_parente_par">
+		<type name="real" length="0"/>
+		<comment> <![CDATA[Micro-satellite coefficient de parentee PAR]]> </comment>
+	</column>
+	<column name="mst_mere_id">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[poisson_id de la mere obtenu a partir de l'analyse micro-satellite]]> </comment>
+	</column>
+	<column name="mst_pere_id">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[poisson_id du pere obtenu a partir de l'analyse par micro-satellite]]> </comment>
+	</column>
+	<column name="snp_mere_id">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[poisson_id de la mere obtenu par analyse Single Nucleotide polymorphism]]> </comment>
+	</column>
+	<column name="snp_pere_id">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[poisson_id du pere obtenu par analyse Single Nucleotide Polymorphism]]> </comment>
+	</column>
+	<column name="cohorte_definitive">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Annee de naissance calculee et consideree comme exacte]]> </comment>
+	</column>
+	<column name="cohorte_determination_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="cohorte_determination_remarque">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Remarques sur la methode de determination]]> </comment>
+	</column>
+	<column name="diff_rayon_genetique">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Nombre d'annees de difference entre la lecture de rayon et l'analyse genetique]]> </comment>
+	</column>
+	<column name="diff_rayon_genetique_remarque">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Remarque concernant la difference d'age obtenue entre la lecture de rayon et l'analyse genetique]]> </comment>
+	</column>
+	<column name="fiabilite_validation_cohorte">
+		<type name="real" length="0"/>
+		<comment> <![CDATA[Valeur de fiabilite de la determination de la cohorte]]> </comment>
+	</column>
+	<column name="repro_nat_ou_pb_echan">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[1 : poisson issu de reproduction naturelle, ou probleme lie a l'echantillon preleve]]> </comment>
+	</column>
+	<column name="capture_age">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[Age a la capture]]> </comment>
+	</column>
+	<column name="release_stage_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="sortie_lieu_id">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="genetique_pk" type="pk-constr" table="sturat.genetique">
+		<columns names="genetique_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="sortie_lieu" layers="0" collapse-mode="2" max-obj-count="8" z-value="0">
+	<schema name="public"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Lieux des sorties du stock des poissons]]> </comment>
+	<tag name="public"/>
+	<position x="1620" y="1700"/>
+	<column name="sortie_lieu_id" not-null="true" sequence="public.sortie_lieu_sortie_lieu_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="localisation" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[information textuelle sur le lieu de lacher]]> </comment>
+	</column>
+	<column name="longitude_dd">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Longitude du point de lâcher, en valeur décimale]]> </comment>
+	</column>
+	<column name="latitude_dd">
+		<type name="double precision" length="0"/>
+		<comment> <![CDATA[Latitude du point de lâcher, en décimal]]> </comment>
+	</column>
+	<column name="actif" not-null="true" default-value="1">
+		<type name="smallint" length="0"/>
+		<comment> <![CDATA[1 : point utilisé actuellement
+0 : ancien point de lâcher]]> </comment>
+	</column>
+	<column name="poisson_statut_id">
+		<type name="integer" length="0"/>
+		<comment> <![CDATA[Statut que prend le poisson après sortie du stock]]> </comment>
+	</column>
+	<column name="point_geom">
+		<type name="public.geometry" length="0"/>
+		<comment> <![CDATA[Point géographique, en WGS84]]> </comment>
+	</column>
+</table>
+
+<view name="v_genetique" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="1620" y="3020"/>
+	<simplecol name="genetique_id" type="integer"/>
+	<simplecol name="hptag" type="character varying"/>
+	<simplecol name="nom" type="character varying"/>
+	<simplecol name="matricule" type="character varying"/>
+	<simplecol name="pittag" type="character varying"/>
+	<simplecol name="pittag2" type="character varying"/>
+	<simplecol name="capture_date" type="timestamp"/>
+	<simplecol name="mst_ho" type="real"/>
+	<simplecol name="mst_hl" type="real"/>
+	<simplecol name="mst_ir" type="real"/>
+	<simplecol name="mst_coef_parente_par" type="real"/>
+	<simplecol name="mst_mere" type="character varying"/>
+	<simplecol name="mst_pere" type="character varying"/>
+	<simplecol name="snp_mere" type="character varying"/>
+	<simplecol name="snp_pere" type="character varying"/>
+	<simplecol name="cohorte_definitive" type="smallint"/>
+	<simplecol name="cohorte_determination_name" type="character varying"/>
+	<simplecol name="cohorte_determination_remarque" type="character varying"/>
+	<simplecol name="diff_rayon_genetique" type="smallint"/>
+	<simplecol name="diff_rayon_genetique_remarque" type="character varying"/>
+	<simplecol name="fiabilite_validation_cohorte" type="real"/>
+	<simplecol name="repro_nat_ou_pb_echan" type="smallint"/>
+	<simplecol name="capture_age" type="smallint"/>
+	<simplecol name="stade_lacher" type="character varying"/>
+	<simplecol name="lieu_lacher" type="character varying"/>
+	<definition> <![CDATA[SELECT g.genetique_id,
+    g.hptag,
+    g.nom,
+    g.matricule,
+    g.pittag,
+    g.pittag2,
+    g.capture_date,
+    g.mst_ho,
+    g.mst_hl,
+    g.mst_ir,
+    g.mst_coef_parente_par,
+    p1.prenom AS mst_mere,
+    p2.prenom AS mst_pere,
+    p3.prenom AS snp_mere,
+    p4.prenom AS snp_pere,
+    g.cohorte_definitive,
+    cohorte_determination.cohorte_determination_name,
+    g.cohorte_determination_remarque,
+    g.diff_rayon_genetique,
+    g.diff_rayon_genetique_remarque,
+    g.fiabilite_validation_cohorte,
+    g.repro_nat_ou_pb_echan,
+    g.capture_age,
+    release_stage.release_stage_name AS stade_lacher,
+    sortie_lieu.localisation AS lieu_lacher
+   FROM (((((((sturat.genetique g
+     LEFT JOIN poisson p1 ON ((g.mst_mere_id = p1.poisson_id)))
+     LEFT JOIN poisson p2 ON ((g.mst_pere_id = p2.poisson_id)))
+     LEFT JOIN poisson p3 ON ((g.snp_mere_id = p3.poisson_id)))
+     LEFT JOIN poisson p4 ON ((g.snp_pere_id = p4.poisson_id)))
+     LEFT JOIN sturat.release_stage USING (release_stage_id))
+     LEFT JOIN sortie_lieu USING (sortie_lieu_id))
+     LEFT JOIN sturat.cohorte_determination USING (cohorte_determination_id));;]]> </definition>
+</view>
+
+<view name="v_genetique_simple" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="0" y="3220"/>
+	<simplecol name="genetique_id" type="integer"/>
+	<simplecol name="hptag" type="character varying"/>
+	<simplecol name="pittag" type="character varying"/>
+	<simplecol name="capture_date" type="timestamp"/>
+	<simplecol name="mere_id" type="integer"/>
+	<simplecol name="pere_id" type="integer"/>
+	<simplecol name="cohorte_definitive" type="smallint"/>
+	<simplecol name="cohorte_determination_name" type="character varying"/>
+	<simplecol name="release_stage_name" type="character varying"/>
+	<simplecol name="localisation" type="character varying"/>
+	<definition> <![CDATA[SELECT genetique.genetique_id,
+    genetique.hptag,
+    genetique.pittag,
+    genetique.capture_date,
+        CASE
+            WHEN (genetique.mst_mere_id IS NULL) THEN genetique.snp_mere_id
+            ELSE genetique.mst_mere_id
+        END AS mere_id,
+        CASE
+            WHEN (genetique.mst_pere_id IS NULL) THEN genetique.snp_pere_id
+            ELSE genetique.mst_pere_id
+        END AS pere_id,
+    genetique.cohorte_definitive,
+    cohorte_determination.cohorte_determination_name,
+    release_stage.release_stage_name,
+    sortie_lieu.localisation
+   FROM (((sturat.genetique
+     LEFT JOIN sturat.cohorte_determination USING (cohorte_determination_id))
+     LEFT JOIN sturat.release_stage USING (release_stage_id))
+     LEFT JOIN sortie_lieu USING (sortie_lieu_id));;]]> </definition>
+</view>
+
+<sequence name="pittag_pittag_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="public"/>
+	<role name="quinton"/>
+</sequence>
+
+<sequence name="sortie_sortie_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="public"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="pittag" layers="0" collapse-mode="2" max-obj-count="7" z-value="0">
+	<schema name="public"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des marques utilisées pour suivre les poissons]]> </comment>
+	<tag name="public"/>
+	<position x="1620" y="920"/>
+	<column name="pittag_id" not-null="true" sequence="public.pittag_pittag_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="poisson_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="pittag_type_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="pittag_valeur" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Valeur du pittag (donnée utilisée pour identifier le pittag)]]> </comment>
+	</column>
+	<column name="pittag_date_pose">
+		<type name="timestamp" length="0"/>
+	</column>
+	<column name="pittag_commentaire">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Commentaire sur la pose du pittag]]> </comment>
+	</column>
+</table>
+
+<index name="gps_gpsdate_idx" table="sturat.gps"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="gpsdate"/>
+		</idxelement>
+</index>
+
+<index name="trait_traitstart_idx" table="sturat.trait"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="trait_start"/>
+		</idxelement>
+</index>
+
+<index name="trait_traitend_idx" table="sturat.trait"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="trait_end"/>
+		</idxelement>
+</index>
+
+<index name="trait_trace_trait_id_idx" table="sturat.trait_trace"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="trait_id"/>
+		</idxelement>
+</index>
+
+<index name="gps_gpsdateutc_idx" table="sturat.gps"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<expression> <![CDATA[timezone('utc'::text, gpsdate)]]> </expression>
+		</idxelement>
+</index>
+
+<sequence name="request_request_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="sturio_sturat_rw"/>
+</sequence>
+
+<table name="request" layers="0" collapse-mode="2" max-obj-count="8" z-value="0">
+	<schema name="sturat"/>
+	<role name="collec_cp"/>
+	<comment> <![CDATA[Request table in database]]> </comment>
+	<tag name="utils"/>
+	<position x="760" y="2260"/>
+	<column name="request_id" not-null="true" sequence="sturat.request_request_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="create_date" not-null="true">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date of create of the request]]> </comment>
+	</column>
+	<column name="last_exec">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date of the last execution]]> </comment>
+	</column>
+	<column name="title" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Title of the request]]> </comment>
+	</column>
+	<column name="body" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Body of the request. Don't begin it by SELECT, which will be added automatically]]> </comment>
+	</column>
+	<column name="login" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Login of the creator of the request]]> </comment>
+	</column>
+	<column name="datefields">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[List of the date fields used in the request, separated by a comma, for format it]]> </comment>
+	</column>
+	<constraint name="request_pk" type="pk-constr" table="sturat.request">
+		<columns names="request_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<view name="v_individu_sturio" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="400" y="2540"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="trait_id" type="integer"/>
+	<simplecol name="pittag" type="character varying"/>
+	<simplecol name="hp_tag" type="character varying"/>
+	<simplecol name="implanted_hp_tag" type="character varying"/>
+	<simplecol name="dst_tag" type="character varying"/>
+	<simplecol name="implanted_dst_tag" type="character varying"/>
+	<simplecol name="age" type="smallint"/>
+	<simplecol name="cohort" type="character varying"/>
+	<simplecol name="cohorte_determination_id" type="integer"/>
+	<simplecol name="commentaire" type="character varying"/>
+	<simplecol name="living" type="smallint"/>
+	<simplecol name="capture_nb" type="smallint"/>
+	<simplecol name="state" type="character varying"/>
+	<simplecol name="parent" type="smallint"/>
+	<simplecol name="tetracycline_treatment" type="smallint"/>
+	<simplecol name="other_remarks" type="character varying"/>
+	<simplecol name="campaign_date" type="date"/>
+	<simplecol name="campaign_name" type="character varying"/>
+	<simplecol name="cohorte_determination_reliability" type="character varying"/>
+	<simplecol name="fork_length" type="double precision"/>
+	<simplecol name="parasite" type="smallint"/>
+	<simplecol name="total_length" type="double precision"/>
+	<simplecol name="weight" type="double precision"/>
+	<simplecol name="implanted_pittag" type="character varying"/>
+	<simplecol name="pittag_read" type="character varying"/>
+	<simplecol name="release_age" type="character varying"/>
+	<simplecol name="hp_tag_read" type="character varying"/>
+	<simplecol name="dst_tag_read" type="character varying"/>
+	<simplecol name="release_stage_id" type="integer"/>
+	<simplecol name="sortie_lieu_id" type="integer"/>
+	<simplecol name="father_id" type="integer"/>
+	<simplecol name="mother_id" type="integer"/>
+	<simplecol name="release_stage_name" type="character varying"/>
+	<simplecol name="cohorte_determination_name" type="character varying"/>
+	<simplecol name="lieu_lacher" type="character varying"/>
+	<simplecol name="father_matricule" type="character varying"/>
+	<simplecol name="father_prenom" type="character varying"/>
+	<simplecol name="mother_matricule" type="character varying"/>
+	<simplecol name="mother_prenom" type="character varying"/>
+	<definition> <![CDATA[SELECT i.individu_sturio_id,
+    i.trait_id,
+    i.pittag,
+    i.hp_tag,
+    i.implanted_hp_tag,
+    i.dst_tag,
+    i.implanted_dst_tag,
+    i.age,
+    i.cohort,
+    i.cohorte_determination_id,
+    i.commentaire,
+    i.living,
+    i.capture_nb,
+    i.state,
+    i.parent,
+    i.tetracycline_treatment,
+    i.other_remarks,
+    i.campaign_date,
+    i.campaign_name,
+    i.cohorte_determination_reliability,
+    i.fork_length,
+    i.parasite,
+    i.total_length,
+    i.weight,
+    i.implanted_pittag,
+    i.pittag_read,
+    i.release_age,
+    i.hp_tag_read,
+    i.dst_tag_read,
+    i.release_stage_id,
+    i.sortie_lieu_id,
+    i.father_id,
+    i.mother_id,
+    rs.release_stage_name,
+    cd.cohorte_determination_name,
+    sl.localisation AS lieu_lacher,
+    father.matricule AS father_matricule,
+    father.prenom AS father_prenom,
+    mother.matricule AS mother_matricule,
+    mother.prenom AS mother_prenom
+   FROM (((((sturat.individu_sturio i
+     LEFT JOIN sturat.release_stage rs USING (release_stage_id))
+     LEFT JOIN sturat.cohorte_determination cd USING (cohorte_determination_id))
+     LEFT JOIN sortie_lieu sl USING (sortie_lieu_id))
+     LEFT JOIN poisson father ON ((i.father_id = father.poisson_id)))
+     LEFT JOIN poisson mother ON ((i.mother_id = mother.poisson_id)));;]]> </definition>
+</view>
+
+<table name="sortie" layers="0" collapse-mode="2" max-obj-count="8" z-value="0">
+	<schema name="public"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<comment> <![CDATA[Table des sorties du stock]]> </comment>
+	<tag name="public"/>
+	<position x="1620" y="1480"/>
+	<column name="sortie_id" not-null="true" sequence="public.sortie_sortie_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="poisson_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="evenement_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="sortie_lieu_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="sortie_date">
+		<type name="date" length="0"/>
+		<comment> <![CDATA[Date du lâcher]]> </comment>
+	</column>
+	<column name="sortie_commentaire">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Remarques sur la sortie]]> </comment>
+	</column>
+	<column name="sevre">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Poisson sevré : oui, non, mixte...]]> </comment>
+	</column>
+</table>
+
+<view name="v_sturio_genetique" layers="0" collapse-mode="2" max-obj-count="0" z-value="0">
+	<schema name="sturat"/>
+	<role name="&quot;eric.quinton&quot;"/>
+	<tag name="sturio"/>
+	<position x="1620" y="2100"/>
+	<simplecol name="individu_sturio_id" type="integer"/>
+	<simplecol name="genetique_id" type="integer"/>
+	<simplecol name="trait_id" type="integer"/>
+	<simplecol name="pittag" type="character varying"/>
+	<simplecol name="hp_tag" type="character varying"/>
+	<simplecol name="pere_matricule" type="character varying"/>
+	<simplecol name="pere_prenom" type="character varying"/>
+	<simplecol name="mere_matricule" type="character varying"/>
+	<simplecol name="mere_prenom" type="character varying"/>
+	<simplecol name="cohorte_definitive" type="smallint"/>
+	<simplecol name="cohorte_determination_name" type="character varying"/>
+	<simplecol name="stade_lacher_genetique" type="character varying"/>
+	<simplecol name="lieu_lacher_genetique" type="character varying"/>
+	<simplecol name="age_genetique" type="double precision"/>
+	<simplecol name="poisson_id" type="integer"/>
+	<simplecol name="date_naissance_sturio" type="date"/>
+	<simplecol name="date_lacher_sturio" type="date"/>
+	<simplecol name="sortie_lieu_sturio" type="character varying"/>
+	<simplecol name="cohorte_sturio" type="character varying"/>
+	<simplecol name="age_lacher_sturio" type="double precision"/>
+	<definition> <![CDATA[SELECT i.individu_sturio_id,
+    g.genetique_id,
+    i.trait_id,
+    i.pittag,
+    i.hp_tag,
+    pere.matricule AS pere_matricule,
+    pere.prenom AS pere_prenom,
+    mere.matricule AS mere_matricule,
+    mere.prenom AS mere_prenom,
+    g.cohorte_definitive,
+    g.cohorte_determination_name,
+    g.release_stage_name AS stade_lacher_genetique,
+    g.localisation AS lieu_lacher_genetique,
+    (date_part('year'::text, trait.trait_start) - (g.cohorte_definitive)::double precision) AS age_genetique,
+    juv.poisson_id,
+    juv.date_naissance AS date_naissance_sturio,
+    js.sortie_date AS date_lacher_sturio,
+    jsl.localisation AS sortie_lieu_sturio,
+    juv.cohorte AS cohorte_sturio,
+    (date_part('year'::text, js.sortie_date) - ((juv.cohorte)::integer)::double precision) AS age_lacher_sturio
+   FROM ((((((((sturat.individu_sturio i
+     JOIN sturat.trait USING (trait_id))
+     LEFT JOIN sturat.v_genetique_simple g ON ((((g.pittag)::text = (i.pittag)::text) OR ((g.hptag)::text = (i.hp_tag)::text))))
+     LEFT JOIN poisson pere ON ((g.pere_id = pere.poisson_id)))
+     LEFT JOIN poisson mere ON ((g.mere_id = mere.poisson_id)))
+     LEFT JOIN pittag p ON ((((i.pittag)::text = (p.pittag_valeur)::text) OR ((i.hp_tag)::text = (p.pittag_valeur)::text))))
+     LEFT JOIN poisson juv ON (((p.poisson_id = juv.poisson_id) OR ((g.pittag)::text = (juv.matricule)::text))))
+     LEFT JOIN sortie js ON ((js.poisson_id = juv.poisson_id)))
+     LEFT JOIN sortie_lieu jsl ON ((js.sortie_lieu_id = jsl.sortie_lieu_id)));;]]> </definition>
+</view>
+
+<sequence name="dbversion_dbversion_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturat"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="dbversion" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturat"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Table des versions de la base de donnees]]> </comment>
+	<tag name="utils"/>
+	<position x="0" y="1840"/>
+	<column name="dbversion_id" not-null="true" sequence="sturat.dbversion_dbversion_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="dbversion_number" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Numero de la version]]> </comment>
+	</column>
+	<column name="dbversion_date" not-null="true">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date de la version]]> </comment>
+	</column>
+	<constraint name="dbversion_pk" type="pk-constr" table="sturat.dbversion">
+		<columns names="dbversion_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="dbparam" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturat"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Table des parametres associes de maniere intrinseque a l'instance]]> </comment>
+	<tag name="utils"/>
+	<position x="0" y="1960"/>
+	<column name="dbparam_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="dbparam_name" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom du parametre]]> </comment>
+	</column>
+	<column name="dbparam_value">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Valeur du paramètre]]> </comment>
+	</column>
+	<constraint name="dbparam_pk" type="pk-constr" table="sturat.dbparam">
+		<columns names="dbparam_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="aclgroup_aclgroup_id_seq" cycle="false" start="7" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="aclacl" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Table des droits attribués]]> </comment>
+	<tag name="acl"/>
+	<position x="0" y="20"/>
+	<column name="aclaco_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="aclgroup_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="aclacl_pk" type="pk-constr" table="sturatgacl.aclacl">
+		<columns names="aclaco_id,aclgroup_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="aclaco_aclaco_id_seq" cycle="false" start="7" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="aclaco" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Table des droits gérés]]> </comment>
+	<tag name="acl"/>
+	<position x="420" y="20"/>
+	<column name="aclaco_id" not-null="true" sequence="sturatgacl.aclaco_aclaco_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="aclappli_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="aco" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="aclaco_pk" type="pk-constr" table="sturatgacl.aclaco">
+		<columns names="aclaco_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="aclappli_aclappli_id_seq" cycle="false" start="2" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="aclappli" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Table des applications gérées]]> </comment>
+	<tag name="acl"/>
+	<position x="760" y="20"/>
+	<column name="aclappli_id" not-null="true" sequence="sturatgacl.aclappli_aclappli_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="appli" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom de l'application pour la gestion des droits]]> </comment>
+	</column>
+	<column name="applidetail">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Description de l'application]]> </comment>
+	</column>
+	<constraint name="aclappli_pk" type="pk-constr" table="sturatgacl.aclappli">
+		<columns names="aclappli_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="aclgroup" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Groupes des logins]]> </comment>
+	<tag name="acl"/>
+	<position x="0" y="200"/>
+	<column name="aclgroup_id" not-null="true" sequence="sturatgacl.aclgroup_aclgroup_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="groupe" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="aclgroup_id_parent">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="aclgroup_pk" type="pk-constr" table="sturatgacl.aclgroup">
+		<columns names="aclgroup_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="acllogin_acllogin_id_seq" cycle="false" start="2" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="acllogin" layers="0" collapse-mode="2" max-obj-count="4" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Table des logins des utilisateurs autorisés]]> </comment>
+	<tag name="acl"/>
+	<position x="760" y="200"/>
+	<column name="acllogin_id" not-null="true" sequence="sturatgacl.acllogin_acllogin_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="login" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="logindetail" not-null="true">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Nom affiché]]> </comment>
+	</column>
+	<column name="totp_key">
+		<type name="character varying" length="0"/>
+	</column>
+	<constraint name="acllogin_pk" type="pk-constr" table="sturatgacl.acllogin">
+		<columns names="acllogin_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="acllogingroup" layers="0" collapse-mode="2" max-obj-count="3" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Table des relations entre les logins et les groupes]]> </comment>
+	<tag name="acl"/>
+	<position x="420" y="200"/>
+	<column name="acllogin_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="aclgroup_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="acllogingroup_pk" type="pk-constr" table="sturatgacl.acllogingroup">
+		<columns names="acllogin_id,aclgroup_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="log_log_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="log" layers="0" collapse-mode="2" max-obj-count="7" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+	<comment> <![CDATA[Liste des connexions ou des actions enregistrées]]> </comment>
+	<tag name="acl"/>
+	<position x="1160" y="200"/>
+	<column name="log_id" not-null="true" sequence="sturatgacl.log_log_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="login" not-null="true">
+		<type name="character varying" length="32"/>
+	</column>
+	<column name="nom_module">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="log_date" not-null="true">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Heure de connexion]]> </comment>
+	</column>
+	<column name="commentaire">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Donnees complementaires enregistrees]]> </comment>
+	</column>
+	<column name="ipaddress">
+		<type name="character varying" length="0"/>
+		<comment> <![CDATA[Adresse IP du client]]> </comment>
+	</column>
+	<constraint name="log_pk" type="pk-constr" table="sturatgacl.log">
+		<columns names="log_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="seq_logingestion_id" cycle="false" start="2" increment="1" min-value="1" max-value="999999" cache="1">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+</sequence>
+
+<table name="logingestion" layers="0" collapse-mode="2" max-obj-count="13" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="filo"/>
+	<tag name="acl"/>
+	<position x="1620" y="20"/>
+	<column name="id" not-null="true" sequence="sturatgacl.seq_logingestion_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="login" not-null="true">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="password">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="nom">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="prenom">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="mail">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="datemodif">
+		<type name="timestamp" length="0"/>
+	</column>
+	<column name="actif" default-value="1">
+		<type name="smallint" length="0"/>
+	</column>
+	<column name="is_clientws" default-value="false">
+		<type name="boolean" length="0"/>
+	</column>
+	<column name="tokenws">
+		<type name="character varying" length="0"/>
+	</column>
+	<column name="is_expired" default-value="false">
+		<type name="boolean" length="0"/>
+	</column>
+	<constraint name="pk_logingestion" type="pk-constr" table="sturatgacl.logingestion">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="passwordlost_passwordlost_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="9223372036854775807" cache="1">
+	<schema name="sturatgacl"/>
+	<role name="quinton"/>
+</sequence>
+
+<index name="log_date_idx" table="sturatgacl.log"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="log_date"/>
+		</idxelement>
+</index>
+
+<index name="log_login_idx" table="sturatgacl.log"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="login"/>
+		</idxelement>
+</index>
+
+<index name="log_commentaire_idx" table="sturatgacl.log"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="commentaire"/>
+		</idxelement>
+</index>
+
+<index name="log_ip_idx" table="sturatgacl.log"
+	 concurrent="false" unique="false" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="ipaddress"/>
+		</idxelement>
+</index>
+
+<index name="logingestion_login_idx" table="sturatgacl.logingestion"
+	 concurrent="false" unique="true" fast-update="false" buffering="false" nulls-not-distinct="false"
+	 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="login"/>
+		</idxelement>
+</index>
+
+<table name="paswordlost" layers="0" collapse-mode="2" max-obj-count="6" z-value="0">
+	<schema name="sturatgacl"/>
+	<role name="postgres"/>
+	<tag name="acl"/>
+	<position x="1160" y="20"/>
+	<column name="passwordlost_id" not-null="true">
+		<type name="serial" length="0"/>
+	</column>
+	<column name="token" not-null="true">
+		<type name="varchar" length="0"/>
+	</column>
+	<column name="expiration" not-null="true">
+		<type name="timestamp" length="0"/>
+	</column>
+	<column name="usedate">
+		<type name="timestamp" length="0"/>
+	</column>
+	<constraint name="paswordlost_pk" type="pk-constr" table="sturatgacl.paswordlost">
+		<columns names="passwordlost_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="logingestion_has_many_paswordlost" type="rel1n" layers="0"
+	 src-col-pattern="{sc}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#19d420"
+	 src-table="sturatgacl.logingestion"
+	 dst-table="sturatgacl.paswordlost"
+	 src-required="true" dst-required="false"
+	 deferrable="true" defer-type="INITIALLY IMMEDIATE"/>
+
+<table name="tracegpx" layers="0" collapse-mode="2" max-obj-count="6" z-value="0">
+	<schema name="sturat"/>
+	<comment> <![CDATA[Contains the traces imported from GPX files with ogr2ogr]]> </comment>
+	<tag name="trait"/>
+	<position x="400" y="1840"/>
+	<column name="ogc_fid" not-null="true">
+		<type name="serial" length="0"/>
+	</column>
+	<column name="filename">
+		<type name="varchar" length="0"/>
+		<comment> <![CDATA[Name of the origin file]]> </comment>
+	</column>
+	<column name="name">
+		<type name="varchar" length="0"/>
+		<comment> <![CDATA[Name of the trace]]> </comment>
+	</column>
+	<column name="importdate" default-value="now()">
+		<type name="timestamp" length="0"/>
+		<comment> <![CDATA[Date of import into the database]]> </comment>
+	</column>
+	<column name="geom">
+		<type name="geometry" length="0"/>
+	</column>
+</table>
+
+<constraint name="debris_nature_debris_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.debris_nature" table="sturat.debris">
+	<columns names="debris_nature_id" ref-type="src-columns"/>
+	<columns names="debris_nature_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="espece_echantillon_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.espece" table="sturat.echantillon">
+	<columns names="espece_id" ref-type="src-columns"/>
+	<columns names="espece_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_echantillon_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.echantillon">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="eel_stade_individu_eel_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.eel_stade" table="sturat.individu_eel">
+	<columns names="eel_stade_id" ref-type="src-columns"/>
+	<columns names="eel_stade_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_individu_eel_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.individu_eel">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="echantillon_individu_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.echantillon" table="sturat.individu">
+	<columns names="echantillon_id" ref-type="src-columns"/>
+	<columns names="echantillon_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="cohorte_determination_individu_sturio_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.cohorte_determination" table="sturat.individu_sturio">
+	<columns names="cohorte_determination_id" ref-type="src-columns"/>
+	<columns names="cohorte_determination_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="poisson_individu_sturio_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.poisson" table="sturat.individu_sturio">
+	<columns names="mother_id" ref-type="src-columns"/>
+	<columns names="poisson_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="poisson_individu_sturio_fk1" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.poisson" table="sturat.individu_sturio">
+	<columns names="father_id" ref-type="src-columns"/>
+	<columns names="poisson_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="release_stage_individu_sturio_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.release_stage" table="sturat.individu_sturio">
+	<columns names="release_stage_id" ref-type="src-columns"/>
+	<columns names="release_stage_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="sortie_lieu_individu_sturio_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.sortie_lieu" table="sturat.individu_sturio">
+	<columns names="sortie_lieu_id" ref-type="src-columns"/>
+	<columns names="sortie_lieu_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_individu_sturio_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.individu_sturio">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_physicochimie_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.physicochimie">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="individu_sturio_prelevement_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.individu_sturio" table="sturat.prelevement">
+	<columns names="individu_sturio_id" ref-type="src-columns"/>
+	<columns names="individu_sturio_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="nageoire_prelevement_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.nageoire" table="sturat.prelevement">
+	<columns names="fin_id" ref-type="src-columns"/>
+	<columns names="fin_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="prelevement_localisation_prelevement_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.prelevement_localisation" table="sturat.prelevement">
+	<columns names="prelevement_localisation_id" ref-type="src-columns"/>
+	<columns names="prelevement_localisation_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="prelevement_type_prelevement_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.prelevement_type" table="sturat.prelevement">
+	<columns names="prelevement_type_id" ref-type="src-columns"/>
+	<columns names="prelevement_type_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_sonde_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.sonde">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="debris_trait_debris_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.debris" table="sturat.trait_debris">
+	<columns names="debris_id" ref-type="src-columns"/>
+	<columns names="debris_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_trait_debris_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.trait_debris">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_trait_geom_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.trait_geom">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="manipulateur_trait_manipulateur_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.manipulateur" table="sturat.trait_manipulateur">
+	<columns names="manipulateur_id" ref-type="src-columns"/>
+	<columns names="manipulateur_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_trait_manipulateur_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.trait_manipulateur">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="trait_trait_trace_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.trait" table="sturat.trait_trace">
+	<columns names="trait_id" ref-type="src-columns"/>
+	<columns names="trait_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="engin_type_trait_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.engin_type" table="sturat.trait">
+	<columns names="engin_type_id" ref-type="src-columns"/>
+	<columns names="engin_type_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="maree_trait_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.maree" table="sturat.trait">
+	<columns names="maree_id" ref-type="src-columns"/>
+	<columns names="maree_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="station_trait_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.station" table="sturat.trait">
+	<columns names="station_id" ref-type="src-columns"/>
+	<columns names="station_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="cohorte_determination_genetique_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.cohorte_determination" table="sturat.genetique">
+	<columns names="cohorte_determination_id" ref-type="src-columns"/>
+	<columns names="cohorte_determination_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="release_stage_genetique_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturat.release_stage" table="sturat.genetique">
+	<columns names="release_stage_id" ref-type="src-columns"/>
+	<columns names="release_stage_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="sortie_lieu_genetique_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.sortie_lieu" table="sturat.genetique">
+	<columns names="sortie_lieu_id" ref-type="src-columns"/>
+	<columns names="sortie_lieu_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="pittag_poisson_fk" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.poisson" table="public.pittag">
+	<columns names="poisson_id" ref-type="src-columns"/>
+	<columns names="poisson_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="sortie_poisson_fk" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.poisson" table="public.sortie">
+	<columns names="poisson_id" ref-type="src-columns"/>
+	<columns names="poisson_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="sortie_sortie_lieu_fk" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="public.sortie_lieu" table="public.sortie">
+	<columns names="sortie_lieu_id" ref-type="src-columns"/>
+	<columns names="sortie_lieu_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="aclaco_aclacl_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturatgacl.aclaco" table="sturatgacl.aclacl">
+	<columns names="aclaco_id" ref-type="src-columns"/>
+	<columns names="aclaco_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="aclgroup_aclacl_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturatgacl.aclgroup" table="sturatgacl.aclacl">
+	<columns names="aclgroup_id" ref-type="src-columns"/>
+	<columns names="aclgroup_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="aclappli_aclaco_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturatgacl.aclappli" table="sturatgacl.aclaco">
+	<columns names="aclappli_id" ref-type="src-columns"/>
+	<columns names="aclappli_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="aclgroup_aclgroup_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturatgacl.aclgroup" table="sturatgacl.aclgroup">
+	<columns names="aclgroup_id_parent" ref-type="src-columns"/>
+	<columns names="aclgroup_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="aclgroup_acllogingroup_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturatgacl.aclgroup" table="sturatgacl.acllogingroup">
+	<columns names="aclgroup_id" ref-type="src-columns"/>
+	<columns names="aclgroup_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="acllogin_acllogingroup_fk" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="NO ACTION" del-action="NO ACTION" ref-table="sturatgacl.acllogin" table="sturatgacl.acllogingroup">
+	<columns names="acllogin_id" ref-type="src-columns"/>
+	<columns names="acllogin_id" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="rel_debris_debris_nature" type="relfk" layers="0"
+	 src-table="sturat.debris"
+	 dst-table="sturat.debris_nature" reference-fk="debris_nature_debris_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_echantillon_espece" type="relfk" layers="0"
+	 src-table="sturat.echantillon"
+	 dst-table="sturat.espece" reference-fk="espece_echantillon_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_echantillon_trait" type="relfk" layers="0"
+	 src-table="sturat.echantillon"
+	 dst-table="sturat.trait" reference-fk="trait_echantillon_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_individu_eel_eel_stade" type="relfk" layers="0"
+	 src-table="sturat.individu_eel"
+	 dst-table="sturat.eel_stade" reference-fk="eel_stade_individu_eel_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_individu_eel_trait" type="relfk" layers="0"
+	 src-table="sturat.individu_eel"
+	 dst-table="sturat.trait" reference-fk="trait_individu_eel_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_individu_echantillon" type="relfk" layers="0"
+	 src-table="sturat.individu"
+	 dst-table="sturat.echantillon" reference-fk="echantillon_individu_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_individu_sturio_cohorte_determination" type="relfk" layers="0"
+	 src-table="sturat.individu_sturio"
+	 dst-table="sturat.cohorte_determination" reference-fk="cohorte_determination_individu_sturio_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_individu_sturio_poisson" type="relfk" layers="0"
+	 src-table="sturat.individu_sturio"
+	 dst-table="public.poisson" reference-fk="poisson_individu_sturio_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_individu_sturio_poisson1" type="relfk" layers="0"
+	 src-table="sturat.individu_sturio"
+	 dst-table="public.poisson" reference-fk="poisson_individu_sturio_fk1"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_individu_sturio_release_stage" type="relfk" layers="0"
+	 src-table="sturat.individu_sturio"
+	 dst-table="sturat.release_stage" reference-fk="release_stage_individu_sturio_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_individu_sturio_sortie_lieu" type="relfk" layers="0"
+	 src-table="sturat.individu_sturio"
+	 dst-table="public.sortie_lieu" reference-fk="sortie_lieu_individu_sturio_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_individu_sturio_trait" type="relfk" layers="0"
+	 src-table="sturat.individu_sturio"
+	 dst-table="sturat.trait" reference-fk="trait_individu_sturio_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_physicochimie_trait" type="relfk" layers="0"
+	 src-table="sturat.physicochimie"
+	 dst-table="sturat.trait" reference-fk="trait_physicochimie_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_prelevement_individu_sturio" type="relfk" layers="0"
+	 src-table="sturat.prelevement"
+	 dst-table="sturat.individu_sturio" reference-fk="individu_sturio_prelevement_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_prelevement_nageoire" type="relfk" layers="0"
+	 src-table="sturat.prelevement"
+	 dst-table="sturat.nageoire" reference-fk="nageoire_prelevement_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_prelevement_prelevement_localisation" type="relfk" layers="0"
+	 src-table="sturat.prelevement"
+	 dst-table="sturat.prelevement_localisation" reference-fk="prelevement_localisation_prelevement_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_prelevement_prelevement_type" type="relfk" layers="0"
+	 src-table="sturat.prelevement"
+	 dst-table="sturat.prelevement_type" reference-fk="prelevement_type_prelevement_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_sonde_trait" type="relfk" layers="0"
+	 src-table="sturat.sonde"
+	 dst-table="sturat.trait" reference-fk="trait_sonde_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_trait_debris_debris" type="relfk" layers="0"
+	 src-table="sturat.trait_debris"
+	 dst-table="sturat.debris" reference-fk="debris_trait_debris_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_trait_debris_trait" type="relfk" layers="0"
+	 src-table="sturat.trait_debris"
+	 dst-table="sturat.trait" reference-fk="trait_trait_debris_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_trait_geom_trait" type="relfk" layers="0"
+	 src-table="sturat.trait_geom"
+	 dst-table="sturat.trait" reference-fk="trait_trait_geom_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_trait_manipulateur_manipulateur" type="relfk" layers="0"
+	 src-table="sturat.trait_manipulateur"
+	 dst-table="sturat.manipulateur" reference-fk="manipulateur_trait_manipulateur_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_trait_manipulateur_trait" type="relfk" layers="0"
+	 src-table="sturat.trait_manipulateur"
+	 dst-table="sturat.trait" reference-fk="trait_trait_manipulateur_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_trait_trace_trait" type="relfk" layers="0"
+	 src-table="sturat.trait_trace"
+	 dst-table="sturat.trait" reference-fk="trait_trait_trace_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_trait_engin_type" type="relfk" layers="0"
+	 src-table="sturat.trait"
+	 dst-table="sturat.engin_type" reference-fk="engin_type_trait_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_trait_maree" type="relfk" layers="0"
+	 src-table="sturat.trait"
+	 dst-table="sturat.maree" reference-fk="maree_trait_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_trait_station" type="relfk" layers="0"
+	 src-table="sturat.trait"
+	 dst-table="sturat.station" reference-fk="station_trait_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_genetique_cohorte_determination" type="relfk" layers="0"
+	 src-table="sturat.genetique"
+	 dst-table="sturat.cohorte_determination" reference-fk="cohorte_determination_genetique_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_genetique_release_stage" type="relfk" layers="0"
+	 src-table="sturat.genetique"
+	 dst-table="sturat.release_stage" reference-fk="release_stage_genetique_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_genetique_sortie_lieu" type="relfk" layers="0"
+	 src-table="sturat.genetique"
+	 dst-table="public.sortie_lieu" reference-fk="sortie_lieu_genetique_fk"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_pittag_poisson" type="relfk" layers="0"
+	 src-table="public.pittag"
+	 dst-table="public.poisson" reference-fk="pittag_poisson_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_sortie_poisson" type="relfk" layers="0"
+	 src-table="public.sortie"
+	 dst-table="public.poisson" reference-fk="sortie_poisson_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_sortie_sortie_lieu" type="relfk" layers="0"
+	 src-table="public.sortie"
+	 dst-table="public.sortie_lieu" reference-fk="sortie_sortie_lieu_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_aclacl_aclaco" type="relfk" layers="0"
+	 src-table="sturatgacl.aclacl"
+	 dst-table="sturatgacl.aclaco" reference-fk="aclaco_aclacl_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_aclacl_aclgroup" type="relfk" layers="0"
+	 src-table="sturatgacl.aclacl"
+	 dst-table="sturatgacl.aclgroup" reference-fk="aclgroup_aclacl_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_aclaco_aclappli" type="relfk" layers="0"
+	 src-table="sturatgacl.aclaco"
+	 dst-table="sturatgacl.aclappli" reference-fk="aclappli_aclaco_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_aclgroup_aclgroup" type="relfk" layers="0"
+	 src-table="sturatgacl.aclgroup"
+	 dst-table="sturatgacl.aclgroup" reference-fk="aclgroup_aclgroup_fk"
+	 src-required="false" dst-required="false">
+	<line>
+		<position x="371.747" y="238.241"/>
+	<position x="371.747" y="167"/>
+	<position x="225.831" y="167"/>
+	</line>
+</relationship>
+
+<relationship name="rel_acllogingroup_aclgroup" type="relfk" layers="0"
+	 src-table="sturatgacl.acllogingroup"
+	 dst-table="sturatgacl.aclgroup" reference-fk="aclgroup_acllogingroup_fk"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_acllogingroup_acllogin" type="relfk" layers="0"
+	 src-table="sturatgacl.acllogingroup"
+	 dst-table="sturatgacl.acllogin" reference-fk="acllogin_acllogingroup_fk"
+	 src-required="false" dst-required="true"/>
+
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_owner"/>
+	<privileges create="true" connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges connect="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_gacl_g"/>
+	<privileges connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_rw"/>
+	<privileges connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_sturwild_gacl"/>
+	<privileges connect="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_sturwild_r"/>
+	<privileges connect="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_sturwild_rw"/>
+	<privileges connect="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_r"/>
+	<privileges connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="sturio" type="database"/>
+	<roles names="sturio_travaux"/>
+	<privileges connect="true"/>
+</permission>
+<permission>
+	<object name="sturat" type="schema"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges create="true" usage="true"/>
+</permission>
+<permission>
+	<object name="sturat" type="schema"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges usage="true"/>
+</permission>
+<permission>
+	<object name="sturat" type="schema"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges usage="true"/>
+</permission>
+<permission>
+	<object name="sturat.cohorte_determination" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.cohorte_determination" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.cohorte_determination" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.debris" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.debris" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.debris" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.debris_nature" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.debris_nature" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.debris_nature" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.echantillon" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.echantillon" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.echantillon" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.eel_stade" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.eel_stade" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.eel_stade" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.engin_type" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.engin_type" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.engin_type" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.espece" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.espece" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.espece" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.gps" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.gps" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.gps" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu_eel" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu_eel" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu_eel" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu_sturio" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu_sturio" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.individu_sturio" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.manipulateur" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.manipulateur" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.manipulateur" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.maree" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.maree" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.maree" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.nageoire" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.nageoire" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.nageoire" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.physicochimie" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.physicochimie" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.physicochimie" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement_localisation" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement_localisation" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement_localisation" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement_type" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement_type" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.prelevement_type" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.release_stage" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.release_stage" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.release_stage" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.sonde" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.sonde" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.sonde" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.station" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.station" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.station" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_debris" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_debris" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_debris" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_geom" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_geom" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_geom" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_manipulateur" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_manipulateur" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_manipulateur" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_trace" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_trace" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.trait_trace" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_individu_sturio" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_individu_sturio" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_individu_sturio" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="public.poisson" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.poisson" type="table"/>
+	<roles names="sturio_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.poisson" type="table"/>
+	<roles names="sturio_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="public.sortie_lieu" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.sortie_lieu" type="table"/>
+	<roles names="sturio_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.sortie_lieu" type="table"/>
+	<roles names="sturio_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_geom" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_geom" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_geom" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_sturio" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_sturio" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_sturio" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_trace" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_trace" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_trait_trace" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.vis_nombre" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vis_nombre" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vis_nombre" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_dna" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_dna" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_dna" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_psia" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_psia" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_psia" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_rayon" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_rayon" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_rayon" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_stomacal" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_stomacal" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_stomacal" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_sturtop" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_sturtop" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.vp_sturtop" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.genetique" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.genetique" type="table"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.genetique" type="table"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_genetique" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_genetique" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_genetique" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_genetique_simple" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_genetique_simple" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_genetique_simple" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_sturio_genetique" type="view"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_sturio_genetique" type="view"/>
+	<roles names="sturio_sturat_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="sturat.v_sturio_genetique" type="view"/>
+	<roles names="sturio_sturat_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.pittag" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.pittag" type="table"/>
+	<roles names="sturio_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.pittag" type="table"/>
+	<roles names="sturio_r"/>
+	<privileges select="true"/>
+</permission>
+<permission>
+	<object name="public.sortie" type="table"/>
+	<roles names="&quot;eric.quinton&quot;"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.sortie" type="table"/>
+	<roles names="sturio_rw"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.sortie" type="table"/>
+	<roles names="sturio_r"/>
+	<privileges select="true"/>
+</permission>
+</dbmodel>

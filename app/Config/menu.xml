@@ -4,18 +4,40 @@
 		<its:translateRule selector="//item/@label" translate="yes" />
 		<its:translateRule selector="//item/@tooltip" translate="yes" />
 	</its:rules>
+	<item module="traitList" label="Traits" tooltip="Liste des traits">
+		<item module="traitList" label="Traits" tooltip="Liste des traits"/>
+		<item divider="1" droits="gestion"/>
+		<item module="traceImport" label="Import GPX" tooltip="Import des traces GPX" droits="gestion"/>
+		<item module="tracePairing" label="Appariement" tooltip="Appariement des traces GPX avec les traits" droits="gestion"/>
+		<item divider="1" droits="gestion"/>
+		<item module="importCinna" label="Import CINNA" tooltip="Import des données CINNA dans la base Estuaire_phy" droits="gestion"/>
+		<item divider='1' droits="param"/>
+		<item module="requestList" label="Requêtes SQL" tooltip="Exécution de requêtes SQL dans la base de données" droits="param"/>
+	</item>
+	<item module="sturioList" label="Esturgeons" tooltip="Liste des esturgeons connus"/>
 
-	<item module="manage" label="Gestion" tooltip="Gestion">
-		<item divider='1' droits="param" />
-		<item module="requestList" label="Requêtes SQL" tooltip="Exécution de requêtes SQL dans la base de données" droits="param" />
+
+	<item module="parametre" label="Paramètres" tooltip="Paramètres" droits="consult">
+		<item module="manipulateurList" droits="consult" label="Manipulateurs" tooltip="Liste des manipulateurs embarqués"/>
+		<item module="debris_natureList" droits="consult" label="Natures de débris" tooltip="Liste des natures de débris"/>
+		<item module="prelevement_localisationList" droits="consult" label="Localisations des prélèvements" tooltip="Liste des localisations des prélèvements"/>
+		<item module="prelevement_typeList" droits="consult" label="Types de prélèvement" tooltip="Liste des types de prélèvements"/>
+		<item module="cohorte_determinationList" droits="consult" label="Détermination de la cohorte" tooltip="Liste des méthodes de détermination de la cohorte"/>
+		<item module="eel_stadeList" droits="consult" label="Stades des anguilles" tooltip="Liste des stades de maturité des anguilles"/>
+		<item module="release_stageList" droits="consult" label="Stades de lâchers" tooltip="Liste des stades de lâchers"/>
+		<item module="nageoireList" droits="consult" label="Nageoires" tooltip="Types de nageoires"/>
+		<item module="stationList" droits="consult" label="Stations" tooltip="Liste des stations"/>
+		<item module="mareeList" droits="consult" label="marees" tooltip="Liste des marées"/>
+		<item module="enginTypeList" droits="consult" label="Types d'engins" tooltip="Liste des types d'engins"/>
+		<item module="especeList" label="Espèces" tooltip="Liste des espèces" droits="consult"/>
+		<item divider='1'/>
+		<item module="dbstructureSchema" droits="parap" label="Schéma de la base de données" tooltip="Schéma de la base de données">
+			<item module="dbstructureSchema" droits="param" label="Schéma de la base de données" tooltip="Schéma de la base de données"/>
+			<item module="dbstructureHtml" droits='param' label="Structure de la base de données (HTML)" tooltip="Liste des tables et des colonnes"/>
+			<item module="dbstructureLatex" droits='param' label="Structure de la base de données (Latex)" tooltip="Liste des tables et des colonnes sous forme de tableaux Latex"/>
+		</item>
 	</item>
 
-	<item module="parametre" label="Paramètres" tooltip="Paramètres de l'application" droits="gestion">
-		<item divider='1' />
-		<item module="dbstructureSchema" droits="admin" label="Schéma de la base de données" tooltip="Schéma de la base de données" />
-		<item module="dbstructureHtml" droits='admin' label="Structure de la base de données (HTML)" tooltip="Liste des tables et des colonnes" />
-		<item module="dbstructureLatex" droits='admin' label="Structure de la base de données (Latex)" tooltip="Liste des tables et des colonnes sous forme de tableaux Latex" />
-	</item>
 	<item module="administration" label="Administration" tooltip="Administration de l'application" droits="admin">
 		<item module="loginGestionList" droits="admin" label="Liste des comptes locaux" tooltip="Liste des logins - identification via la base de données" />
 		<item module="appliList" drsoits="admin" label="ACL - droits" tooltip="applications et droits gérés" />

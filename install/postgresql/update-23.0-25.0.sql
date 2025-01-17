@@ -17,3 +17,4 @@ alter table logingestion add column if not exists lastattempt datetime;
 
 update aclgroup set groupe = 'manage' where groupe = 'gestion';
 update aclaco set aco = 'manage' where aco = 'gestion';
+insert into dbversion (dbversion_date, dbversion_number) values ('2025-01-17', '25.0');
