@@ -43,7 +43,7 @@ database.default.password = password
 database.default.DBDriver = Postgre
 database.default.DBPrefix =
 database.default.port = 5432
-database.default.searchpath = public,app,gacl
+database.default.searchpath = sturat,sturatgacl,public
 database.default.charset = utf8
 
 # Ppci\Config\Ppci.language = fr
@@ -51,8 +51,8 @@ database.default.charset = utf8
 #--------------------------------------------------------------------
 # Encryption
 #--------------------------------------------------------------------
-# app.privateKey = ${BASE_DIR}/id_app
-# app.pubKey = ${BASE_DIR}/id_app.pub
+app.privateKey = ${BASE_DIR}/id_sturat
+app.pubKey = ${BASE_DIR}/id_sturat.pub
 
 #--------------------------------------------------------------------
 # Ppci identification
@@ -199,4 +199,4 @@ Ppci\Config\IdentificationConfig.identificationLogo = "${FRONT_DIR}/favicon.png"
 #----------------------------------------------------------------
 # Check new release - 0 to disable
 #----------------------------------------------------------------
-#app.checkRelease = 1
+app.checkRelease = 0
