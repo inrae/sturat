@@ -62,8 +62,8 @@
         $("#station_id").change(function () {
             var id = $(this).val();
             $.ajax({
-                url: "index.php",
-                data: { "module": "stationGetPoints", "station_id": id }
+                url: "stationGetPoints",
+                data: {  "station_id": id }
             })
                 .done(function (value) {
                     try {
