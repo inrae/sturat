@@ -16,7 +16,7 @@ class Param extends PpciModel
      * @param pdo $bdd
      * @param string $tablename
      */
-    public function __construct()
+    public function __construct($tablename)
     {
         $this->table = $tablename;
         $this->fields = array(
@@ -28,7 +28,7 @@ class Param extends PpciModel
     /**
      * Get the id of a record from the name
      *
-     * @param varchar $name
+     * @param string $name
      * @param boolean $withCreate: if true and the record not exists, the parameter is created
      * @return int
      */
@@ -37,7 +37,7 @@ class Param extends PpciModel
         if (strlen($name) > 0) {
             $sql = "select " . $this->table . "_id  as id
                 from $this->table
-                where " . $this->table . "_name = :name";
+                where " . $this->table . "_name = :name:";
             $data = $this->lireParamAsPrepared($sql, array("name" => $name));
             if ($withCreate && !$data["id"]) {
                 $data["id"] = $this->ecrire(array($this->table . "_name" => $name));
