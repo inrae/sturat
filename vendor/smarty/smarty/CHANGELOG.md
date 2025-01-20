@@ -1316,7 +1316,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - bugfix Smarty_CacheResource_Keyvaluestore did use different keys on read/writes and clearCache() calls (Issue 169)
 
  13.03.2014
- - bugfix clearXxx() change of 27.1.2014 did not work when specifing cache_id or compile_id  (forum topic 24868 and 24867)
+ - bugfix clear change of 27.1.2014 did not work when specifing cache_id or compile_id  (forum topic 24868 and 24867)
 
  - 3.1.17 -
  08.03.2014

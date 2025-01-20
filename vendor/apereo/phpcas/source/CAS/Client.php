@@ -2716,7 +2716,7 @@ class CAS_Client
      */
     private function _initPGTStorage()
     {
-        // if no SetPGTStorageXxx() has been used, default to file
+        // if no SetPGTStorage has been used, default to file
         if ( !is_object($this->_pgt_storage) ) {
             $this->setPGTStorageFile();
         }

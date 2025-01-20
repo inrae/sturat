@@ -29,4 +29,8 @@ class Services extends BaseService
      *     return new \CodeIgniter\Example();
      * }
      */
+    public static function AppDatabase($getShared = true)
+    {
+        return ($getShared === true ? static::getSharedInstance('AppDatabase') : new Database());
+    }
 }
