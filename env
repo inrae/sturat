@@ -46,6 +46,16 @@ database.default.port = 5432
 database.default.searchpath = sturat,sturatgacl,public
 database.default.charset = utf8
 
+database.cinna.hostname = localhost
+database.cinna.database = estuaire_phy
+database.cinna.username = sturat_appli
+database.cinna.password = password
+database.cinna.DBDriver = Postgre
+database.cinna.DBPrefix =
+database.cinna.port = 5432
+database.cinna.searchpath = cinna,public
+database.cinna.charset = utf8
+
 # Ppci\Config\Ppci.language = fr
 
 #--------------------------------------------------------------------

@@ -21,6 +21,7 @@ class Cinna extends PpciModel
             "geom" => array("type" => 4)
         );
         $this->autoFormatDate = false;
+        $this->DBGroup = "cinna";
         $this->srid = 4326;
         parent::__construct();
     }

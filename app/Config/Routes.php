@@ -48,7 +48,7 @@ $routes->add('enginTypeList', 'EnginType::list');
 $routes->add('enginTypeChange', 'EnginType::change');
 $routes->post('enginTypeWrite', 'EnginType::write');
 $routes->post('enginTypeDelete', 'EnginType::delete');
-$routes->add('readOnlyChange', 'ReadOnly::index');
+$routes->add('readOnlyChange', 'ReadOnlyControl::index');
 $routes->add('manipulateurList', 'Manipulateur::list');
 $routes->add('manipulateurChange', 'Manipulateur::change');
 $routes->post('manipulateurWrite', 'Manipulateur::write');
