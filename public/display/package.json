@@ -25,7 +25,6 @@
     "leaflet": "^1.7.1",
     "leaflet-draw": "^1.0.4",
     "leaflet-mouse-position": "^1.2.0",
-    "leaflet.polyline.snakeanim": "^0.2.0",
     "leaflet.tilelayer.pouchdbcached": "^1.0.0",
     "magnific-popup": "^1.1.0",
     "markdown-it": "^12.0.2",

@@ -8,7 +8,7 @@ use Ppci\Models\PpciModel;
 class  extends PpciLibrary { 
 
     
-    private $keyName;
+    public $keyName;
 
     function __construct()
     {
