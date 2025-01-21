@@ -21,7 +21,7 @@ use Ppci\Libraries\PpciLibrary;
 
 class TraitLib extends PpciLibrary
 {
-	private $keyName;
+	public $keyName;
 
 	function __construct()
 	{

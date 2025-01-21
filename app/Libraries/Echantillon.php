@@ -10,7 +10,7 @@ use Ppci\Libraries\PpciLibrary;
 
 class Echantillon extends PpciLibrary
 {
-    private $keyName;
+    public $keyName;
 
     function __construct()
     {

@@ -11,7 +11,7 @@ class Param extends PpciLibrary
 {
 
 
-	private $keyName;
+	public $keyName;
 	private $tablename;
 	private $tableDescriptions = [];
 

@@ -11,7 +11,7 @@ use Ppci\Models\PpciModel;
 class Espece extends PpciLibrary
 {
 
-    private $keyName;
+    public $keyName;
 
     function __construct()
     {

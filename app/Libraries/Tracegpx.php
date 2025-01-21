@@ -16,7 +16,7 @@ class Tracegpx extends PpciLibrary
 {
 
 
-    private $keyName;
+    public $keyName;
 
     function __construct()
     {

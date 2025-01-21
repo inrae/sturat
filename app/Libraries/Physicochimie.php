@@ -9,7 +9,7 @@ use Ppci\Libraries\PpciLibrary;
 
 class Physicochimie extends PpciLibrary
 {
-    private $keyName;
+    public $keyName;
     function __construct()
     {
         parent::__construct();

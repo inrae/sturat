@@ -28,6 +28,10 @@ class Cinna extends PpciController
         $paramDb = config("Database");
         $db = db_connect("cinna");
         $db->query("set search_path = " . $paramDb->cinna["searchpath"]);
-        return $this->lib->importExec();
+        if( $this->lib->importExec()) {
+            defaultPage();
+        } else {
+            return $this->import();
+        }
     }
 }

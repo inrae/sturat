@@ -10,7 +10,7 @@ class Traitdebris extends PpciLibrary
 {
 
 
-    private $keyName;
+    public $keyName;
 
     function __construct()
     {
