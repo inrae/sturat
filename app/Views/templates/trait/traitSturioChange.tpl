@@ -63,7 +63,7 @@
          * mise à jour des tag
          */
         $(".tagupdate").change(function () {
-            $($(this).data("nom")).val($(this).val());
+            $("#"+$(this).data("name")).val($(this).val());
         });
     });
 </script>
@@ -109,29 +109,29 @@
                     <tbody>
                         <tr>
                             <td>{t}Pittag{/t}</td>
-                            <td><input class="form-control tagupdate" data-nom="pittag" id="pittag_read"
+                            <td><input class="form-control tagupdate" data-name="pittag" id="pittag_read"
                                     name="pittag_read" value="{$data.pittag_read}"></td>
-                            <td><input class="form-control tagupdate" data-nom="pittag" id="implanted_pittag"
+                            <td><input class="form-control tagupdate" data-name="pittag" id="implanted_pittag"
                                     name="implanted_pittag" value="{$data.implanted_pittag}"></td>
-                            <td><input class="form-control" data-nom="pittag" id="pittag" name="pittag"
+                            <td><input class="form-control" id="pittag" name="pittag"
                                     value="{$data.pittag}"></td>
                         </tr>
                         <tr>
                             <td>{t}HP tag{/t}</td>
-                            <td><input class="form-control tagupdate" data-nom="hp_tag" id="hp_tag_read"
+                            <td><input class="form-control tagupdate" data-name="hp_tag" id="hp_tag_read"
                                     name="hp_tag_read" value="{$data.hp_tag_read}"></td>
-                            <td><input class="form-control tagupdate" data-nom="hp_tag" id="implanted_hp_tag"
+                            <td><input class="form-control tagupdate" data-name="hp_tag" id="implanted_hp_tag"
                                     name="implanted_hp_tag" value="{$data.implanted_hp_tag}"></td>
-                            <td><input class="form-control" data-nom="hp_tag" id="hp_tag" name="hp_tag"
+                            <td><input class="form-control" id="hp_tag" name="hp_tag"
                                     value="{$data.hp_tag}"></td>
                         </tr>
                         <tr>
                             <td>{t}DST tag{/t}</td>
-                            <td><input class="form-control tagupdate" data-nom="dst_tag" id="dst_tag_read"
+                            <td><input class="form-control tagupdate" data-name="dst_tag" id="dst_tag_read"
                                     name="dst_tag_read" value="{$data.dst_tag_read}"></td>
-                            <td><input class="form-control tagupdate" data-nom="dst_tag" id="implanted_dst_tag"
+                            <td><input class="form-control tagupdate" data-name="dst_tag" id="implanted_dst_tag"
                                     name="implanted_dst_tag" value="{$data.implanted_dst_tag}"></td>
-                            <td><input class="form-control" data-nom="dst_tag" id="dst_tag" name="dst_tag"
+                            <td><input class="form-control" id="dst_tag" name="dst_tag"
                                     value="{$data.dst_tag}"></td>
                         </tr>
                     </tbody>

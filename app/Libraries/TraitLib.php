@@ -28,7 +28,7 @@ class TraitLib extends PpciLibrary
 		parent::__construct();
 		$this->dataclass = new TraitClass;
 		$this->keyName = "trait_id";
-		if (isset($_REQUEST[$this->keyName])) {
+		if (isset($_REQUEST[$this->keyName]) && !empty($_REQUEST[$this->keyName])) {
 			$this->id = $_REQUEST[$this->keyName];
 		}
 	}
@@ -76,8 +76,8 @@ class TraitLib extends PpciLibrary
 		$station = new Station();
 		$this->vue->htmlVars[] = "stationPoints";
 		$this->vue->set(json_encode($station->getPoints($data["station_id"])), "stationPoints");
-		if ($_SESSION["readOnly"] == 0 && $_SESSION["rights"]["manage"] == 1) {
-			$debris = new Debris();
+		if ($_SESSION["dbparams"]["readOnly"] == 0 && $_SESSION["userRights"]["manage"] == 1) {
+			$debris = new Debris;
 			$this->vue->set($debris->getListe("debris_name"), "debris");
 		}
 		return $this->vue->send();

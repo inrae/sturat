@@ -33,9 +33,9 @@ class SearchTrait extends SearchParam
     {
         $ds = new \DateTime();
         $ds->modify("-1 month");
-        $this->param["from"] = $ds->format($_SESSION["MASKDATE"]);
-        $this->param["to"] = date($_SESSION["MASKDATE"]);
-        $this->param["trace_import_from"] = date($_SESSION["MASKDATE"]);
-        $this->param["trace_import_to"] = date($_SESSION["MASKDATE"]);
+        $this->param["from"] = $ds->format($_SESSION["date"]["maskdate"]);
+        $this->param["to"] = date($_SESSION["date"]["maskdate"]);
+        $this->param["trace_import_from"] = date($_SESSION["date"]["maskdate"]);
+        $this->param["trace_import_to"] = date($_SESSION["date"]["maskdate"]);
     }
 }

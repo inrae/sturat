@@ -85,9 +85,6 @@ class Echantillon extends PpciLibrary
                 }
                 $db->transCommit();
                 $this->message->set(_("Échantillon enregistré"));
-                foreach ($this->dataclass->getErrorData() as $mess) {
-                    $this->message->set($mess["message"], true);
-                }
                 return true;
             } else {
                 throw new PpciException(_("Erreur indéterminée lors de l'enregistrement de l'échantillon"));

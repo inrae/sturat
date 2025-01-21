@@ -18,6 +18,7 @@ class Param extends PpciLibrary
 	function __construct($tablename)
 	{
 		parent::__construct();
+		$this->tablename = $tablename;
 		$this->dataclass = new ModelsParam($tablename);
 		$this->keyName = $tablename . "_id";
 		if (isset($_REQUEST[$this->keyName])) {
@@ -35,7 +36,7 @@ class Param extends PpciLibrary
 	function list()
 	{
 		$this->vue = service('Smarty');
-		$this->vue->set($this->dataclass->getListe(1), "data");
+		$this->vue->set($data = $this->dataclass->getListe(1), "data");
 		$this->vue->set("param/paramList.tpl", "corps");
 		generateSet($this->vue, $this->tablename, $this->tableDescriptions[$this->tablename]);
 		return $this->vue->send();

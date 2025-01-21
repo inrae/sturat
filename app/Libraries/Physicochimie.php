@@ -28,7 +28,6 @@ class Physicochimie extends PpciLibrary
          * $_REQUEST["idParent"] contains the identifiant of the parent record
          */
         $this->dataRead($this->id, "trait/physicochimieChange.tpl", $this->id);
-        require_once "modules/classes/trait.class.php";
         $trait = new TraitClass();
         $this->vue->set($trait->getDetail($this->id), "trait");
         return $this->vue->send();

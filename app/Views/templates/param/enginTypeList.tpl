@@ -2,7 +2,7 @@
 <div class="row">
 	<div class="col-md-6">
 		{if $rights.param == 1 && $readOnly == 0}
-		<a href="enginTypeChange?fin_id=0">
+		<a href="enginTypeChange?engin_type_id=0">
 			<img src="display/images/new.png" height="25">
 			{t}Nouveau...{/t}
 		</a>

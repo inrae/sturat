@@ -2,7 +2,9 @@
 
 namespace App\Libraries;
 
+use App\Models\IndividuSturio;
 use App\Models\Poisson;
+use App\Models\SearchSturio;
 use Ppci\Libraries\PpciLibrary;
 
 class Sturio extends PpciLibrary
@@ -13,9 +15,6 @@ class Sturio extends PpciLibrary
         parent::__construct();
         $this->dataclass = new IndividuSturio;
         $this->keyName = "individu_sturio_id";
-        if (isset($_REQUEST[$this->keyName])) {
-            $this->id = $_REQUEST[$this->keyName];
-        }
     }
 
     function list()
@@ -24,7 +23,9 @@ class Sturio extends PpciLibrary
         /**
          * Display the list of traits
          */
-
+        if (!isset($_SESSION["searchSturio"])) {
+            $_SESSION["searchSturio"] = new SearchSturio;
+        }
         $_SESSION["searchSturio"]->setParam($_GET);
         $dataSearch = $_SESSION["searchSturio"]->getParam();
         if ($dataSearch["isSearch"] == 1) {
@@ -37,12 +38,12 @@ class Sturio extends PpciLibrary
     }
     function detail()
     {
+        $this->vue=service('Smarty');
         $this->vue->set($this->dataclass->getSize($_GET["pittag"], $_GET["hp_tag"]), "measures");
         $this->vue->set($this->dataclass->getSampling($_GET["pittag"], $_GET["hp_tag"]), "samplings");
         $this->vue->set($this->dataclass->getListDetail($_GET["pittag"], $_GET["hp_tag"]), "sturios");
         if (!empty($_GET["pittag"])) {
-            include_once "modules/classes/poisson.class.php";
-            $poisson = new Poisson();
+            $poisson = new Poisson;
             $this->vue->set($poisson->getDetail($_GET["pittag"]), "poisson");
         }
         $this->vue->set("sturio/sturioDetail.tpl", "corps");

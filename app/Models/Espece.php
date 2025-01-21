@@ -72,12 +72,11 @@ class Espece extends PpciModel
 	{
 		$field = pg_escape_identifier($this->db->getConnection(), $champ);
 		$parentField = pg_escape_identifier($this->db->getConnection(),$champParent);
-		$valeur = $this->encodeData($valeur);
 		if (!empty($champ) && array_key_exists($champ, $this->fields) && !empty($champParent) && array_key_exists($champParent, $this->fields) && !empty($valeur)) {
 			$sql = "select distinct $field as field from espece
-							where parentField = :valeur:
-							and field is not null
-							order by field";
+							where $parentField = :valeur:
+							and $field is not null
+							order by $field";
 			return $this->getListeParam($sql,["valeur"=>$valeur]);
 		}
 	}
@@ -110,8 +109,8 @@ class Espece extends PpciModel
 			} else {
 				$where .= "(upper(nom) like upper(:nom:)
 					or upper(nom_fr) like upper(:nom_fr:))";
-					$this->param["nom"] = '%" . $param["nom"] . "%';
-					$this->param["nom_fr"] = '%" . $param["nom"] . "%';
+					$this->param["nom"] = "%" . $param["nom"] . "%";
+					$this->param["nom_fr"] = "%" . $param["nom"] . "%";
 			}
 			$and = true;
 		}

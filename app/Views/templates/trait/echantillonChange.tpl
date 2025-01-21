@@ -251,4 +251,4 @@
         {/if}
 
     </div>
-</form>
+{$csrf}</form>

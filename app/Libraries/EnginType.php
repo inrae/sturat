@@ -16,7 +16,7 @@ class EnginType extends PpciLibrary
     {
         parent::__construct();
         $this->dataclass = new ModelsEnginType();
-        $this->keyName = "";
+        $this->keyName = "engin_type_id";
         if (isset($_REQUEST[$this->keyName])) {
             $this->id = $_REQUEST[$this->keyName];
         }

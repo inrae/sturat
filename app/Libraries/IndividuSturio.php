@@ -102,9 +102,6 @@ class IndividuSturio extends PpciLibrary
                 }
                 $db->transCommit();
                 $this->message->set(_("Esturgeon enregistré"));
-                foreach ($this->dataclass->getErrorData() as $mess) {
-                    $this->message->set($mess["message"], true);
-                }
                 return true;
             } else {
                 throw new PpciException(_("Erreur indéterminée lors de l'enregistrement de l'esturgeon"));

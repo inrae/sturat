@@ -103,7 +103,7 @@ class IndividuSturio extends PpciModel
         join sturat.station using (station_id)
         where pittag like :tag:
         )
-        select distinct pittag, poisson_date::date, localisation, poisson_type, hp_tag, dst_tag, cohorte,
+        select distinct pittag, poisson_date, localisation, poisson_type, hp_tag, dst_tag, cohorte,
         total_length, fork_length, weight
         from req";
         } else {
@@ -146,8 +146,7 @@ class IndividuSturio extends PpciModel
                 ";
         }
         $this->dateFields[] = "poisson_date";
-
-        $this->datefields[] = "trait_start";
+        $this->dateFields[] = "trait_start";
 
         return $this->getListeParamAsPrepared($sql, array("tag" => '%' . $tag . '%'));
     }
@@ -161,13 +160,13 @@ class IndividuSturio extends PpciModel
      */
     function getSize(string $pittag, string $hptag = ""): ?array
     {
-        $sql = "select longueur_fourche as fork_length, longueur_totale as total_length, masse as weight, morphologie_date::date as measure_date
+        $sql = "select longueur_fourche as fork_length, longueur_totale as total_length, masse as weight, morphologie_date as measure_date
     ,'élevage' as measure_type
     from morphologie m
     join poisson using (poisson_id)
-    where matricule = :pittag
+    where matricule = :pittag:
     union
-    select fork_length, total_length, weight, trait_start::date as measure_date
+    select fork_length, total_length, weight, trait_start as measure_date
     , 'capture' as measure_type
     from sturat.individu_sturio is2
     join sturat.trait using (trait_id)
@@ -177,8 +176,7 @@ class IndividuSturio extends PpciModel
             $sql .= " or hp_tag = :hptag:";
             $search["hptag"] = $hptag;
         }
-        $this->datefields[] = "measure_date";
-
+        $this->dateFields[] = "measure_date";
         return $this->getListeParamAsPrepared($sql, $search);
     }
     /**
@@ -204,7 +202,7 @@ class IndividuSturio extends PpciModel
             $sql .= " or hp_tag = :hptag:";
             $search["hptag"] = $hptag;
         }
-        $this->datefields[] = "trait_start";
+        $this->dateFields[] = "trait_start";
         return $this->getListeParamAsPrepared($sql, $search);
     }
     /**

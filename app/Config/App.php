@@ -213,8 +213,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $privateKey = ROOTPATH . "id_app";
-    public $pubKey = ROOTPATH . "id_app.pub";
+    public $privateKey = ROOTPATH . "id_sturat";
+    public $pubKey = ROOTPATH . "id_sturat.pub";
     /**
      * List of locales date formats
      *
@@ -310,12 +310,12 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $APP_help_address = "https://github.com/equinton/ppci/issues/new";
+    public $APP_help_address = "https://forgemia.inra.fr/eabx-public/sturat2/-/issues/new";
     /**
      *
      * @var string
      */
-    public $copyright = "Copyright © 2024 - All rights reserved. Author : Éric Quinton - Software distributed under AGPL license";
+    public $copyright = "Copyright © 2021-2025 - All rights reserved. Author : Éric Quinton, for INRAE - EABX - Software distributed under AGPL license";
 
     /**
      * Max duration of a session
@@ -335,7 +335,7 @@ class App extends BaseConfig
      * Get last release informations
      * Ask Github or Gitlab to obtains informations on the last published release
      */
-    public $checkRelease = 1;
+    public $checkRelease = 0;
     /**
      * Github server
      */

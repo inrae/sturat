@@ -62,7 +62,7 @@ class Echantillon extends PpciModel
     function read($id, $getDefault = true, $trait_id = 0): array
     {
         if ($id == 0) {
-            $data = $this->getDefaultValue($trait_id);
+            $data = $this->getDefaultValues($trait_id);
         } else {
             $data = $this->lireParamAsPrepared($this->sql . " where echantillon_id = :id:", array("id" => $id));
         }
@@ -87,8 +87,14 @@ class Echantillon extends PpciModel
             $recalculate = true;
         }
         if ($recalculate) {
-            $this->addMessage(_("Le nombre total de poissons a été ajusté"));
+            $this->message->set(_("Le nombre total de poissons a été ajusté"));
         }
         return parent::write($data);
+    }
+    function delete($id = null, bool $purge = false)
+    {
+        $individu = new Individu;
+        $individu->deleteFromField($id, "echantillon_id");
+        parent::delete($id);
     }
 }
