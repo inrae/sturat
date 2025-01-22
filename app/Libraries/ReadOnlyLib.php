@@ -6,7 +6,7 @@ use Ppci\Libraries\PpciException;
 use Ppci\Libraries\PpciLibrary;
 use Ppci\Models\Dbparam;
 
-class ReadOnlyClass extends PpciLibrary
+class ReadOnlyLib extends PpciLibrary
 {
     function __construct()
     {

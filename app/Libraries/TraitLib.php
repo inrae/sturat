@@ -76,10 +76,10 @@ class TraitLib extends PpciLibrary
 		$station = new Station();
 		$this->vue->htmlVars[] = "stationPoints";
 		$this->vue->set(json_encode($station->getPoints($data["station_id"])), "stationPoints");
-		if ($_SESSION["dbparams"]["readOnly"] == 0 && $_SESSION["userRights"]["manage"] == 1) {
+		//if ($_SESSION["dbparams"]["readOnly"] == 0 && $_SESSION["userRights"]["manage"] == 1) {
 			$debris = new Debris;
 			$this->vue->set($debris->getListe("debris_name"), "debris");
-		}
+		//}
 		return $this->vue->send();
 	}
 	function change()

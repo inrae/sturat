@@ -89,8 +89,11 @@
                                 <input type="hidden" name="td{$td.trait_debit_id}" value="{$td.trait_debit_id}">
                             </td>
                             <td>
-                                <select class="field form-control debris_id" name="di{$td.trait_debit_id}">
+                                <select class="field form-control debris_id" name="di{$td.trait_debit_id}"
+                                {if $readOnly ==1 || $rights.manage != 1}readonly{/if}>
+                                    {if $readOnly == 0 && $rights.manage == 1}
                                     <option value="0">{t}Sélectionnez{/t}</option>
+                                    {/if}
                                     {foreach $debris as $deb}
                                     <option value="{$deb.debris_id}" {if $deb.debris_id==$td.debris_id} selected{/if}>
                                         {$deb.debris_name} ({$deb.unite_comptage})

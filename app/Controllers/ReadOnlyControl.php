@@ -3,17 +3,18 @@
 namespace App\Controllers;
 
 use \Ppci\Controllers\PpciController;
-use App\Libraries\ReadOnlyClass;
+use App\Libraries\ReadOnlyLib;
 
 class ReadOnlyControl extends PpciController
 {
     protected $lib;
     function __construct()
     {
-        $this->lib = new ReadOnlyClass();
+        $this->lib = new ReadOnlyLib();
     }
     function index()
     {
-        return $this->lib->index();
+        $this->lib->index();
+        defaultPage();
     }
 }
