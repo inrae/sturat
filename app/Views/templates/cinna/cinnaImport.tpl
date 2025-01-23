@@ -1,14 +1,11 @@
 <h2>{t}Importation des fichiers CINNA{/t}</h2>
 <div class="row">
     <div class="col-md-6 form-display">
-        {t}Cette fonction vous permet d'importer les fichiers CINNA dans la base de données estuaire_phy, schéma
-        CINNA{/t}
+        {t}Cette fonction vous permet d'importer les fichiers CINNA dans la base de données estuaire_phy, schéma CINNA{/t}
         <br>
-        {t}Attention : l'opération n'est à réaliser qu'une seule fois pour chaque fichier : dans le cas contraire, les
-        enregistrements seront en double.{/t}
+        {t}Attention : l'opération n'est à réaliser qu'une seule fois pour chaque fichier : dans le cas contraire, les enregistrements seront en double.{/t}
         <br>
-        <b>{t}Après l'importation, veuillez noter les numéros des identifiants générés, avec le nom du fichier
-            correspondant, pour pouvoir revenir en arrière si c'était nécessaire.{/t}</b>
+        <b>{t}Après l'importation, veuillez noter les numéros des identifiants générés, avec le nom du fichier correspondant, pour pouvoir revenir en arrière si c'était nécessaire.{/t}</b>
     </div>
 </div>
 <div class="row">

@@ -6,8 +6,8 @@
             <input type="hidden" name="moduleBase" value="station">
             <input type="hidden" name="station_id" value="{$data.station_id}">
             <div class="form-group">
-                <label for="paramName" class="control-label col-md-4"><span class="red">*</span> {t}Libellé
-                    :{/t}</label>
+                <label for="paramName" class="control-label col-md-4"><span class="red">*</span> 
+                    {t}Libellé :{/t}</label>
                 <div class="col-md-8">
                     <input id="paramName" type="text" class="form-control" name="station_code"
                         value="{$data.station_code}" autofocus required>

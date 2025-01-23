@@ -67,8 +67,8 @@
         });
     });
 </script>
-<h2>{t}Création/modification d'un esturgeon{/t}{if $data.individu_sturio_id > 0}&nbsp;{t}N°
-    {/t}{$data.individu_sturio_id}{/if} - {t}trait n° {/t}&nbsp;{$trait.trait_id} -
+<h2>{t}Création/modification d'un esturgeon{/t}{if $data.individu_sturio_id > 0}&nbsp;
+    {t}N°{/t} {$data.individu_sturio_id}{/if} - {t}trait n° {/t}&nbsp;{$trait.trait_id} -
     {t}Station{/t}&nbsp;{$trait.station_code} - &nbsp;{$trait.trait_start}</h2>
 <div class="row">
     <a href="traitList">

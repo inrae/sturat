@@ -1,8 +1,7 @@
 <h2>{t}Import des traces GPX{/t}</h2>
 <div class="row">
     <div class="col-md-6 form-display">
-        {t}Cette fonction vous permet d'importer dans une table temporaire toutes les traces présentes dans un fichier
-        GPX. Vous pourrez ensuite associer ces traces avec les traits correspondants.{/t}
+        {t}Cette fonction vous permet d'importer dans une table temporaire toutes les traces présentes dans un fichier GPX. Vous pourrez ensuite associer ces traces avec les traits correspondants.{/t}
     </div>
 </div>
 <div class="row">

@@ -6,8 +6,8 @@
             <input type="hidden" name="moduleBase" value="nageoire">
             <input type="hidden" name="fin_id" value="{$data.fin_id}">
             <div class="form-group">
-                <label for="paramName" class="control-label col-md-4"><span class="red">*</span> {t}Libellé
-                    :{/t}</label>
+                <label for="paramName" class="control-label col-md-4"><span class="red">*</span> 
+                    {t}Libellé :{/t}</label>
                 <div class="col-md-8">
                     <input id="paramName" type="text" class="form-control" name="fin_name" value="{$data.fin_name}"
                         autofocus required>

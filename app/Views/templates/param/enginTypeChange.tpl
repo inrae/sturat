@@ -6,8 +6,8 @@
             <input type="hidden" name="moduleBase" value="enginType">
             <input type="hidden" name="engin_type_id" value="{$data.engin_type_id}">
             <div class="form-group">
-                <label for="paramName" class="control-label col-md-4"><span class="red">*</span> {t}Libellé
-                    :{/t}</label>
+                <label for="paramName" class="control-label col-md-4"><span class="red">*</span> 
+                    {t}Libellé :{/t}</label>
                 <div class="col-md-8">
                     <input id="paramName" type="text" class="form-control" name="engin_type_libelle"
                         value="{$data.engin_type_libelle}" autofocus required>

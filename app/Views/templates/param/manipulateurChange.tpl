@@ -6,23 +6,23 @@
             <input type="hidden" name="moduleBase" value="manipulateur">
             <input type="hidden" name="manipulateur_id" value="{$data.manipulateur_id}">
             <div class="form-group">
-                <label for="name" class="control-label col-md-4"><span class="red">*</span> {t}Nom
-                    :{/t}</label>
+                <label for="name" class="control-label col-md-4"><span class="red">*</span> 
+                    {t}Nom :{/t}</label>
                 <div class="col-md-8">
                     <input id="name" type="text" class="form-control" name="name" value="{$data.name}" autofocus
                         required>
                 </div>
             </div>
             <div class="form-group">
-                <label for="firstname" class="control-label col-md-4">{t}Prénom
-                    :{/t}</label>
+                <label for="firstname" class="control-label col-md-4">
+                    {t}Prénom :{/t}</label>
                 <div class="col-md-8">
                     <input id="firstname" type="text" class="form-control" name="firstname" value="{$data.firstname}">
                 </div>
             </div>
             <div class="form-group">
-                <label for="actif1" class="col-md-4 control-label"><span class="red">*</span>{t}Manipulateur en activité
-                    ?{/t}</label>
+                <label for="actif1" class="col-md-4 control-label"><span class="red">*</span>
+                    {t}Manipulateur en activité ?{/t}</label>
                 <div class="col-md-8">
                     <input class="" type="radio" id="actif1" name="actif" value="1" {if
                         $data.actif==1}checked{/if}>&nbsp;{t}oui{/t}
