@@ -1,2 +1,30 @@
 News
 ====================
+Version v25.0.0 of 23 January 2025
+----------------------------------
+- Switching the application to the codeigniter framework
+- translation of all labels in English
+
+Version v24.0.0 dated 17 April 2024
+-------------------------------
+Bug fixes :
+- when entering sturgeons, the comment was replaced by ‘other remarks’. This field has been removed (empty)
+- when entering sturgeons, the entry of samples was not working properly, some information was not necessarily recorded or the display of new lines was not functional.
+
+Version 1.3.0 of 17/08/2022
+-------------------------------
+- Import of CINNA data added
+
+Version 1.2 dated 24/11/2021
+-------------------------------
+- Import of gpx features added
+- Correction of line data entry: addition of sexagesimal coordinates, modification of mandatory fields, modification of unit for line length
+- species display and entry added
+
+Version 1.1 of 21/10/2021
+-------------------------------
+Added modification of features and parameter tables
+
+Version 1.0 dated 17/08/2021
+-------------------------------
+First version, only allowing consultation of the list of traits and general information

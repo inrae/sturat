@@ -1,2 +1,30 @@
 Nouveautés
 ============
+Version v25.0.0 du 23 janvier 2025
+----------------------------------
+- Basculement de l'application vers le framework codeigniter
+- Traduction de tous les libellés en anglais
+
+Version v24.0.0 du 17 avril 2024
+-------------------------------
+Corrections de bugs :
+- en saisie des esturgeons, le commentaire était remplacé par "autres remarques". Ce dernier champ a été supprimé (vide)
+- en saisie des esturgeons, la saisie des prélèvements fonctionnait mal, certaines informations n'étaient pas forcément enregistrées ou l'affichage de nouvelles ligne non fonctionnel
+
+Version 1.3.0 du 17/08/2022
+-------------------------------
+- Ajout de l'importation des données CINNA
+
+Version 1.2 du 24/11/2021
+-------------------------------
+- Ajout de l'importation des traits gpx
+- Correction de la saisie des traits : ajout des coordonnées sexagésimales, modification des champs obligatoires, modification de l'unité pour la longueur du trait
+- ajout de la visualisation et de la saisie des espèces
+
+Version 1.1 du 21/10/2021
+-------------------------------
+Ajout de la modification des traits et des tables de paramètres
+
+Version 1.0 du 17/08/2021
+-------------------------------
+Première version, ne permettant que la consultation de la liste des traits et des informations générales
