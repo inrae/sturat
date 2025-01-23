@@ -1,5 +1,8 @@
 <?php
-class ImportException extends Exception {}
+
+namespace App\Models;
+
+use Ppci\Libraries\PpciException;
 
 /**
  * Classe de gestion des imports csv
@@ -35,7 +38,7 @@ class Importgz
          * File read
          */
         if (!$data = gzfile($filename)) {
-            throw new ImportException($filename . " non trouvé ou non lisible");
+            throw new PpciException(sprintf(_("%s non trouvé ou non lisible"), $filename));
         }
         foreach ($data as $line) {
             $localArray = explode($this->separator, $line);

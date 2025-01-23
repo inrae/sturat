@@ -6,12 +6,13 @@ use Ppci\Models\PpciModel;
 
 class Cinna extends PpciModel
 {
+    protected $DBGroup = 'cinna';
 
     function __construct()
     {
         $this->table = "cinna";
         $this->fields = array(
-            "cinna_id" => array("cle" => 1, "type" => 1),
+            "cinna_id" => array("key" => 1, "type" => 1),
             "cinnadate" => array("type" => 3),
             "val" => array("type" => 1),
             "unit_id" => array("type" => 1),
@@ -21,7 +22,6 @@ class Cinna extends PpciModel
             "geom" => array("type" => 4)
         );
         $this->autoFormatDate = false;
-        $this->DBGroup = "cinna";
         $this->srid = 4326;
         parent::__construct();
     }
@@ -35,6 +35,10 @@ class Cinna extends PpciModel
             $latLon["lon"] = $latLon["lon"] * -1;
         }
         return $latLon;
+    }
+
+    function test() {
+        return $this->readParam("select count(*) from cinna");
     }
 
     function getLatLonGGA($line): array

@@ -30,6 +30,7 @@ class Tracegpx extends PpciLibrary
 
     function import()
     {
+        $this->vue=service('Smarty');
         $this->vue->set("trait/traceImport.tpl", "corps");
         return $this->vue->send();
     }
@@ -56,14 +57,15 @@ class Tracegpx extends PpciLibrary
              * @var Database
              */
             $dbconfig = service("AppDatabase");
+            $dbparam = $dbconfig->default;
 
             $this->dataclass->importFileTrace(
                 $_FILES["upload"]["tmp_name"],
                 $_FILES["upload"]["name"],
-                $dbconfig["default"]["hostname"],
-                $dbconfig["default"]["database"],
-                $dbconfig["default"]["username"],
-                $dbconfig["default"]["password"]
+                $dbparam["hostname"],
+                $dbparam["database"],
+                $dbparam["username"],
+                $dbparam["password"]
             );
             return true;
         } catch (PpciException $e) {
@@ -75,6 +77,7 @@ class Tracegpx extends PpciLibrary
     }
     function pairing()
     {
+        $this->vue=service('Smarty');
         $this->vue->set("trait/tracePairing.tpl", "corps");
         if (!isset($_SESSION["searchTrait"])) {
             $_SESSION["searchTrait"] = new SearchTrait;

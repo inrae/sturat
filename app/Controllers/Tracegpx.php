@@ -18,7 +18,11 @@ class Tracegpx extends PpciController
     }
     function importExec()
     {
-        return $this->lib->importExec();
+        if( $this->lib->importExec()) {
+            return $this->pairing();
+        } else {
+            return $this->import();
+        }
     }
     function pairing()
     {
@@ -26,6 +30,10 @@ class Tracegpx extends PpciController
     }
     function pairingExec()
     {
-        return $this->lib->pairingExec();
+        if ( $this->lib->pairingExec() ) {
+            return defaultPage();
+        } else {
+            return $this->pairing();
+        }
     }
 }

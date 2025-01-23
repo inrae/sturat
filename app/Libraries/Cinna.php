@@ -3,29 +3,35 @@
 namespace App\Libraries;
 
 use App\Models\Cinna as ModelsCinna;
-use Importgz;
+use App\Models\Importgz as ModelsImportgz;
 use Ppci\Libraries\PpciException;
 use Ppci\Libraries\PpciLibrary;
-use Ppci\Models\PpciModel;
+use Ppci\Models\Log;
 
 class Cinna extends PpciLibrary
 {
-
-
     public $keyName;
+    private \CodeIgniter\Database\BaseConnection $db;
 
     function __construct()
     {
         parent::__construct();
-        $this->dataclass = new ModelsCinna();
-        $this->keyName = "";
-        if (isset($_REQUEST[$this->keyName])) {
-            $this->id = $_REQUEST[$this->keyName];
+        /**
+         * @var \CodeIgniter\Database\BaseConnection
+         */
+        $this->db = \Config\Database::connect("cinna", true);
+        if ($this->db) {
+            $this->db->query("set search_path = " . $_ENV["database.cinna.searchpath"]);
+        } else {
+            $this->message->set(_("Connexion à la base utilisée pour enregistrer les paramètres CINNA impossible"), true);
+            defaultPage();
         }
+        $this->dataclass = new ModelsCinna();
     }
 
     function import()
     {
+        $this->vue = service('Smarty');
         $this->vue->set("cinna/cinnaImport.tpl", "corps");
         return $this->vue->send();
     }
@@ -48,8 +54,7 @@ class Cinna extends PpciLibrary
          * Connection to the database cinna
          */
         try {
-            $import = new Importgz();
-            $cinna = new ModelsCinna();
+            $import = new ModelsImportgz;
             $units = array("K" => 7, "M" => 8, "N" => 9, "P" => 4, "B" => 3);
             $separator = ",";
             /**
@@ -61,9 +66,8 @@ class Cinna extends PpciLibrary
                 }
                 $min = 99999999;
                 $max = 0;
-                $db = $this->dataclass->db;
-                $db->transBegin();
-                $nblines = $import->initFile($file["tmp_name"], $separator);
+                $this->db->transBegin();
+                $import->initFile($file["tmp_name"], $separator);
                 $cinnadata = $import->getData();
                 $numline = 0;
                 $latlonOK = false;
@@ -79,8 +83,8 @@ class Cinna extends PpciLibrary
                         /**
                          * Position of the boat
                          */
-                        $latlon = $cinna->getLatLonGGA($line);
-                        $latlonOK = $cinna->verifyLatLon($latlon);
+                        $latlon = $this->dataclass->getLatLonGGA($line);
+                        $latlonOK = $this->dataclass->verifyLatLon($latlon);
                         $geom = "POINT(" . $latlon["lon"] . " " . $latlon["lat"] . ")";
                     } else {
                         if ($latlonOK) {
@@ -148,11 +152,11 @@ class Cinna extends PpciLibrary
                                     $lineOK = false;
                             }
                             if ($lineOK) {
-                                $data["cinnadate"] = $cinna->formatDate($line[0]);
+                                $data["cinnadate"] = $this->dataclass->formatDate($line[0]);
                                 $data["lon"] = $latlon["lon"];
                                 $data["lat"] = $latlon["lat"];
                                 $data["geom"] =  $geom;
-                                $this->id = $cinna->ecrire($data);
+                                $this->id = $this->dataclass->ecrire($data);
                                 if ($this->id < $min) {
                                     $min = $this->id;
                                 }
@@ -166,24 +170,32 @@ class Cinna extends PpciLibrary
                                     $data["val"] = $line[2];
                                     $data["parameter_id"] = 6;
                                     $data["unit_id"] = 6;
-                                    $this->id = $cinna->ecrire($data);
+                                    $this->id = $this->dataclass->ecrire($data);
                                 }
                                 $max = $this->id;
                             }
                         }
                     }
                 }
-                $this->message->set(sprintf(_("Fichier %1s traité. Id min généré : %2s, id max : %3s"), $file["name"], $min, $max));
-                $db->transCommit();
+                $mess = sprintf(_("Fichier %1s traité. Id min généré : %2s, id max : %3s"), $file["name"], $min, $max);
+                $this->message->set($mess);
+                $this->db->transCommit();
+                /**
+                 * @var Log
+                 */
+                $log = service('Log');
+                $log->setLog($_SESSION["login"], "importCinnaExec", $mess);
             }
             return true;
         } catch (PpciException $e) {
-            if ($db->transEnabled) {
-                $db->transRollback();
+            if ($this->db->transEnabled) {
+                $this->db->transRollback();
             }
-            $this->message->set(_("Echec de traitement du fichier"));
+            $this->message->set(_("Echec de traitement du fichier"), true);
             $this->message->set(sprintf(_("Ligne potentiellement en erreur : %s"), $numline));
-            $this->message->set(sprintf(_("Contenu de la ligne concernée : %s"), $line));
+            $this->message->set(sprintf(_("Contenu de la ligne concernée : %s"), implode(";", $line)));
+            $this->message->set(sprintf(_("Données prêtes à être importées - nom des colonnes : %s"), implode(";", array_keys($data))));
+            $this->message->set(sprintf(_("Données prêtes à être importées - valeurs correspondantes : %s"), implode(";", $data)));
             $this->message->set($e->getMessage());
             return false;
         }
