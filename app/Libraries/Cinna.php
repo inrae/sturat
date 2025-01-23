@@ -151,6 +151,9 @@ class Cinna extends PpciLibrary
                                 default:
                                     $lineOK = false;
                             }
+                            if (empty($data["val"])) {
+                                $lineOK = false;
+                            }
                             if ($lineOK) {
                                 $data["cinnadate"] = $this->dataclass->formatDate($line[0]);
                                 $data["lon"] = $latlon["lon"];
@@ -177,8 +180,13 @@ class Cinna extends PpciLibrary
                         }
                     }
                 }
-                $mess = sprintf(_("Fichier %1s traité. Id min généré : %2s, id max : %3s"), $file["name"], $min, $max);
-                $this->message->set($mess);
+                if ($max == 0) {
+                    $this->message->set(sprintf(_("Le fichier %s a été traité, mais aucune donnée n'a pu être importée"), $file["name"]));
+                    $mess = sprintf(_("Fichier %s traité - aucune information importée"), $file["name"]);
+                } else {
+                    $mess = sprintf(_("Fichier %1s traité. Id min généré : %2s, id max : %3s"), $file["name"], $min, $max);
+                    $this->message->set($mess);
+                }
                 $this->db->transCommit();
                 /**
                  * @var Log
