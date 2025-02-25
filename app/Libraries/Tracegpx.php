@@ -9,8 +9,6 @@ use App\Models\TraitClass;
 use Config\Database;
 use Ppci\Libraries\PpciException;
 use Ppci\Libraries\PpciLibrary;
-use Ppci\Models\PpciModel;
-use \Safe\Exceptions\ExecException;
 
 class Tracegpx extends PpciLibrary
 {
