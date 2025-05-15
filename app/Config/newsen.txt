@@ -1,5 +1,9 @@
 News
 ====================
+Version v25.0.1 of 15 May 2025
+------------------------------
+- upgrading the framework and third-party libraries
+
 Version v25.0.0 of 23 January 2025
 ----------------------------------
 - Switching the application to the codeigniter framework

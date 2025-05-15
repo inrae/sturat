@@ -1,5 +1,9 @@
 Nouveautés
 ============
+Version v25.0.1 du 15 mai 2025
+------------------------------
+- mise à niveau du framework et des bibliothèques tierces
+
 Version v25.0.0 du 23 janvier 2025
 ----------------------------------
 - Basculement de l'application vers le framework codeigniter
