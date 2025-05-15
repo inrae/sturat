@@ -76,7 +76,7 @@ class Events
             return;
         }
 
-        $config = config(Modules::class);
+        $config = new Modules();
         $events = APPPATH . 'Config' . DIRECTORY_SEPARATOR . 'Events.php';
         $files  = [];
 
@@ -158,7 +158,7 @@ class Events
                 static::$performanceLog[] = [
                     'start' => $start,
                     'end'   => microtime(true),
-                    'event' => strtolower($eventName),
+                    'event' => $eventName,
                 ];
             }
 
@@ -212,7 +212,7 @@ class Events
             if ($check === $listener) {
                 unset(
                     static::$listeners[$eventName][1][$index],
-                    static::$listeners[$eventName][2][$index]
+                    static::$listeners[$eventName][2][$index],
                 );
 
                 return true;

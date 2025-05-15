@@ -20,6 +20,8 @@ use CodeIgniter\Cookie\Exceptions\CookieException;
 use CodeIgniter\Database\BaseConnection;
 use CodeIgniter\Database\ConnectionInterface;
 use CodeIgniter\Debug\Timer;
+use CodeIgniter\Exceptions\InvalidArgumentException;
+use CodeIgniter\Exceptions\RuntimeException;
 use CodeIgniter\Files\Exceptions\FileNotFoundException;
 use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\Exceptions\HTTPException;
@@ -122,7 +124,6 @@ if (! function_exists('command')) {
      */
     function command(string $command)
     {
-        $runner      = service('commands');
         $regexString = '([^\s]+?)(?:\s|(?<!\\\\)"|(?<!\\\\)\'|$)';
         $regexQuoted = '(?:"([^"\\\\]*(?:\\\\.[^"\\\\]*)*)"|\'([^\'\\\\]*(?:\\\\.[^\'\\\\]*)*)\')';
 
@@ -146,7 +147,7 @@ if (! function_exists('command')) {
                 // @codeCoverageIgnoreStart
                 throw new InvalidArgumentException(sprintf(
                     'Unable to parse input near "... %s ...".',
-                    substr($command, $cursor, 10)
+                    substr($command, $cursor, 10),
                 ));
                 // @codeCoverageIgnoreEnd
             }
@@ -154,8 +155,9 @@ if (! function_exists('command')) {
             $cursor += strlen($match[0]);
         }
 
-        $command     = array_shift($args);
+        /** @var array<int|string, string|null> */
         $params      = [];
+        $command     = array_shift($args);
         $optionValue = false;
 
         foreach ($args as $i => $arg) {
@@ -185,7 +187,7 @@ if (! function_exists('command')) {
         }
 
         ob_start();
-        $runner->run($command, $params);
+        service('commands')->run($command, $params);
 
         return ob_get_clean();
     }
@@ -369,9 +371,9 @@ if (! function_exists('env')) {
      * retrieving values set from the .env file for
      * use in config files.
      *
-     * @param string|null $default
+     * @param array<int|string, mixed>|bool|float|int|object|string|null $default
      *
-     * @return bool|string|null
+     * @return array<int|string, mixed>|bool|float|int|object|string|null
      */
     function env(string $key, $default = null)
     {
@@ -470,7 +472,7 @@ if (! function_exists('force_https')) {
     function force_https(
         int $duration = 31_536_000,
         ?RequestInterface $request = null,
-        ?ResponseInterface $response = null
+        ?ResponseInterface $response = null,
     ): void {
         $request ??= service('request');
 
@@ -1065,7 +1067,7 @@ if (! function_exists('slash_item')) {
                 'Cannot convert "%s::$%s" of type "%s" to type "string".',
                 App::class,
                 $item,
-                gettype($configItem)
+                gettype($configItem),
             ));
         }
 

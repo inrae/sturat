@@ -146,17 +146,17 @@
         },
         {
             "name": "bjeavons/zxcvbn-php",
-            "version": "1.4.1",
-            "version_normalized": "1.4.1.0",
+            "version": "1.4.2",
+            "version_normalized": "1.4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bjeavons/zxcvbn-php.git",
-                "reference": "603e015f2c81118a8f42930140311d125eba6f8a"
+                "reference": "426f664501a0747beb8f3ee17ac30c7dd6327ffa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bjeavons/zxcvbn-php/zipball/603e015f2c81118a8f42930140311d125eba6f8a",
-                "reference": "603e015f2c81118a8f42930140311d125eba6f8a",
+                "url": "https://api.github.com/repos/bjeavons/zxcvbn-php/zipball/426f664501a0747beb8f3ee17ac30c7dd6327ffa",
+                "reference": "426f664501a0747beb8f3ee17ac30c7dd6327ffa",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
             "suggest": {
                 "ext-gmp": "Required for optimized binomial calculations (also requires PHP >= 7.3)"
             },
-            "time": "2024-11-21T22:10:41+00:00",
+            "time": "2025-02-24T16:47:20+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -199,7 +199,7 @@
             ],
             "support": {
                 "issues": "https://github.com/bjeavons/zxcvbn-php/issues",
-                "source": "https://github.com/bjeavons/zxcvbn-php/tree/1.4.1"
+                "source": "https://github.com/bjeavons/zxcvbn-php/tree/1.4.2"
             },
             "install-path": "../bjeavons/zxcvbn-php"
         },
@@ -370,35 +370,35 @@
         },
         {
             "name": "codeigniter4/framework",
-            "version": "v4.5.7",
-            "version_normalized": "4.5.7.0",
+            "version": "v4.6.1",
+            "version_normalized": "4.6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/framework.git",
-                "reference": "f253839c071abbef5262cbb8f49a6077dc5dd568"
+                "reference": "d021b04fdf23afc85d8a8b9b541be9a0a9ccdb5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/framework/zipball/f253839c071abbef5262cbb8f49a6077dc5dd568",
-                "reference": "f253839c071abbef5262cbb8f49a6077dc5dd568",
+                "url": "https://api.github.com/repos/codeigniter4/framework/zipball/d021b04fdf23afc85d8a8b9b541be9a0a9ccdb5f",
+                "reference": "d021b04fdf23afc85d8a8b9b541be9a0a9ccdb5f",
                 "shasum": ""
             },
             "require": {
                 "ext-intl": "*",
                 "ext-mbstring": "*",
-                "laminas/laminas-escaper": "^2.13",
+                "laminas/laminas-escaper": "^2.14",
                 "php": "^8.1",
                 "psr/log": "^3.0"
             },
             "require-dev": {
                 "codeigniter/coding-standard": "^1.7",
-                "fakerphp/faker": "^1.9",
+                "fakerphp/faker": "^1.24",
                 "friendsofphp/php-cs-fixer": "^3.47.1",
-                "kint-php/kint": "^5.0.4",
-                "mikey179/vfsstream": "^1.6",
+                "kint-php/kint": "^6.0",
+                "mikey179/vfsstream": "^1.6.12",
                 "nexusphp/cs-config": "^3.6",
                 "phpunit/phpunit": "^10.5.16 || ^11.2",
-                "predis/predis": "^1.1 || ^2.0"
+                "predis/predis": "^1.1 || ^2.3"
             },
             "suggest": {
                 "ext-curl": "If you use CURLRequest class",
@@ -421,7 +421,7 @@
                 "ext-sqlsrv": "If you use SQL Server",
                 "ext-xdebug": "If you use CIUnitTestCase::assertHeaderEmitted()"
             },
-            "time": "2024-12-31T12:13:44+00:00",
+            "time": "2025-05-02T16:00:55+00:00",
             "type": "project",
             "installation-source": "dist",
             "autoload": {
@@ -447,17 +447,17 @@
         },
         {
             "name": "equinton/ppci",
-            "version": "v1.1.0",
-            "version_normalized": "1.1.0.0",
+            "version": "v1.1.4",
+            "version_normalized": "1.1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/equinton/ppci.git",
-                "reference": "0c864dca956fe80670de62e26a04ee469b07f0f0"
+                "reference": "a8601421dc2753a828c77c11081f612f89181e96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/equinton/ppci/zipball/0c864dca956fe80670de62e26a04ee469b07f0f0",
-                "reference": "0c864dca956fe80670de62e26a04ee469b07f0f0",
+                "url": "https://api.github.com/repos/equinton/ppci/zipball/a8601421dc2753a828c77c11081f612f89181e96",
+                "reference": "a8601421dc2753a828c77c11081f612f89181e96",
                 "shasum": ""
             },
             "require": {
@@ -470,7 +470,7 @@
                 "smarty/smarty": "^4.0",
                 "spomky-labs/otphp": "~10.0"
             },
-            "time": "2025-01-17T10:23:13+00:00",
+            "time": "2025-04-10T14:36:14+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -491,7 +491,7 @@
             "description": "PrototypePHP to CodeIgniter",
             "support": {
                 "issues": "https://github.com/equinton/ppci/issues",
-                "source": "https://github.com/equinton/ppci/tree/v1.1.0"
+                "source": "https://github.com/equinton/ppci/tree/v1.1.4"
             },
             "install-path": "../equinton/ppci"
         },
@@ -608,17 +608,17 @@
         },
         {
             "name": "laminas/laminas-escaper",
-            "version": "2.15.0",
-            "version_normalized": "2.15.0.0",
+            "version": "2.17.0",
+            "version_normalized": "2.17.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "c612b0488ae486284c39885efca494c180f16351"
+                "reference": "df1ef9503299a8e3920079a16263b578eaf7c3ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/c612b0488ae486284c39885efca494c180f16351",
-                "reference": "c612b0488ae486284c39885efca494c180f16351",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/df1ef9503299a8e3920079a16263b578eaf7c3ba",
+                "reference": "df1ef9503299a8e3920079a16263b578eaf7c3ba",
                 "shasum": ""
             },
             "require": {
@@ -630,14 +630,13 @@
                 "zendframework/zend-escaper": "*"
             },
             "require-dev": {
-                "infection/infection": "^0.27.11",
+                "infection/infection": "^0.29.8",
                 "laminas/laminas-coding-standard": "~3.0.1",
-                "maglnet/composer-require-checker": "^3.8.0",
-                "phpunit/phpunit": "^9.6.22",
-                "psalm/plugin-phpunit": "^0.19.0",
-                "vimeo/psalm": "^5.26.1"
+                "phpunit/phpunit": "^10.5.45",
+                "psalm/plugin-phpunit": "^0.19.2",
+                "vimeo/psalm": "^6.6.2"
             },
-            "time": "2024-12-17T19:39:54+00:00",
+            "time": "2025-05-06T19:29:36+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -728,17 +727,17 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.1",
-            "version_normalized": "1.12.1.0",
+            "version": "1.13.1",
+            "version_normalized": "1.13.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
+                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/1720ddd719e16cf0db4eb1c6eca108031636d46c",
+                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c",
                 "shasum": ""
             },
             "require": {
@@ -754,7 +753,7 @@
                 "phpspec/prophecy": "^1.10",
                 "phpunit/phpunit": "^7.5.20 || ^8.5.23 || ^9.5.13"
             },
-            "time": "2024-11-08T17:47:46+00:00",
+            "time": "2025-04-29T12:36:36+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -779,7 +778,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.1"
             },
             "funding": [
                 {
@@ -1548,17 +1547,17 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.41",
-            "version_normalized": "10.5.41.0",
+            "version": "10.5.46",
+            "version_normalized": "10.5.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "e76586fa3d49714f230221734b44892e384109d7"
+                "reference": "8080be387a5be380dda48c6f41cee4a13aadab3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e76586fa3d49714f230221734b44892e384109d7",
-                "reference": "e76586fa3d49714f230221734b44892e384109d7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8080be387a5be380dda48c6f41cee4a13aadab3d",
+                "reference": "8080be387a5be380dda48c6f41cee4a13aadab3d",
                 "shasum": ""
             },
             "require": {
@@ -1568,7 +1567,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.12.1",
+                "myclabs/deep-copy": "^1.13.1",
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.1",
@@ -1592,7 +1591,7 @@
             "suggest": {
                 "ext-soap": "To be able to generate mocks based on WSDL files"
             },
-            "time": "2025-01-13T09:33:05+00:00",
+            "time": "2025-05-02T06:46:24+00:00",
             "bin": [
                 "phpunit"
             ],
@@ -1632,7 +1631,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.41"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.46"
             },
             "funding": [
                 {
@@ -1642,6 +1641,14 @@
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
                 },
                 {
                     "url": "https://tidelift.com/funding/github/packagist/phpunit/phpunit",
@@ -2998,20 +3005,21 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.31.0",
-            "version_normalized": "1.31.0.0",
+            "version": "v1.32.0",
+            "version_normalized": "1.32.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341"
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/85181ba99b2345b0ef10ce42ecac37612d9fd341",
-                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493",
                 "shasum": ""
             },
             "require": {
+                "ext-iconv": "*",
                 "php": ">=7.2"
             },
             "provide": {
@@ -3020,7 +3028,7 @@
             "suggest": {
                 "ext-mbstring": "For best performance"
             },
-            "time": "2024-09-09T11:45:10+00:00",
+            "time": "2024-12-23T08:48:59+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -3061,7 +3069,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.32.0"
             },
             "funding": [
                 {
