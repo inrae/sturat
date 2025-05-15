@@ -266,12 +266,6 @@ class FileLocator implements FileLocatorInterface
         return array_merge($namespaces, $system);
     }
 
-    /**
-     * Find the qualified name of a file according to
-     * the namespace of the first matched namespace path.
-     *
-     * @return false|string The qualified name or false if the path is not found
-     */
     public function findQualifiedNameFromPath(string $path)
     {
         $resolvedPath = realpath($path);
@@ -295,11 +289,13 @@ class FileLocator implements FileLocatorInterface
                         str_replace(
                             '/',
                             '\\',
-                            mb_substr($path, mb_strlen($namespace['path']))
+                            mb_substr($path, mb_strlen($namespace['path'])),
                         ),
-                        '\\'
+                        '\\',
                     );
+
                 // Remove the file extension (.php)
+                /** @var class-string */
                 $className = mb_substr($className, 0, -4);
 
                 if (in_array($className, $this->invalidClassnames, true)) {

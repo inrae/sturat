@@ -49,16 +49,6 @@ class Builder extends BaseBuilder
     protected $countString = 'SELECT COUNT(1) ';
 
     /**
-     * Limit used flag
-     *
-     * If we use LIMIT, we'll add a field that will
-     * throw off num_fields later.
-     *
-     * @var bool
-     */
-    protected $limitUsed = false;
-
-    /**
      * A reference to the database connection.
      *
      * @var Connection
@@ -92,10 +82,10 @@ class Builder extends BaseBuilder
                     static fn ($value): string => 'SELECT ' . implode(', ', array_map(
                         static fn ($key, $index): string => $index . ' ' . $key,
                         $keys,
-                        $value
+                        $value,
                     )),
-                    $values
-                )
+                    $values,
+                ),
             ) . " FROM DUAL\n";
         }
 
@@ -214,28 +204,13 @@ class Builder extends BaseBuilder
     protected function _limit(string $sql, bool $offsetIgnore = false): string
     {
         $offset = (int) ($offsetIgnore === false ? $this->QBOffset : 0);
-        if (version_compare($this->db->getVersion(), '12.1', '>=')) {
-            // OFFSET-FETCH can be used only with the ORDER BY clause
-            if (empty($this->QBOrderBy)) {
-                $sql .= ' ORDER BY 1';
-            }
 
-            return $sql . ' OFFSET ' . $offset . ' ROWS FETCH NEXT ' . $this->QBLimit . ' ROWS ONLY';
+        // OFFSET-FETCH can be used only with the ORDER BY clause
+        if (empty($this->QBOrderBy)) {
+            $sql .= ' ORDER BY 1';
         }
 
-        $this->limitUsed    = true;
-        $limitTemplateQuery = 'SELECT * FROM (SELECT INNER_QUERY.*, ROWNUM RNUM FROM (%s) INNER_QUERY WHERE ROWNUM < %d)' . ($offset !== 0 ? ' WHERE RNUM >= %d' : '');
-
-        return sprintf($limitTemplateQuery, $sql, $offset + $this->QBLimit + 1, $offset);
-    }
-
-    /**
-     * Resets the query builder values.  Called by the get() function
-     */
-    protected function resetSelect()
-    {
-        $this->limitUsed = false;
-        parent::resetSelect();
+        return $sql . ' OFFSET ' . $offset . ' ROWS FETCH NEXT ' . $this->QBLimit . ' ROWS ONLY';
     }
 
     /**
@@ -287,8 +262,8 @@ class Builder extends BaseBuilder
                         )
                     ),
                     array_keys($constraints),
-                    $constraints
-                )
+                    $constraints,
+                ),
             ) . ")\n";
 
             $sql .= "WHEN MATCHED THEN UPDATE\n";
@@ -302,8 +277,8 @@ class Builder extends BaseBuilder
                     ' = ' . $value :
                     ' = ' . $alias . '.' . $value),
                     array_keys($updateFields),
-                    $updateFields
-                )
+                    $updateFields,
+                ),
             );
 
             $this->QBOptions['sql'] = $sql;
@@ -318,10 +293,10 @@ class Builder extends BaseBuilder
                     static fn ($value): string => 'SELECT ' . implode(', ', array_map(
                         static fn ($key, $index): string => $index . ' ' . $key,
                         $keys,
-                        $value
+                        $value,
                     )) . ' FROM DUAL',
-                    $values
-                )
+                    $values,
+                ),
             ) . "\n";
         }
 
@@ -392,8 +367,8 @@ class Builder extends BaseBuilder
                         )
                     ),
                     array_keys($constraints),
-                    $constraints
-                )
+                    $constraints,
+                ),
             ) . ")\n";
 
             $sql .= "WHEN MATCHED THEN UPDATE SET\n";
@@ -405,8 +380,8 @@ class Builder extends BaseBuilder
                     " = {$value}" :
                     " = {$alias}.{$value}"),
                     array_keys($updateFields),
-                    $updateFields
-                )
+                    $updateFields,
+                ),
             );
 
             $sql .= "\nWHEN NOT MATCHED THEN INSERT (" . implode(', ', $keys) . ")\nVALUES ";
@@ -427,10 +402,10 @@ class Builder extends BaseBuilder
                     static fn ($value): string => 'SELECT ' . implode(', ', array_map(
                         static fn ($key, $index): string => $index . ' ' . $key,
                         $keys,
-                        $value
+                        $value,
                     )),
-                    $values
-                )
+                    $values,
+                ),
             ) . " FROM DUAL\n";
         }
 
@@ -477,8 +452,8 @@ class Builder extends BaseBuilder
                         )
                     ),
                     array_keys($constraints),
-                    $constraints
-                )
+                    $constraints,
+                ),
             );
 
             // convert binds in where
@@ -491,7 +466,7 @@ class Builder extends BaseBuilder
             $sql .= ' ' . str_replace(
                 'WHERE ',
                 'AND ',
-                $this->compileWhereHaving('QBWhere')
+                $this->compileWhereHaving('QBWhere'),
             ) . ')';
 
             $this->QBOptions['sql'] = $sql;
@@ -506,10 +481,10 @@ class Builder extends BaseBuilder
                     static fn ($value): string => 'SELECT ' . implode(', ', array_map(
                         static fn ($key, $index): string => $index . ' ' . $key,
                         $keys,
-                        $value
+                        $value,
                     )),
-                    $values
-                )
+                    $values,
+                ),
             ) . " FROM DUAL\n";
         }
 

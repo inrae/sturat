@@ -151,6 +151,8 @@ class ChromeLoggerHandler extends BaseHandler
     /**
      * Attaches the header and the content to the passed in request object.
      *
+     * @param-out ResponseInterface $response
+     *
      * @return void
      */
     public function sendLogs(?ResponseInterface &$response = null)
@@ -160,7 +162,7 @@ class ChromeLoggerHandler extends BaseHandler
         }
 
         $data = base64_encode(
-            mb_convert_encoding(json_encode($this->json), 'UTF-8', mb_list_encodings())
+            mb_convert_encoding(json_encode($this->json), 'UTF-8', mb_list_encodings()),
         );
 
         $response->setHeader($this->header, $data);

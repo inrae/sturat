@@ -287,6 +287,8 @@ class Query implements QueryInterface, Stringable
      * Escapes and inserts any binds into the finalQueryString property.
      *
      * @see https://regex101.com/r/EUEhay/5
+     *
+     * @return void
      */
     protected function compileBinds()
     {
@@ -342,7 +344,7 @@ class Query implements QueryInterface, Stringable
      */
     protected function matchSimpleBinds(string $sql, array $binds, int $bindCount, int $ml): string
     {
-        if ($c = preg_match_all("/'[^']*'/", $sql, $matches)) {
+        if ($c = preg_match_all("/'[^']*'/", $sql, $matches) >= 1) {
             $c = preg_match_all('/' . preg_quote($this->bindMarker, '/') . '/i', str_replace($matches[0], str_replace($this->bindMarker, str_repeat(' ', $ml), $matches[0]), $sql, $c), $matches, PREG_OFFSET_CAPTURE);
 
             // Bind values' count must match the count of markers in the query

@@ -21,12 +21,12 @@ use CodeIgniter\Database\Exceptions\DataException;
 use CodeIgniter\Database\Query;
 use CodeIgniter\DataConverter\DataConverter;
 use CodeIgniter\Entity\Entity;
+use CodeIgniter\Exceptions\InvalidArgumentException;
 use CodeIgniter\Exceptions\ModelException;
 use CodeIgniter\I18n\Time;
 use CodeIgniter\Pager\Pager;
 use CodeIgniter\Validation\ValidationInterface;
 use Config\Feature;
-use InvalidArgumentException;
 use ReflectionClass;
 use ReflectionException;
 use ReflectionProperty;
@@ -121,9 +121,13 @@ abstract class BaseModel
     protected ?DataConverter $converter = null;
 
     /**
-     * If this model should use "softDeletes" and
-     * simply set a date when rows are deleted, or
-     * do hard deletes.
+     * Determines whether the model should protect field names during
+     * mass assignment operations such as insert() and update().
+     *
+     * When set to true, only the fields explicitly defined in the $allowedFields
+     * property will be allowed for mass assignment. This helps prevent
+     * unintended modification of database fields and improves security
+     * by avoiding mass assignment vulnerabilities.
      *
      * @var bool
      */
@@ -379,7 +383,7 @@ abstract class BaseModel
             $this->converter = new DataConverter(
                 $this->casts,
                 $this->castHandlers,
-                $this->db
+                $this->db,
             );
         }
     }
@@ -1081,7 +1085,7 @@ abstract class BaseModel
                 if ($updateIndex === null) {
                     throw new InvalidArgumentException(
                         'The index ("' . $index . '") for updateBatch() is missing in the data: '
-                        . json_encode($row)
+                        . json_encode($row),
                     );
                 }
 

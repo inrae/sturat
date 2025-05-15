@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace CodeIgniter\CLI;
 
 use CodeIgniter\CLI\Exceptions\CLIException;
-use InvalidArgumentException;
+use CodeIgniter\Exceptions\InvalidArgumentException;
 use Throwable;
 
 /**
@@ -107,12 +107,12 @@ class CLI
     /**
      * List of array segments.
      *
-     * @var array
+     * @var list<string>
      */
     protected static $segments = [];
 
     /**
-     * @var array
+     * @var array<string, string|null>
      */
     protected static $options = [];
 
@@ -289,7 +289,7 @@ class CLI
 
         CLI::isZeroOptions($options);
 
-        if ($line = array_shift($text)) {
+        if (($line = array_shift($text)) !== null) {
             CLI::write($line);
         }
 
@@ -348,7 +348,7 @@ class CLI
             // return the prompt again if $input contain(s) non-numeric character, except a comma.
             // And if max from $options less than max from input,
             // it means user tried to access null value in $options
-            if ($pattern === 0 || $maxOptions < $maxInput) {
+            if ($pattern < 1 || $maxOptions < $maxInput) {
                 static::error('Please select correctly.');
                 CLI::newLine();
 
@@ -610,11 +610,11 @@ class CLI
             $nonColoredText = preg_replace(
                 $pattern,
                 '<<__colored_string__>>',
-                $text
+                $text,
             );
             $nonColoredChunks = preg_split(
                 '/<<__colored_string__>>/u',
-                $nonColoredText
+                $nonColoredText,
             );
 
             foreach ($nonColoredChunks as $i => $chunk) {
@@ -944,6 +944,8 @@ class CLI
 
     /**
      * Returns the raw array of segments found.
+     *
+     * @return list<string>
      */
     public static function getSegments(): array
     {
@@ -971,6 +973,8 @@ class CLI
 
     /**
      * Returns the raw array of options found.
+     *
+     * @return array<string, string|null>
      */
     public static function getOptions(): array
     {

@@ -9,6 +9,9 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+use CodeIgniter\Boot;
+use Config\Paths;
+
 /*
  *---------------------------------------------------------------
  * Sample file for Preloading
@@ -69,10 +72,10 @@ class preload
 
     private function loadAutoloader(): void
     {
-        $paths = new Config\Paths();
+        $paths = new Paths();
         require rtrim($paths->systemDirectory, '\\/ ') . DIRECTORY_SEPARATOR . 'Boot.php';
 
-        CodeIgniter\Boot::preload($paths);
+        Boot::preload($paths);
     }
 
     /**
@@ -86,7 +89,7 @@ class preload
             $phpFiles  = new RegexIterator(
                 $fullTree,
                 '/.+((?<!Test)+\.php$)/i',
-                RecursiveRegexIterator::GET_MATCH
+                RecursiveRegexIterator::GET_MATCH,
             );
 
             foreach ($phpFiles as $key => $file) {
