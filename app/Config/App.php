@@ -310,7 +310,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $APP_help_address = "https://forgemia.inra.fr/eabx-public/sturat2/-/issues/new";
+    public $APP_help_address = "https://github.com/inrae/sturat/issues/new/choose";
     /**
      *
      * @var string
