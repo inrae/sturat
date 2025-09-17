@@ -40,13 +40,18 @@ class Tracegpx extends PpciModel
      * @param string $password
      * @return string|null
      */
-    function importFileTrace(string $localfilename, string $filename, string $server, string $dbname, string $user, string $password): void
+    function importFileTrace(string $localfilename, string $filename, string $server, string $dbname, string $user, string $password, string $ogr2ogr = "/usr/bin/ogr2ogr"): void
     {
         if (!is_file($localfilename)) {
             throw new PpciException(_("Le fichier à importer n'a pas été correctement téléchargé dans le serveur"));
         }
-        $command = 'ogr2ogr -f PostgreSQL PG:"host="' . $server . '" dbname="' . $dbname . '" user="' . $user . '" password="' . $password . '" " -nln sturat.tracegpx -append -update ' . $localfilename . ' -lco geometry_name=geom -sql "Select name, ' . "'" . escapeshellcmd($filename) . "'" . ' as filename from tracks where name not like ' . "'COMMENTAIRE%'" . '"';
-        system($command);
+        if (!is_file($ogr2ogr)) {
+            throw new PpciException(_("Le programme ogr2ogr, utilisé pour importer les traces gpx, n'a pas été installé dans le serveur"));
+        }
+        $command = $ogr2ogr . ' -f PostgreSQL PG:"host="' . $server . '" dbname="' . $dbname . '" user="' . $user . '" password="' . $password . '" " -nln sturat.tracegpx -append -update ' . $localfilename . ' -lco geometry_name=geom -sql "Select name, ' . "'" . escapeshellcmd($filename) . "'" . ' as filename from tracks where name not like ' . "'COMMENTAIRE%'" . '"';
+        if (!system($command, $result_code) && $result_code != 0) {
+            throw new PpciException(sprintf(_("L'import des données GPS a échoué pour une raison inconnue. Code d'erreur : %s"), $result_code));
+        }
     }
     /**
      * Write the trace for the selected trait
