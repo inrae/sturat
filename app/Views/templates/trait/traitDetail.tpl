@@ -83,7 +83,7 @@
   <fieldset>
     <legend>{t}Coordonnées géographiques du trait{/t}</legend>
     <dl class="dl-horizontal">
-      <dt>Point de début :</dt>
+      <dt>{t}Point de début :{/t}</dt>
       <dd>
         Lat : {$geom.latitude_start} (<span id="pos_deb_lat"></span>)
         <br>
@@ -91,7 +91,7 @@
       </dd>
     </dl>
     <dl class="dl-horizontal">
-      <dt>Point de fin :</dt>
+      <dt>{t}Point de fin :{/t}</dt>
       <dd>
         Lat : {$geom.latitude_end} (<span id="pos_fin_lat"></span>)
         <br>
