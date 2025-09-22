@@ -82,3 +82,4 @@ $routes->add('tracePairing', 'Tracegpx::pairing');
 $routes->add('tracePairingExec', 'Tracegpx::pairingExec');
 $routes->add('importCinna', 'Cinna::import');
 $routes->add('importCinnaExec', 'Cinna::importExec');
+$routes->add('parametre', '\Ppci\Controllers\Utils::submenu/parametre');

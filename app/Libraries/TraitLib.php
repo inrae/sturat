@@ -30,6 +30,8 @@ class TraitLib extends PpciLibrary
 		$this->keyName = "trait_id";
 		if (isset($_REQUEST[$this->keyName]) && !empty($_REQUEST[$this->keyName])) {
 			$this->id = $_REQUEST[$this->keyName];
+		} else {
+			$this->id = 0;
 		}
 	}
 	function list()

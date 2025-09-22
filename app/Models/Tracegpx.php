@@ -70,7 +70,7 @@ class Tracegpx extends PpciModel
             $this->traittrace = new Traittrace;
         }
         $data = array("trait_id" => $trait_id, "trace_geom" => $trace["geom"]);
-        $this->traittrace->ecrire($data);
+        $this->traittrace->write($data);
     }
 
     /**

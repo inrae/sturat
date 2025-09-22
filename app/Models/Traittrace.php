@@ -42,4 +42,32 @@ class Traittrace extends PpciModel
         $points = $res["coordinates"];
         return $points;
     }
+    /**
+     * rewrite write function to record geometry trace
+     *
+     * @param array $data
+     * @return integer
+     */
+    function write($data): int
+    {
+        /**
+         * check if exists
+         */
+        $sql = "SELECT trait_id from trait_trace where trait_id = :trait_id:";
+        $last = $this->readParam($sql, ["trait_id" => $data["trait_id"]]);
+        if ($last["trait_id"] > 0) {
+            $sql = "UPDATE trait_trace 
+                set trace_geom = st_geomfromtext(:geom:, :srid:)
+                where trait_id = :trait_id:";
+        } else {
+            $sql = "INSERT into trait_trace (trait_id, trace_geom) values (:trait_id:, st_geomfromtext(:geom:, :srid:))";
+        }
+        $param = [
+            "trait_id" => $data["trait_id"],
+            "geom" => $data["trace_geom"],
+            "srid" => $this->srid
+        ];
+        $this->executeSQL($sql, $param, true);
+        return $data["trait_id"];
+    }
 }
