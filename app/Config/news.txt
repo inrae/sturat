@@ -1,5 +1,9 @@
 Nouveautés
 ============
+Version v25.0.2 du 22 septembre 2025
+------------------------------
+- ajout de contrôles lors de l'importation des traits GPX
+
 Version v25.0.1 du 15 mai 2025
 ------------------------------
 - mise à niveau du framework et des bibliothèques tierces

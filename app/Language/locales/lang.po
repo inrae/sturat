@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-23 16:30+0100\n"
+"POT-Creation-Date: 2025-09-19 15:19+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. (itstool) path: menu/item@label
@@ -347,8 +347,8 @@ msgstr "Backup of the database"
 #. (itstool) path: menu/item@label
 #: ../../Config/menu.xml:55
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:21
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:41
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:42
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:43
 msgid "Connexion"
 msgstr "Sign in"
 
@@ -359,8 +359,8 @@ msgstr "Sign in to the app"
 
 #. (itstool) path: menu/item@label
 #: ../../Config/menu.xml:56
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:37
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:38
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:39
 msgid "Déconnexion"
 msgstr "Sign out"
 
@@ -393,9 +393,9 @@ msgstr "List of last connections"
 
 #. (itstool) path: item/item@label
 #: ../../Config/menu.xml:59
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginChangePassword.tpl:86
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:33
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:34
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:35
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginChangePassword.tpl:86
 msgid "Modifier le mot de passe"
 msgstr "Change your password"
 
@@ -454,6 +454,128 @@ msgstr "English"
 msgid "Labels in English"
 msgstr "Labels in English"
 
+#: ../../../app/Libraries/Echantillon.php:87
+msgid "Échantillon enregistré"
+msgstr "Sample recorded"
+
+#: ../../../app/Libraries/Echantillon.php:90
+msgid "Erreur indéterminée lors de l'enregistrement de l'échantillon"
+msgstr "Undetermined error when recording the sample"
+
+#: ../../../app/Libraries/Echantillon.php:96
+#: ../../../app/Libraries/IndividuSturio.php:113
+#: ../../../app/Libraries/Traitdebris.php:71
+msgid "Une erreur est survenue pendant l'enregistrement"
+msgstr "An error occurred when recording"
+
+#: ../../../app/Libraries/ReadOnlyLib.php:31
+msgid "Le paramètre readOnly n'est pas conforme à ce qui est attendu"
+msgstr "The parameter readLonly does not conform what is expected"
+
+#: ../../../app/Libraries/ReadOnlyLib.php:35
+msgid "Problème rencontré lors de la lecture de la table des paramètres"
+msgstr "Problem encountered when reading the parameter table"
+
+#: ../../../app/Libraries/Tracegpx.php:43
+msgid "Une erreur est survenue pendant le téléchargement du fichier"
+msgstr "An error occurred during the file upload"
+
+#: ../../../app/Libraries/Tracegpx.php:45
+msgid "La taille du fichier dépasse la taille autorisée au niveau du serveur"
+msgstr "The file size exceeds that authorized in the server"
+
+#: ../../../app/Libraries/Tracegpx.php:46
+msgid "La taille du fichier dépasse celle autorisée dans le formulaire"
+msgstr "The file size exceeds that authorized in the form"
+
+#: ../../../app/Libraries/Tracegpx.php:47
+msgid "Le fichier n'a été chargé que partiellement"
+msgstr "The file was only partially loaded"
+
+#: ../../../app/Libraries/Tracegpx.php:48 ../../../app/Libraries/Cinna.php:48
+msgid "Le fichier n'a pas été téléchargé"
+msgstr "The file has not been uploaded"
+
+#: ../../../app/Libraries/Tracegpx.php:49
+msgid "Le dossier temporaire de dépôt du fichier n'existe pas dans le serveur"
+msgstr ""
+"The temporary folder used to store the file does not exist on the server"
+
+#: ../../../app/Libraries/Tracegpx.php:50
+msgid "Une erreur est survenue pendant l'écriture sur le disque du serveur"
+msgstr "An error occurred when writing on the disk of the server"
+
+#: ../../../app/Libraries/Tracegpx.php:51
+msgid "Une extension de PHP a bloqué le téléchargement"
+msgstr "A PHP extension has blocked the upload"
+
+#: ../../../app/Libraries/Tracegpx.php:53
+msgid "Erreur rencontrée : "
+msgstr "Encountered error: "
+
+#: ../../../app/Libraries/Tracegpx.php:73
+msgid "Une erreur est survenue pendant l'écriture en base de données"
+msgstr "An error occurred when recording into the database"
+
+#: ../../../app/Libraries/Tracegpx.php:110
+msgid "Une erreur a été rencontrée lors de l'appariement"
+msgstr "A problem was encountered when matching"
+
+#: ../../../app/Libraries/Tracegpx.php:119
+#, php-format
+msgid "%s traces(s) appariée(s)"
+msgstr "%s matched trace(s)"
+
+#: ../../../app/Libraries/Tracegpx.php:122
+msgid "Aucune trace n'a été appariée"
+msgstr "No tracks were matched"
+
+#: ../../../app/Libraries/Param.php:28
+msgid "Natures des débris"
+msgstr "Nature of debris"
+
+#: ../../../app/Libraries/Param.php:29
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:105
+msgid "Localisation du prélèvement"
+msgstr "Sampling location"
+
+#: ../../../app/Libraries/Param.php:30
+msgid "Type de prélèvement"
+msgstr "Sampling type"
+
+#: ../../../app/Libraries/Param.php:31
+msgid "Méthodes de détermination des cohortes"
+msgstr "Cohort determination methods:"
+
+#: ../../../app/Libraries/Param.php:32
+msgid "Stades de l'anguille"
+msgstr "Eel stages"
+
+#: ../../../app/Libraries/Param.php:33
+msgid "Stades de lâcher"
+msgstr "Release stages"
+
+#: ../../../app/Libraries/IndividuSturio.php:104
+msgid "Esturgeon enregistré"
+msgstr "Sturgeon recorded"
+
+#: ../../../app/Libraries/IndividuSturio.php:107
+msgid "Erreur indéterminée lors de l'enregistrement de l'esturgeon"
+msgstr "Undetermined error when recording the sturgeon"
+
+#: ../../../app/Libraries/Traitdebris.php:65
+msgid "Débris enregistrés"
+msgstr "Recorded debris"
+
+#: ../../../app/Libraries/TraitLib.php:137
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:101
+msgid "Suppression effectuée"
+msgstr "Deletion done"
+
+#: ../../../app/Libraries/TraitLib.php:145
+msgid "Une erreur est survenue pendant la suppression"
+msgstr "An error occurred when deleting"
+
 #: ../../../app/Libraries/Cinna.php:26
 msgid ""
 "Connexion à la base utilisée pour enregistrer les paramètres CINNA impossible"
@@ -473,10 +595,6 @@ msgstr "The file size exceeds the value defined in the web page"
 msgid "Le fichier n'a été que partiellement téléchargé"
 msgstr "The file was only partially loaded"
 
-#: ../../../app/Libraries/Cinna.php:48 ../../../app/Libraries/Tracegpx.php:48
-msgid "Le fichier n'a pas été téléchargé"
-msgstr "The file has not been uploaded"
-
 #: ../../../app/Libraries/Cinna.php:49
 msgid "Un dossier temporaire est manquant dans le serveur"
 msgstr "An temporary folder is missing from the server"
@@ -493,12 +611,12 @@ msgstr "The file %1s has not been uploaded: %2s"
 #: ../../../app/Libraries/Cinna.php:184
 #, php-format
 msgid "Le fichier %s a été traité, mais aucune donnée n'a pu être importée"
-msgstr "The file %s was processed, but no data could be imported"
+msgstr "File %s was processed, but no data could be imported"
 
 #: ../../../app/Libraries/Cinna.php:185
 #, php-format
 msgid "Fichier %s traité - aucune information importée"
-msgstr "File %s processed - No data imported"
+msgstr "File %s was processed, but no data could be imported"
 
 #: ../../../app/Libraries/Cinna.php:187
 #, php-format
@@ -529,129 +647,6 @@ msgstr "Data ready to import - name of columns : %s"
 msgid "Données prêtes à être importées - valeurs correspondantes : %s"
 msgstr "Data ready to import - corresponded values : %s"
 
-#: ../../../app/Libraries/TraitLib.php:137
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:98
-msgid "Suppression effectuée"
-msgstr "Deletion done"
-
-#: ../../../app/Libraries/TraitLib.php:145
-msgid "Une erreur est survenue pendant la suppression"
-msgstr "An error occurred when deleting"
-
-#: ../../../app/Libraries/IndividuSturio.php:104
-msgid "Esturgeon enregistré"
-msgstr "Sturgeon recorded"
-
-#: ../../../app/Libraries/IndividuSturio.php:107
-msgid "Erreur indéterminée lors de l'enregistrement de l'esturgeon"
-msgstr "Undetermined error when recording the sturgeon"
-
-#: ../../../app/Libraries/IndividuSturio.php:113
-#: ../../../app/Libraries/Echantillon.php:96
-#: ../../../app/Libraries/Traitdebris.php:71
-msgid "Une erreur est survenue pendant l'enregistrement"
-msgstr "An error occurred when recording"
-
-#: ../../../app/Libraries/Echantillon.php:87
-msgid "Échantillon enregistré"
-msgstr "Sample recorded"
-
-#: ../../../app/Libraries/Echantillon.php:90
-msgid "Erreur indéterminée lors de l'enregistrement de l'échantillon"
-msgstr "Undetermined error when recording the sample"
-
-#: ../../../app/Libraries/ReadOnlyLib.php:31
-msgid "Le paramètre readOnly n'est pas conforme à ce qui est attendu"
-msgstr "The parameter readLonly does not conform what is expected"
-
-#: ../../../app/Libraries/ReadOnlyLib.php:35
-msgid "Problème rencontré lors de la lecture de la table des paramètres"
-msgstr "Problem encountered when reading the parameter table"
-
-#: ../../../app/Libraries/Param.php:28
-msgid "Natures des débris"
-msgstr "Nature of debris"
-
-#: ../../../app/Libraries/Param.php:29
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:105
-msgid "Localisation du prélèvement"
-msgstr "Sampling location"
-
-#: ../../../app/Libraries/Param.php:30
-msgid "Type de prélèvement"
-msgstr "Sampling type"
-
-#: ../../../app/Libraries/Param.php:31
-msgid "Méthodes de détermination des cohortes"
-msgstr "Cohort determination methods:"
-
-#: ../../../app/Libraries/Param.php:32
-msgid "Stades de l'anguille"
-msgstr "Eel stages"
-
-#: ../../../app/Libraries/Param.php:33
-msgid "Stades de lâcher"
-msgstr "Release stages"
-
-#: ../../../app/Libraries/Tracegpx.php:43
-msgid "Une erreur est survenue pendant le téléchargement du fichier"
-msgstr "An error occurred during the file upload"
-
-#: ../../../app/Libraries/Tracegpx.php:45
-msgid "La taille du fichier dépasse la taille autorisée au niveau du serveur"
-msgstr "The file size exceeds that authorized in the server"
-
-#: ../../../app/Libraries/Tracegpx.php:46
-msgid "La taille du fichier dépasse celle autorisée dans le formulaire"
-msgstr "The file size exceeds that authorized in the form"
-
-#: ../../../app/Libraries/Tracegpx.php:47
-msgid "Le fichier n'a été chargé que partiellement"
-msgstr "The file was only partially loaded"
-
-#: ../../../app/Libraries/Tracegpx.php:49
-msgid "Le dossier temporaire de dépôt du fichier n'existe pas dans le serveur"
-msgstr ""
-"The temporary folder used to store the file does not exist on the server"
-
-#: ../../../app/Libraries/Tracegpx.php:50
-msgid "Une erreur est survenue pendant l'écriture sur le disque du serveur"
-msgstr "An error occurred when writing on the disk of the server"
-
-#: ../../../app/Libraries/Tracegpx.php:51
-msgid "Une extension de PHP a bloqué le téléchargement"
-msgstr "A PHP extension has blocked the upload"
-
-#: ../../../app/Libraries/Tracegpx.php:53
-msgid "Erreur rencontrée : "
-msgstr "Encountered error: "
-
-#: ../../../app/Libraries/Tracegpx.php:72
-msgid "Une erreur est survenue pendant l'écriture en base de données"
-msgstr "An error occurred when recording into the database"
-
-#: ../../../app/Libraries/Tracegpx.php:109
-msgid "Une erreur a été rencontrée lors de l'appariement"
-msgstr "A problem was encountered when matching"
-
-#: ../../../app/Libraries/Tracegpx.php:118
-#, php-format
-msgid "%s traces(s) appariée(s)"
-msgstr "%s matched trace(s)"
-
-#: ../../../app/Libraries/Tracegpx.php:121
-msgid "Aucune trace n'a été appariée"
-msgstr "No tracks were matched"
-
-#: ../../../app/Libraries/Traitdebris.php:65
-msgid "Débris enregistrés"
-msgstr "Recorded debris"
-
-#: ../../../app/Models/Importgz.php:41
-#, php-format
-msgid "%s non trouvé ou non lisible"
-msgstr "%s not found or not readable"
-
 #: ../../../app/Models/Echantillon.php:90
 msgid "Le nombre total de poissons a été ajusté"
 msgstr "The total number of fish has been adjusted"
@@ -661,86 +656,67 @@ msgid ""
 "Le fichier à importer n'a pas été correctement téléchargé dans le serveur"
 msgstr "The file to import has not been correctly uploaded to the server"
 
-#: ../../../app/Models/Tracegpx.php:62
+#: ../../../app/Models/Tracegpx.php:49
+msgid ""
+"Le programme ogr2ogr, utilisé pour importer les traces gpx, n'a pas été "
+"installé dans le serveur"
+msgstr ""
+"The ogr2ogr program, used to import gpx tracks, has not been installed on "
+"the server"
+
+#: ../../../app/Models/Tracegpx.php:53
+#, php-format
+msgid ""
+"L'import des données GPS a échoué pour une raison inconnue. Code d'erreur : "
+"%s"
+msgstr ""
+"L'import des données GPS a échoué pour une raison inconnue. Code d'erreur : "
+"%s"
+
+#: ../../../app/Models/Tracegpx.php:67
 #, php-format
 msgid "La trace sélectionnée est vide pour le trait %s"
 msgstr "The selected track for the trait %s is empty"
 
-#: ../../../vendor/equinton/ppci/src/Libraries/Views/PdfView.php:72
-msgid "Le fichier ne peut pas être envoyé au navigateur"
-msgstr "The file cannot be sent to the browser"
+#: ../../../app/Models/Importgz.php:41
+#, php-format
+msgid "%s non trouvé ou non lisible"
+msgstr "%s not found or not readable"
 
-#: ../../../vendor/equinton/ppci/src/Libraries/Views/PdfView.php:75
-msgid "Aucun contenu disponible"
-msgstr "No content available"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Views/BinaryView.php:59
-msgid "Problème rencontré lors de l'ouverture de finfo"
-msgstr "Problem encountered when opening finfo"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Views/SmartyPpci.php:94
+#: ../../../vendor/equinton/ppci/src/Filters/DbversioncheckFilter.php:44
 #, php-format
 msgid ""
-"Mode développement - base de données : pgsql:host=%1s;dbname=%2s - schema : "
-"%3s"
-msgstr "Development mode - database: pgsql:host=%1s;dbname=%2s - schema: %3s"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Views/FileView.php:41
-msgid ""
-"Le nom du fichier à exporter n'a pas été renseigné et aucune donnée n'est "
-"disponible pour l'exportation"
+"La base de données n'est pas dans la version attendue (%1$s). Version "
+"actuelle : %2$s"
 msgstr ""
-"The name of the file to be exported has not been entered and no data is "
-"available for export."
+"The database is not in the expected version (%1$s). Current version: %2$s"
 
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:43
-msgid "Erreur de lecture des informations dans la base de données"
-msgstr "Error reading information in the database"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:60
-#: ../../../vendor/equinton/ppci/src/Libraries/Dbparam.php:22
-msgid "Enregistrement effectué"
-msgstr "Saved"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:66
+#: ../../../vendor/equinton/ppci/src/Filters/RightFilter.php:52
 msgid ""
-"Un problème est survenu lors de l'enregistrement. Si le problème persiste, "
-"contactez votre support"
+"Vous ne disposez pas des droits nécessaires pour exécuter cette fonction"
+msgstr "You do not have the necessary rights to perform this function"
+
+#: ../../../vendor/equinton/ppci/src/Filters/StartcallFilter.php:27
+msgid "La session a expiré, vous devez vous reconnecter"
+msgstr "The session has expired, you need to reconnect"
+
+#: ../../../vendor/equinton/ppci/src/Filters/AdminFilter.php:46
+msgid ""
+"Vous devez vous ré-identifier avec votre code TOTP pour accéder aux modules "
+"d'administration"
 msgstr ""
-"A problem is occurred during the registration. If it persist, contact your "
-"support"
+"You must re-identify with your TOTP code to access the administration "
+"modules."
 
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:72
-#, php-format
-msgid "La clé n'a pas été retournée lors de l'enregistrement dans %s"
-msgstr "The key was not returned during registration in %s"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:81
+#: ../../../vendor/equinton/ppci/src/Filters/AdminFilter.php:49
 msgid ""
-"Un enregistrement portant déjà ce nom existe déjà dans la base de données."
-msgstr "A record with this name already exists into the database."
+"Vous devez activer la double identification TOTP pour accéder aux modules "
+"d'administration"
+msgstr ""
+"You must activate dual TOTP identification to access the administration "
+"modules"
 
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:109
-msgid ""
-"La suppression n'est pas possible : des informations sont référencées par "
-"cet enregistrement"
-msgstr "Delete is not possible: some data as referenced by this item"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:114
-msgid "Problème lors de la suppression"
-msgstr "Problem when deleting"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/LastRelease.php:18
-#: ../../../vendor/equinton/ppci/src/Libraries/LastRelease.php:38
-msgid "Impossible de récupérer la dernière version publiée de l'application"
-msgstr "Unable to retrieve the latest published version of the application"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/LastRelease.php:53
-#, php-format
-msgid "La nouvelle version %1s du %2s a été publiée !"
-msgstr "The release %1s of %2s has been published!"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:52
+#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:55
 msgid ""
 "Les informations fournies sont insuffisantes pour valider la création de la "
 "double identification"
@@ -748,21 +724,36 @@ msgstr ""
 "The information provided is insufficient to validate the creation of double "
 "identification"
 
-#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:62
+#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:65
 msgid "La double authentification est maintenant activée."
 msgstr "The dual authentication is activate now."
 
-#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:71
+#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:74
 msgid "Le code fourni n'a pu être vérifié"
 msgstr "The code provided could not be verified"
 
-#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:103
+#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:106
 msgid "Vous êtes maintenant connecté"
 msgstr "You are now logged in"
 
-#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:129
+#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:132
+#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:161
 msgid "Le code TOTP rentré n'a pas été reconnu"
 msgstr "The TOTP code entered was not recognised"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Totp.php:151
+msgid "L'identification TOTP n'a pas été activée"
+msgstr "TOTP activation was unsuccessful"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/LastRelease.php:18
+#: ../../../vendor/equinton/ppci/src/Libraries/LastRelease.php:38
+msgid "Impossible de récupérer la dernière version publiée de l'application"
+msgstr "Unable to retrieve the latest published version of the application"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/LastRelease.php:58
+#, php-format
+msgid "La nouvelle version %1s du %2s a été publiée !"
+msgstr "The release %1s of %2s has been published!"
 
 #: ../../../vendor/equinton/ppci/src/Libraries/Markdown.php:16
 #, php-format
@@ -773,38 +764,6 @@ msgstr "The file %s don't exist"
 #, php-format
 msgid "Le fichier %s est vide ou ne peut être lu"
 msgstr "File %s not found or not readable"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Dbparam.php:30
-msgid "Problème lors de l'écriture dans la base de données"
-msgstr "Problem writing to the database"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:101
-msgid "Fac-similé de l'envoi d'un mail - mode debug"
-msgstr "Facsimile of sending an email - debug mode"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:102
-msgid "Paramètres du mail :"
-msgstr "Email settings:"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:104
-msgid "Données transmises :"
-msgstr "Data transmitted :"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:120
-msgid "Un problème a été rencontré lors de l'envoi du mail"
-msgstr "A problem was encountered when sending the email"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Structure.php:83
-msgid "Le fichier contenant le schéma de la base de données n'a pas été trouvé"
-msgstr "The file containing the database schema was not found"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Backup.php:37
-msgid "Fichier généré. Vérifiez son contenu !"
-msgstr "File generated. Check its contents!"
-
-#: ../../../vendor/equinton/ppci/src/Libraries/Backup.php:40
-msgid "Le fichier de backup n'a pas été généré"
-msgstr "The backup file was not generated"
 
 #: ../../../vendor/equinton/ppci/src/Libraries/PasswordLost.php:35
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/passwordLost.tpl:1
@@ -862,6 +821,30 @@ msgstr ""
 "Password reset is not enabled for this application, or the token has not "
 "been supplied"
 
+#: ../../../vendor/equinton/ppci/src/Libraries/Backup.php:37
+msgid "Fichier généré. Vérifiez son contenu !"
+msgstr "File generated. Check its contents!"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Backup.php:40
+msgid "Le fichier de backup n'a pas été généré"
+msgstr "The backup file was not generated"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:101
+msgid "Fac-similé de l'envoi d'un mail - mode debug"
+msgstr "Facsimile of sending an email - debug mode"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:102
+msgid "Paramètres du mail :"
+msgstr "Email settings:"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:104
+msgid "Données transmises :"
+msgstr "Data transmitted :"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Mail.php:120
+msgid "Un problème a été rencontré lors de l'envoi du mail"
+msgstr "A problem was encountered when sending the email"
+
 #: ../../../vendor/equinton/ppci/src/Libraries/LoginGestionLib.php:62
 msgid "Problème rencontré lors de l'enregistrement"
 msgstr "Problem encountered during recording"
@@ -875,54 +858,149 @@ msgstr "%s - change password"
 msgid "La modification du mot de passe a été enregistrée"
 msgstr "The password change has been saved"
 
-#: ../../../vendor/equinton/ppci/src/Filters/DbversioncheckFilter.php:44
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:45
+msgid "Erreur de lecture des informations dans la base de données"
+msgstr "Error reading information in the database"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:62
+#: ../../../vendor/equinton/ppci/src/Libraries/Dbparam.php:22
+msgid "Enregistrement effectué"
+msgstr "Saved"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:68
+msgid ""
+"Un problème est survenu lors de l'enregistrement. Si le problème persiste, "
+"contactez votre support"
+msgstr ""
+"A problem is occurred during the registration. If it persist, contact your "
+"support"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:74
+#, php-format
+msgid "La clé n'a pas été retournée lors de l'enregistrement dans %s"
+msgstr "The key was not returned during registration in %s"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:84
+msgid ""
+"Un enregistrement portant déjà ce nom existe déjà dans la base de données."
+msgstr "A record with this name already exists into the database."
+
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:112
+msgid ""
+"La suppression n'est pas possible : des informations sont référencées par "
+"cet enregistrement"
+msgstr "Delete is not possible: some data as referenced by this item"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/PpciLibrary.php:117
+msgid "Problème lors de la suppression"
+msgstr "Problem when deleting"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Views/PdfView.php:77
+msgid "Le fichier ne peut pas être envoyé au navigateur"
+msgstr "The file cannot be sent to the browser"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Views/PdfView.php:80
+msgid "Aucun contenu disponible"
+msgstr "No content available"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Views/SmartyPpci.php:94
 #, php-format
 msgid ""
-"La base de données n'est pas dans la version attendue (%1$s). Version "
-"actuelle : %2$s"
-msgstr ""
-"The database is not in the expected version (%1$s). Current version: %2$s"
+"Mode développement - base de données : pgsql:host=%1s;dbname=%2s - schema : "
+"%3s"
+msgstr "Development mode - database: pgsql:host=%1s;dbname=%2s - schema: %3s"
 
-#: ../../../vendor/equinton/ppci/src/Filters/AdminFilter.php:46
+#: ../../../vendor/equinton/ppci/src/Libraries/Views/BinaryView.php:59
+msgid "Problème rencontré lors de l'ouverture de finfo"
+msgstr "Problem encountered when opening finfo"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Views/FileView.php:41
 msgid ""
-"Vous devez vous ré-identifier avec votre code TOTP pour accéder aux modules "
-"d'administration"
+"Le nom du fichier à exporter n'a pas été renseigné et aucune donnée n'est "
+"disponible pour l'exportation"
 msgstr ""
-"You must re-identify with your TOTP code to access the administration "
-"modules."
+"The name of the file to be exported has not been entered and no data is "
+"available for export."
 
-#: ../../../vendor/equinton/ppci/src/Filters/AdminFilter.php:49
+#: ../../../vendor/equinton/ppci/src/Libraries/Dbparam.php:30
+msgid "Problème lors de l'écriture dans la base de données"
+msgstr "Problem writing to the database"
+
+#: ../../../vendor/equinton/ppci/src/Libraries/Structure.php:83
+msgid "Le fichier contenant le schéma de la base de données n'a pas été trouvé"
+msgstr "The file containing the database schema was not found"
+
+#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:91
+msgid "Une erreur est survenue pendant le chiffrement de la clé secrète"
+msgstr "An error occurred during the encryption of the secret key"
+
+#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:106
+msgid "Une erreur est survenue pendant le déchiffrement de la clé secrète"
+msgstr "An error occurred during the decryption of the secret key"
+
+#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:152
+#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:157
+msgid "Une erreur est survenue pendant le chiffrement"
+msgstr "An error occurred during the encryption"
+
+#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:175
+#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:180
+msgid "Une erreur est survenue pendant le déchiffrement"
+msgstr "An error occurred during the decryption"
+
+#: ../../../vendor/equinton/ppci/src/Models/Request.php:108
+#, php-format
+msgid "La requête ne peut pas contenir le terme %s"
+msgstr "The query cannot contain the term %s"
+
+#: ../../../vendor/equinton/ppci/src/Models/Log.php:206
+msgid "Dernières connexions :"
+msgstr "Last connections:"
+
+#: ../../../vendor/equinton/ppci/src/Models/Log.php:208
+#, php-format
+msgid "Le %1s depuis l'adresse IP %2s"
+msgstr "The %1s from the IP address %2s"
+
+#: ../../../vendor/equinton/ppci/src/Models/Log.php:335
+#, php-format
+msgid "%s - Compte bloqué"
+msgstr "%s - Account blocked"
+
+#: ../../../vendor/equinton/ppci/src/Models/Log.php:379
 msgid ""
-"Vous devez activer la double identification TOTP pour accéder aux modules "
-"d'administration"
+"Le nombre d'accès autorisés pour le module demandé a été atteint. Si vous "
+"considérez que la valeur est trop faible, veuillez contacter "
+"l'administrateur de l'application"
 msgstr ""
-"You must activate dual TOTP identification to access the administration "
-"modules"
+"The number of authorized accesses for the requested module has been reached. "
+"If you consider that the value is too low, please contact the application "
+"administrator"
 
-#: ../../../vendor/equinton/ppci/src/Filters/StartcallFilter.php:27
-msgid "La session a expiré, vous devez vous reconnecter"
-msgstr "The session has expired, you need to reconnect"
+#: ../../../vendor/equinton/ppci/src/Models/Log.php:381
+#, php-format
+msgid "%s - Trop d'accès à un module"
+msgstr "%s - Too many accesses to a module"
 
-#: ../../../vendor/equinton/ppci/src/Filters/RightFilter.php:52
+#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:79
+msgid "Le compte n'est pas actif"
+msgstr "The account is not active"
+
+#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:82
 msgid ""
-"Vous ne disposez pas des droits nécessaires pour exécuter cette fonction"
-msgstr "You do not have the necessary rights to perform this function"
-
-#: ../../../vendor/equinton/ppci/src/Controllers/Login.php:28
-msgid "Identification refusée"
-msgstr "Authentication failed"
-
-#: ../../../vendor/equinton/ppci/src/Controllers/Login.php:39
-msgid ""
-"Le mode d'identification dans l'application ne vous permet pas d'accéder à "
-"la page de connexion"
+"Le compte n'est pas autorisé à réinitialiser son mot de passe, la dernière "
+"connexion réussie n'ayant pas été réalisée dans un mode compatible"
 msgstr ""
-"The identification mode in the application does not allow you to access the "
-"login page"
+"The account is not allowed to reset its password because the last successful "
+"login was not done in a compatible mode"
 
-#: ../../../vendor/equinton/ppci/src/Controllers/Login.php:96
-msgid "Vous avez été déconnecté"
-msgstr "You have been disconnected"
+#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:85
+msgid "Aucun compte n'a été trouvé pour le mail considéré"
+msgstr "No account has been found for the considered mail"
+
+#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:88
+msgid "Le mail n'a pas été renseigné"
+msgstr "The email has not been filled in"
 
 #: ../../../vendor/equinton/ppci/src/Models/LoginGestion.php:195
 msgid ""
@@ -1011,104 +1089,13 @@ msgstr "The password is too short (minimum: 10 characters)"
 msgid "Le mot de passe n'est pas identique dans les deux zones"
 msgstr "Passwords don't match in both fields"
 
-#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:79
-msgid "Le compte n'est pas actif"
-msgstr "The account is not active"
-
-#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:82
+#: ../../../vendor/equinton/ppci/src/Models/Acllogin.php:122
 msgid ""
-"Le compte n'est pas autorisé à réinitialiser son mot de passe, la dernière "
-"connexion réussie n'ayant pas été réalisée dans un mode compatible"
+"L'ajout d'un login à la table des comptes (gestion des droits) n'est pas "
+"possible : le login n'est pas fourni"
 msgstr ""
-"The account is not allowed to reset its password because the last successful "
-"login was not done in a compatible mode"
-
-#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:85
-msgid "Aucun compte n'a été trouvé pour le mail considéré"
-msgstr "No account has been found for the considered mail"
-
-#: ../../../vendor/equinton/ppci/src/Models/Passwordlost.php:88
-msgid "Le mail n'a pas été renseigné"
-msgstr "The email has not been filled in"
-
-#: ../../../vendor/equinton/ppci/src/Models/Login.php:77
-msgid "L'identification par jeton n'a pas abouti"
-msgstr "Token identification was unsuccessful"
-
-#: ../../../vendor/equinton/ppci/src/Models/Login.php:120
-msgid ""
-"L'identification n'a pas abouti. Vérifiez votre login et votre mot de passe"
-msgstr "The identification was not successful. Check your login and password"
-
-#: ../../../vendor/equinton/ppci/src/Models/Login.php:199
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/newUser.tpl:1
-msgid "Nouvel utilisateur"
-msgstr "New user:"
-
-#: ../../../vendor/equinton/ppci/src/Models/Login.php:209
-msgid ""
-"Votre compte a été créé, mais est inactif. Un mail a été adressé aux "
-"administrateurs pour son activation"
-msgstr ""
-"Your account was create, but it's inactive. An email was send to the "
-"administrators for its activation"
-
-#: ../../../vendor/equinton/ppci/src/Models/Login.php:219
-msgid "Aucun login n'a été fourni, identification refusée"
-msgstr "No login provided, identification refused"
-
-#: ../../../vendor/equinton/ppci/src/Models/Login.php:381
-#: ../../../vendor/equinton/ppci/src/Models/Ldap.php:74
-msgid "Impossible de se connecter au serveur LDAP"
-msgstr "Unable to connect to LDAP server"
-
-#: ../../../vendor/equinton/ppci/src/Models/Login.php:407
-#, php-format
-msgid "La connexion auprès de l'annuaire LDAP pour l'utilisateur %s a échoué"
-msgstr "Connection to the LDAP directory for user %s has failed"
-
-#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:101
-msgid ""
-"L'identification dans l'annuaire LDAP a échoué pour la récupération des "
-"groupes de l'utilisateur"
-msgstr ""
-"Identification in the LDAP directory failed to retrieve the user's groups"
-
-#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:138
-msgid "Connexion à l'annuaire LDAP impossible"
-msgstr "Cannot connect to the LDAP directory"
-
-#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:318
-msgid "Un groupe ne peut être son propre parent"
-msgstr "A group can't be its own parent"
-
-#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:362
-msgid "Suppression du groupe impossible : d'autres groupes lui sont rattachés"
-msgstr "Can not delete group: other groups are attached to it"
-
-#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:377
-msgid ""
-"La suppression du groupe a échoué. Consultez les logs pour en connaître la "
-"raison"
-msgstr "Deleting the group failed. Check the logs to find out the reason"
-
-#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:89
-msgid "Une erreur est survenue pendant le chiffrement de la clé secrète"
-msgstr "An error occurred during the encryption of the secret key"
-
-#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:104
-msgid "Une erreur est survenue pendant le déchiffrement de la clé secrète"
-msgstr "An error occurred during the decryption of the secret key"
-
-#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:150
-#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:155
-msgid "Une erreur est survenue pendant le chiffrement"
-msgstr "An error occurred during the encryption"
-
-#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:173
-#: ../../../vendor/equinton/ppci/src/Models/Gacltotp.php:178
-msgid "Une erreur est survenue pendant le déchiffrement"
-msgstr "An error occurred during the decryption"
+"Adding a login to the account table (rights management) is not possible: "
+"login is not provided"
 
 #: ../../../vendor/equinton/ppci/src/Models/Import.php:72
 #, php-format
@@ -1120,321 +1107,191 @@ msgstr "%s is not a recognized field that can be used during import"
 msgid "Fichier %s non trouvé ou non lisible"
 msgstr "File %s not found or not readable"
 
-#: ../../../vendor/equinton/ppci/src/Models/Request.php:57
-msgid ""
-"La requête ne peut pas contenir d'ordres de modification de la base de "
-"données ni porter sur des tables contenant des informations confidentielles"
-msgstr ""
-"The request must not contain any database modification commands or relate to "
-"tables containing confidential information"
+#: ../../../vendor/equinton/ppci/src/Models/Ldap.php:75
+#: ../../../vendor/equinton/ppci/src/Models/Login.php:385
+msgid "Impossible de se connecter au serveur LDAP"
+msgstr "Unable to connect to LDAP server"
 
-#: ../../../vendor/equinton/ppci/src/Models/PpciModel.php:145
+#: ../../../vendor/equinton/ppci/src/Models/PpciModel.php:144
 #, php-format
 msgid "Le champ %s est obligatoire mais n'a pas été renseigné"
 msgstr "The field %s is required, but has not been filled out"
 
-#: ../../../vendor/equinton/ppci/src/Models/PpciModel.php:280
+#: ../../../vendor/equinton/ppci/src/Models/PpciModel.php:279
 #, php-format
 msgid "La clé principale %s n'est pas renseignée ou vaut zéro"
 msgstr "The primary key %s is not filled in or is zero"
 
-#: ../../../vendor/equinton/ppci/src/Models/PpciModel.php:284
+#: ../../../vendor/equinton/ppci/src/Models/PpciModel.php:283
 #, php-format
 msgid "Une valeur fournie n'est pas numérique (%s)"
 msgstr "A value supplied is not numeric (%s)"
 
-#: ../../../vendor/equinton/ppci/src/Models/Log.php:206
-msgid "Dernières connexions :"
-msgstr "Last connections:"
+#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:102
+msgid ""
+"L'identification dans l'annuaire LDAP a échoué pour la récupération des "
+"groupes de l'utilisateur"
+msgstr ""
+"Identification in the LDAP directory failed to retrieve the user's groups"
 
-#: ../../../vendor/equinton/ppci/src/Models/Log.php:208
+#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:139
+msgid "Connexion à l'annuaire LDAP impossible"
+msgstr "Cannot connect to the LDAP directory"
+
+#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:319
+msgid "Un groupe ne peut être son propre parent"
+msgstr "A group can't be its own parent"
+
+#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:363
+msgid "Suppression du groupe impossible : d'autres groupes lui sont rattachés"
+msgstr "Can not delete group: other groups are attached to it"
+
+#: ../../../vendor/equinton/ppci/src/Models/Aclgroup.php:378
+msgid ""
+"La suppression du groupe a échoué. Consultez les logs pour en connaître la "
+"raison"
+msgstr "Deleting the group failed. Check the logs to find out the reason"
+
+#: ../../../vendor/equinton/ppci/src/Models/Login.php:77
+msgid "L'identification par jeton n'a pas abouti"
+msgstr "Token identification was unsuccessful"
+
+#: ../../../vendor/equinton/ppci/src/Models/Login.php:110
 #, php-format
-msgid "Le %1s depuis l'adresse IP %2s"
-msgstr "The %1s from the IP address %2s"
+msgid "La connexion auprès de l'annuaire LDAP pour l'utilisateur %s a échoué"
+msgstr "Connection to the LDAP directory for user %s has failed"
 
-#: ../../../vendor/equinton/ppci/src/Models/Log.php:335
-#, php-format
-msgid "%s - Compte bloqué"
-msgstr "%s - Account blocked"
-
-#: ../../../vendor/equinton/ppci/src/Models/Log.php:379
+#: ../../../vendor/equinton/ppci/src/Models/Login.php:124
 msgid ""
-"Le nombre d'accès autorisés pour le module demandé a été atteint. Si vous "
-"considérez que la valeur est trop faible, veuillez contacter "
-"l'administrateur de l'application"
-msgstr ""
-"The number of authorized accesses for the requested module has been reached. "
-"If you consider that the value is too low, please contact the application "
-"administrator"
+"L'identification n'a pas abouti. Vérifiez votre login et votre mot de passe"
+msgstr "The identification was not successful. Check your login and password"
 
-#: ../../../vendor/equinton/ppci/src/Models/Log.php:381
-#, php-format
-msgid "%s - Trop d'accès à un module"
-msgstr "%s - Too many accesses to a module"
+#: ../../../vendor/equinton/ppci/src/Models/Login.php:203
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/newUser.tpl:1
+msgid "Nouvel utilisateur"
+msgstr "New user:"
 
-#: ../../../vendor/equinton/ppci/src/Models/Acllogin.php:122
+#: ../../../vendor/equinton/ppci/src/Models/Login.php:213
 msgid ""
-"L'ajout d'un login à la table des comptes (gestion des droits) n'est pas "
-"possible : le login n'est pas fourni"
+"Votre compte a été créé, mais est inactif. Un mail a été adressé aux "
+"administrateurs pour son activation"
 msgstr ""
-"Adding a login to the account table (rights management) is not possible: "
-"login is not provided"
+"Your account was create, but it's inactive. An email was send to the "
+"administrators for its activation"
 
-#: ../../../app/Views/templates/mapDefault.tpl:62
-msgid "Imprimer la carte"
-msgstr "Print the card"
+#: ../../../vendor/equinton/ppci/src/Models/Login.php:223
+msgid "Aucun login n'a été fourni, identification refusée"
+msgstr "No login provided, identification refused"
 
-#: ../../../app/Views/templates/cinna/cinnaImport.tpl:1
-msgid "Importation des fichiers CINNA"
-msgstr "Import of CINNA files"
+#: ../../../vendor/equinton/ppci/src/Controllers/Login.php:28
+msgid "Identification refusée"
+msgstr "Authentication failed"
 
-#: ../../../app/Views/templates/cinna/cinnaImport.tpl:4
+#: ../../../vendor/equinton/ppci/src/Controllers/Login.php:39
 msgid ""
-"Cette fonction vous permet d'importer les fichiers CINNA dans la base de "
-"données estuaire_phy, schéma CINNA"
+"Le mode d'identification dans l'application ne vous permet pas d'accéder à "
+"la page de connexion"
 msgstr ""
-"This function allows you to import CINNA files into the estuaire_phy "
-"database, CINNA schema"
+"The identification mode in the application does not allow you to access the "
+"login page"
 
-#: ../../../app/Views/templates/cinna/cinnaImport.tpl:6
-msgid ""
-"Attention : l'opération n'est à réaliser qu'une seule fois pour chaque "
-"fichier : dans le cas contraire, les enregistrements seront en double."
-msgstr ""
-"Please note: you only need to perform this operation once for each file, "
-"otherwise the records will be duplicated."
-
-#: ../../../app/Views/templates/cinna/cinnaImport.tpl:8
-msgid ""
-"Après l'importation, veuillez noter les numéros des identifiants générés, "
-"avec le nom du fichier correspondant, pour pouvoir revenir en arrière si "
-"c'était nécessaire."
-msgstr ""
-"After importing, please make a note of the ID numbers generated, along with "
-"the name of the corresponding file, so that you can go back if necessary."
-
-#: ../../../app/Views/templates/cinna/cinnaImport.tpl:17
-#: ../../../app/Views/templates/trait/traceImport.tpl:13
-msgid "Fichier à importer :"
-msgstr "File to import:"
-
-#: ../../../app/Views/templates/cinna/cinnaImport.tpl:25
-msgid "Importer le(s) fichier(s)"
-msgstr "Import the file(s)"
-
-#: ../../../app/Views/templates/param/mareeList.tpl:7
-#: ../../../app/Views/templates/param/enginTypeList.tpl:7
-#: ../../../app/Views/templates/param/paramList.tpl:7
-#: ../../../app/Views/templates/param/manipulateurList.tpl:7
-#: ../../../app/Views/templates/param/stationList.tpl:7
-#: ../../../app/Views/templates/param/nageoireList.tpl:7
-msgid "Nouveau..."
-msgstr "New..."
-
-#: ../../../app/Views/templates/param/mareeList.tpl:13
-#: ../../../app/Views/templates/param/enginTypeList.tpl:13
-#: ../../../app/Views/templates/param/paramList.tpl:13
-#: ../../../app/Views/templates/param/manipulateurList.tpl:13
-#: ../../../app/Views/templates/param/stationList.tpl:13
-#: ../../../app/Views/templates/param/nageoireList.tpl:13
-#: ../../../app/Views/templates/trait/traitSturioList.tpl:13
-#: ../../../app/Views/templates/trait/traitList.tpl:55
-#: ../../../app/Views/templates/trait/echantillonList.tpl:15
-#: ../../../app/Views/templates/trait/echantillonChange.tpl:205
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:264
-#: ../../../app/Views/templates/trait/traitEelList.tpl:14
-#: ../../../app/Views/templates/trait/traitDebrisList.tpl:76
-#: ../../../app/Views/templates/trait/tracePairing.tpl:89
-#: ../../../app/Views/templates/trait/tracePairing.tpl:114
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestList.tpl:9
-msgid "Id"
-msgstr "Id"
-
-#: ../../../app/Views/templates/param/mareeList.tpl:14
-#: ../../../app/Views/templates/param/enginTypeList.tpl:14
-#: ../../../app/Views/templates/param/manipulateurList.tpl:14
-msgid "Nom"
-msgstr "Name"
-
-#: ../../../app/Views/templates/param/paramChange.tpl:1
-msgid "Création - Modification d'un paramètre : "
-msgstr "Create - Edit a parameter : "
-
-#: ../../../app/Views/templates/param/paramChange.tpl:2
-#: ../../../app/Views/templates/param/mareeChange.tpl:2
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:2
-#: ../../../app/Views/templates/param/especeChange.tpl:59
-#: ../../../app/Views/templates/param/nageoireChange.tpl:2
-#: ../../../app/Views/templates/param/enginTypeChange.tpl:2
-#: ../../../app/Views/templates/param/stationChange.tpl:2
-#: ../../../app/Views/templates/trait/traitTab.tpl:48
-#: ../../../app/Views/templates/trait/traitChange.tpl:83
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:6
-#: ../../../app/Views/templates/trait/traitEelChange.tpl:67
-#: ../../../app/Views/templates/trait/echantillonChange.tpl:117
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:76
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:1
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:39
-msgid "Retour à la liste"
-msgstr "Back to the list"
-
-#: ../../../app/Views/templates/param/paramChange.tpl:10
-#: ../../../app/Views/templates/param/mareeChange.tpl:10
-#: ../../../app/Views/templates/param/nageoireChange.tpl:10
-#: ../../../app/Views/templates/param/enginTypeChange.tpl:10
-#: ../../../app/Views/templates/param/stationChange.tpl:10
-msgid "Libellé :"
-msgstr "Label :"
-
-#: ../../../app/Views/templates/param/paramChange.tpl:18
-#: ../../../app/Views/templates/param/mareeChange.tpl:16
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:34
-#: ../../../app/Views/templates/param/nageoireChange.tpl:17
-#: ../../../app/Views/templates/param/enginTypeChange.tpl:24
-#: ../../../app/Views/templates/param/stationChange.tpl:17
-#: ../../../app/Views/templates/trait/traitChange.tpl:254
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:89
-#: ../../../app/Views/templates/trait/traitEelChange.tpl:165
-#: ../../../app/Views/templates/trait/echantillonChange.tpl:246
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:354
-#: ../../../app/Views/templates/trait/traitDebrisList.tpl:121
-#: ../../../app/Views/templates/main.tpl:21
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginChangePassword.tpl:133
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:36
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:220
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:34
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:16
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:12
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:28
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:25
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:45
-msgid "Valider"
-msgstr "Save and return"
-
-#: ../../../app/Views/templates/param/paramChange.tpl:20
-#: ../../../app/Views/templates/param/mareeChange.tpl:18
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:36
-#: ../../../app/Views/templates/param/nageoireChange.tpl:19
-#: ../../../app/Views/templates/param/enginTypeChange.tpl:26
-#: ../../../app/Views/templates/param/stationChange.tpl:19
-#: ../../../app/Views/templates/trait/traitChange.tpl:256
-#: ../../../app/Views/templates/trait/traitEelChange.tpl:167
-#: ../../../app/Views/templates/trait/echantillonChange.tpl:248
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:356
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:222
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:18
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:14
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:27
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:47
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:94
-msgid "Supprimer"
-msgstr "Delete..."
-
-#: ../../../app/Views/templates/param/paramChange.tpl:27
-#: ../../../app/Views/templates/param/mareeChange.tpl:24
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:43
-#: ../../../app/Views/templates/param/nageoireChange.tpl:26
-#: ../../../app/Views/templates/param/enginTypeChange.tpl:33
-#: ../../../app/Views/templates/param/stationChange.tpl:26
-#: ../../../app/Views/templates/trait/traitChange.tpl:266
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:234
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:51
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:60
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:35
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:54
-msgid "Donnée obligatoire"
-msgstr "Mandatory data"
-
-#: ../../../app/Views/templates/param/enginTypeList.tpl:15
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:11
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:12
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestList.tpl:10
-msgid "Description"
-msgstr "Description"
+#: ../../../vendor/equinton/ppci/src/Controllers/Login.php:96
+msgid "Vous avez été déconnecté"
+msgstr "You have been disconnected"
 
 #: ../../../app/Views/templates/param/mareeChange.tpl:1
 msgid "Création - Modification d'un type de marée"
 msgstr "Create - edit a type of tide"
 
-#: ../../../app/Views/templates/param/paramList.tpl:1
-msgid "Liste des paramètres : "
-msgstr "List of parameters:"
+#: ../../../app/Views/templates/param/mareeChange.tpl:2
+#: ../../../app/Views/templates/param/paramChange.tpl:2
+#: ../../../app/Views/templates/param/enginTypeChange.tpl:2
+#: ../../../app/Views/templates/param/stationChange.tpl:2
+#: ../../../app/Views/templates/param/especeChange.tpl:59
+#: ../../../app/Views/templates/param/nageoireChange.tpl:2
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:2
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:76
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:6
+#: ../../../app/Views/templates/trait/traitEelChange.tpl:67
+#: ../../../app/Views/templates/trait/traitChange.tpl:83
+#: ../../../app/Views/templates/trait/traitTab.tpl:48
+#: ../../../app/Views/templates/trait/echantillonChange.tpl:117
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:1
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:43
+msgid "Retour à la liste"
+msgstr "Back to the list"
 
-#: ../../../app/Views/templates/param/paramList.tpl:14
-#: ../../../app/Views/templates/param/nageoireList.tpl:14
-msgid "Libellé"
-msgstr "Label"
+#: ../../../app/Views/templates/param/mareeChange.tpl:10
+#: ../../../app/Views/templates/param/paramChange.tpl:10
+#: ../../../app/Views/templates/param/enginTypeChange.tpl:10
+#: ../../../app/Views/templates/param/stationChange.tpl:10
+#: ../../../app/Views/templates/param/nageoireChange.tpl:10
+msgid "Libellé :"
+msgstr "Label :"
 
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:1
-msgid "Création - Modification d'un manipulateur"
-msgstr "Create - edit a manipulator"
+#: ../../../app/Views/templates/param/mareeChange.tpl:16
+#: ../../../app/Views/templates/param/paramChange.tpl:18
+#: ../../../app/Views/templates/param/enginTypeChange.tpl:24
+#: ../../../app/Views/templates/param/stationChange.tpl:17
+#: ../../../app/Views/templates/param/nageoireChange.tpl:17
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:34
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:354
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:89
+#: ../../../app/Views/templates/trait/traitEelChange.tpl:165
+#: ../../../app/Views/templates/trait/traitChange.tpl:254
+#: ../../../app/Views/templates/trait/echantillonChange.tpl:246
+#: ../../../app/Views/templates/trait/traitDebrisList.tpl:121
+#: ../../../app/Views/templates/main.tpl:21
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:45
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:16
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:12
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:25
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:62
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginChangePassword.tpl:133
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:220
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:36
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totpShowCode.tpl:20
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:34
+msgid "Valider"
+msgstr "Save and return"
 
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:10
-msgid "Nom :"
-msgstr "Name:"
+#: ../../../app/Views/templates/param/mareeChange.tpl:18
+#: ../../../app/Views/templates/param/paramChange.tpl:20
+#: ../../../app/Views/templates/param/enginTypeChange.tpl:26
+#: ../../../app/Views/templates/param/stationChange.tpl:19
+#: ../../../app/Views/templates/param/nageoireChange.tpl:19
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:36
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:356
+#: ../../../app/Views/templates/trait/traitEelChange.tpl:167
+#: ../../../app/Views/templates/trait/traitChange.tpl:256
+#: ../../../app/Views/templates/trait/echantillonChange.tpl:248
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:47
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:18
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:14
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:27
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:222
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:99
+msgid "Supprimer"
+msgstr "Delete..."
 
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:18
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:102
-msgid "Prénom :"
-msgstr "First name:"
+#: ../../../app/Views/templates/param/mareeChange.tpl:24
+#: ../../../app/Views/templates/param/paramChange.tpl:27
+#: ../../../app/Views/templates/param/enginTypeChange.tpl:33
+#: ../../../app/Views/templates/param/stationChange.tpl:26
+#: ../../../app/Views/templates/param/nageoireChange.tpl:26
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:43
+#: ../../../app/Views/templates/trait/traitChange.tpl:266
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:54
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:51
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:60
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:35
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:234
+msgid "Donnée obligatoire"
+msgstr "Mandatory data"
 
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:25
-msgid "Manipulateur en activité ?"
-msgstr "Active manipulator?"
-
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:28
-#: ../../../app/Views/templates/param/manipulateurList.tpl:33
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:26
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:218
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:228
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:330
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:78
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:79
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:117
-#: ../../../app/Views/templates/main.tpl:18
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:124
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:199
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:53
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:54
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:57
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:51
-msgid "oui"
-msgstr "yes"
-
-#: ../../../app/Views/templates/param/manipulateurChange.tpl:30
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:26
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:219
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:229
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:332
-#: ../../../app/Views/templates/main.tpl:16
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:128
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:202
-msgid "non"
-msgstr "no"
-
-#: ../../../app/Views/templates/param/especeChange.tpl:57
-msgid "Modification d'une espèce"
-msgstr "Edit a species"
-
-#: ../../../app/Views/templates/param/manipulateurList.tpl:1
-msgid "Liste des manipulateurs"
-msgstr "List of manipulators"
-
-#: ../../../app/Views/templates/param/manipulateurList.tpl:15
-msgid "Prénom"
-msgstr "First name"
-
-#: ../../../app/Views/templates/param/manipulateurList.tpl:16
-msgid "Actif ?"
-msgstr "Active?"
-
-#: ../../../app/Views/templates/param/nageoireChange.tpl:1
-msgid "Création - Modification d'un type de nageoire"
-msgstr "Create - edit a type of fin"
-
-#: ../../../app/Views/templates/param/stationList.tpl:14
-msgid "Code"
-msgstr "Code"
+#: ../../../app/Views/templates/param/paramChange.tpl:1
+msgid "Création - Modification d'un paramètre : "
+msgstr "Create - Edit a parameter : "
 
 #: ../../../app/Views/templates/param/enginTypeChange.tpl:1
 msgid "Création - Modification d'un type d'engins"
@@ -1444,6 +1301,43 @@ msgstr "Create - Edit a type of engine"
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:18
 msgid "Description :"
 msgstr "Description:"
+
+#: ../../../app/Views/templates/param/paramList.tpl:1
+msgid "Liste des paramètres : "
+msgstr "List of parameters:"
+
+#: ../../../app/Views/templates/param/paramList.tpl:7
+#: ../../../app/Views/templates/param/manipulateurList.tpl:7
+#: ../../../app/Views/templates/param/stationList.tpl:7
+#: ../../../app/Views/templates/param/enginTypeList.tpl:7
+#: ../../../app/Views/templates/param/mareeList.tpl:7
+#: ../../../app/Views/templates/param/nageoireList.tpl:7
+msgid "Nouveau..."
+msgstr "New..."
+
+#: ../../../app/Views/templates/param/paramList.tpl:13
+#: ../../../app/Views/templates/param/manipulateurList.tpl:13
+#: ../../../app/Views/templates/param/stationList.tpl:13
+#: ../../../app/Views/templates/param/enginTypeList.tpl:13
+#: ../../../app/Views/templates/param/mareeList.tpl:13
+#: ../../../app/Views/templates/param/nageoireList.tpl:13
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:264
+#: ../../../app/Views/templates/trait/tracePairing.tpl:89
+#: ../../../app/Views/templates/trait/tracePairing.tpl:114
+#: ../../../app/Views/templates/trait/traitList.tpl:55
+#: ../../../app/Views/templates/trait/traitEelList.tpl:14
+#: ../../../app/Views/templates/trait/traitSturioList.tpl:13
+#: ../../../app/Views/templates/trait/echantillonChange.tpl:205
+#: ../../../app/Views/templates/trait/echantillonList.tpl:15
+#: ../../../app/Views/templates/trait/traitDebrisList.tpl:76
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestList.tpl:9
+msgid "Id"
+msgstr "Id"
+
+#: ../../../app/Views/templates/param/paramList.tpl:14
+#: ../../../app/Views/templates/param/nageoireList.tpl:14
+msgid "Libellé"
+msgstr "Label"
 
 #: ../../../app/Views/templates/param/especeList.tpl:14
 msgid "Nom latin"
@@ -1481,25 +1375,292 @@ msgstr "Ifremer Perm code"
 msgid "Code Sandre"
 msgstr "Sandre code"
 
+#: ../../../app/Views/templates/param/manipulateurList.tpl:1
+msgid "Liste des manipulateurs"
+msgstr "List of manipulators"
+
+#: ../../../app/Views/templates/param/manipulateurList.tpl:14
+#: ../../../app/Views/templates/param/enginTypeList.tpl:14
+#: ../../../app/Views/templates/param/mareeList.tpl:14
+msgid "Nom"
+msgstr "Name"
+
+#: ../../../app/Views/templates/param/manipulateurList.tpl:15
+msgid "Prénom"
+msgstr "First name"
+
+#: ../../../app/Views/templates/param/manipulateurList.tpl:16
+msgid "Actif ?"
+msgstr "Active?"
+
+#: ../../../app/Views/templates/param/manipulateurList.tpl:33
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:28
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:26
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:218
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:228
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:330
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:78
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:79
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:117
+#: ../../../app/Views/templates/main.tpl:18
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:51
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:124
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:199
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:53
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:54
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:57
+msgid "oui"
+msgstr "yes"
+
+#: ../../../app/Views/templates/param/stationList.tpl:14
+msgid "Code"
+msgstr "Code"
+
 #: ../../../app/Views/templates/param/stationChange.tpl:1
 msgid "Création - Modification d'un type de station"
 msgstr "Create - edit a type of station"
+
+#: ../../../app/Views/templates/param/especeChange.tpl:57
+msgid "Modification d'une espèce"
+msgstr "Edit a species"
+
+#: ../../../app/Views/templates/param/nageoireChange.tpl:1
+msgid "Création - Modification d'un type de nageoire"
+msgstr "Create - edit a type of fin"
+
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:1
+msgid "Création - Modification d'un manipulateur"
+msgstr "Create - edit a manipulator"
+
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:10
+msgid "Nom :"
+msgstr "Name:"
+
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:18
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:102
+msgid "Prénom :"
+msgstr "First name:"
+
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:25
+msgid "Manipulateur en activité ?"
+msgstr "Active manipulator?"
+
+#: ../../../app/Views/templates/param/manipulateurChange.tpl:30
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:26
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:219
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:229
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:332
+#: ../../../app/Views/templates/main.tpl:16
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:128
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:202
+msgid "non"
+msgstr "no"
+
+#: ../../../app/Views/templates/param/enginTypeList.tpl:15
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:12
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestList.tpl:10
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:11
+msgid "Description"
+msgstr "Description"
 
 #: ../../../app/Views/templates/param/nageoireList.tpl:1
 msgid "Liste des types de nageoires"
 msgstr "List of fin types"
 
-#: ../../../app/Views/templates/trait/traitMap.tpl:66
-#: ../../../app/Views/templates/trait/traitChange.tpl:39
-#: ../../../app/Views/templates/trait/traitChange.tpl:57
-msgid "Début"
-msgstr "Start"
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:17
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:20
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:22
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:160
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:288
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:303
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:314
+#: ../../../app/Views/templates/trait/traitDebrisList.tpl:12
+#: ../../../app/Views/templates/trait/traitDebrisList.tpl:95
+msgid "Sélectionnez"
+msgstr "Select"
 
-#: ../../../app/Views/templates/trait/traitMap.tpl:69
-#: ../../../app/Views/templates/trait/traitChange.tpl:44
-#: ../../../app/Views/templates/trait/traitChange.tpl:60
-msgid "Fin"
-msgstr "End"
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:25
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:217
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:227
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:328
+msgid "inconnu"
+msgstr "unknown"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:70
+msgid "Création/modification d'un esturgeon"
+msgstr "Create/edit a sturgeon"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:71
+msgid "N°"
+msgstr "Number"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:71
+msgid "trait n° "
+msgstr "trait # "
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:72
+#: ../../../app/Views/templates/trait/tracePairing.tpl:91
+#: ../../../app/Views/templates/trait/traitList.tpl:59
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:2
+#: ../../../app/Views/templates/trait/traitEelChange.tpl:63
+#: ../../../app/Views/templates/trait/echantillonChange.tpl:113
+#: ../../../app/Views/templates/sturio/sturioList.tpl:41
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:51
+msgid "Station"
+msgstr "Station"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:81
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:11
+#: ../../../app/Views/templates/trait/traitEelChange.tpl:72
+#: ../../../app/Views/templates/trait/traitChange.tpl:89
+#: ../../../app/Views/templates/trait/echantillonChange.tpl:122
+msgid "Retour au détail"
+msgstr "Back to the detail"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:87
+#: ../../../app/Views/templates/trait/traitSturioList.tpl:5
+msgid "Nouvel esturgeon"
+msgstr "New sturgeon"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:99
+msgid "Marques"
+msgstr "Marks"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:104
+msgid "Lue"
+msgstr "Read"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:105
+msgid "Posée"
+msgstr "Implemented"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:106
+msgid "Marque"
+msgstr "Mark"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:111
+#: ../../../app/Views/templates/trait/traitSturioList.tpl:14
+#: ../../../app/Views/templates/sturio/sturioList.tpl:10
+#: ../../../app/Views/templates/sturio/sturioList.tpl:36
+msgid "Pittag"
+msgstr "Pittag"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:120
+#: ../../../app/Views/templates/trait/traitSturioList.tpl:15
+msgid "HP tag"
+msgstr "HP tag"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:129
+#: ../../../app/Views/templates/trait/traitSturioList.tpl:16
+msgid "DST tag"
+msgstr "DST tag"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:141
+msgid "Age"
+msgstr "Age"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:143
+msgid "Cohorte :"
+msgstr "Cohort:"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:149
+msgid "Age :"
+msgstr "Age:"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:156
+msgid "Méthode de détermination :"
+msgstr "Determination method:"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:172
+msgid "Fiabilité de la détermination :"
+msgstr "Determination reliability:"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:179
+msgid "Age du lâcher :"
+msgstr "Release age:"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:189
+msgid "Mensurations"
+msgstr "Measurement"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:191
+msgid "Longueur fourche (cm) :"
+msgstr "Fork length (cm):"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:198
+msgid "Longueur totale (cm) :"
+msgstr "Total length (cm):"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:205
+#: ../../../app/Views/templates/trait/traitEelChange.tpl:157
+#: ../../../app/Views/templates/trait/echantillonChange.tpl:185
+msgid "Masse (g) :"
+msgstr "Weight (g):"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:212
+msgid "État général"
+msgstr "General state"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:214
+msgid "Vivant ?"
+msgstr "Leave?"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:224
+msgid "Présence de parasites ?"
+msgstr "Presence of parasites?"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:234
+msgid "Nombre de captures :"
+msgstr "Number of catches:"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:241
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:50
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:83
+#: ../../../app/Views/templates/trait/traitChange.tpl:161
+#: ../../../app/Views/templates/trait/traitDetail.tpl:70
+msgid "Commentaires :"
+msgstr "Comment:"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:254
+msgid "Prélèvements"
+msgstr "Samplings"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:258
+msgid "Ajouter une ligne"
+msgstr "Add a row"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:265
+#: ../../../app/Views/templates/sturio/sturioList.tpl:40
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:100
+msgid "Type"
+msgstr "Type"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:266
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:101
+msgid "Référence"
+msgstr "Reference"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:267
+msgid "Localisation"
+msgstr "Location"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:268
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:102
+msgid "Nageoire"
+msgstr "Fin"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:269
+msgid "Qté sang"
+msgstr "Blood quantity"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:270
+msgid "Mucus"
+msgstr "Mucus"
+
+#: ../../../app/Views/templates/trait/traitSturioChange.tpl:271
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:106
+msgid "Commentaire"
+msgstr "Comment"
 
 #: ../../../app/Views/templates/trait/traceImport.tpl:4
 msgid ""
@@ -1510,166 +1671,221 @@ msgstr ""
 "This function lets you import all the tracks in a GPX file into a temporary "
 "table. You can then associate these tracks with the corresponding features."
 
+#: ../../../app/Views/templates/trait/traceImport.tpl:13
+#: ../../../app/Views/templates/cinna/cinnaImport.tpl:17
+msgid "Fichier à importer :"
+msgstr "File to import:"
+
 #: ../../../app/Views/templates/trait/traceImport.tpl:20
 msgid "Charger le fichier"
 msgstr "Load the file"
 
-#: ../../../app/Views/templates/trait/traitTab.tpl:53
-#: ../../../app/Views/templates/trait/traitList.tpl:48
-msgid "Nouveau trait"
-msgstr "New trait"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:22
+msgid "Apparier les traces GPX avec les traits"
+msgstr "Match GPX tracks with traits"
 
-#: ../../../app/Views/templates/trait/traitTab.tpl:58
-msgid "Trait n° "
-msgstr "Trait #"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:28
+msgid "Traits à apparier"
+msgstr "Traits to match"
 
-#: ../../../app/Views/templates/trait/traitTab.tpl:58
-msgid "Station "
-msgstr "Station "
+#: ../../../app/Views/templates/trait/tracePairing.tpl:30
+#: ../../../app/Views/templates/trait/traitList.tpl:8
+msgid "N° du trait :"
+msgstr "Trait number:"
 
-#: ../../../app/Views/templates/trait/traitTab.tpl:67
-msgid "Détails"
-msgstr "Details"
-
-#: ../../../app/Views/templates/trait/traitTab.tpl:74
-msgid "Physico-chimie"
-msgstr "Physico-chemical"
-
-#: ../../../app/Views/templates/trait/traitTab.tpl:81
-msgid "Captures"
-msgstr "Catchs"
-
-#: ../../../app/Views/templates/trait/traitTab.tpl:88
-#: ../../../app/Views/templates/trait/traitDebrisList.tpl:77
-msgid "Débris"
-msgstr "debris"
-
-#: ../../../app/Views/templates/trait/traitTab.tpl:102
-msgid "Anguilles"
-msgstr "Eels"
-
-#: ../../../app/Views/templates/trait/traitTab.tpl:129
-msgid "Activer le survol des onglets :"
-msgstr "Activate tab hovering:"
-
-#: ../../../app/Views/templates/trait/traitChange.tpl:79
-msgid "Création/Modification du trait"
-msgstr "Create/Edit a trait"
-
-#: ../../../app/Views/templates/trait/traitChange.tpl:89
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:11
-#: ../../../app/Views/templates/trait/traitEelChange.tpl:72
-#: ../../../app/Views/templates/trait/echantillonChange.tpl:122
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:81
-msgid "Retour au détail"
-msgstr "Back to the detail"
-
-#: ../../../app/Views/templates/trait/traitChange.tpl:99
-#: ../../../app/Views/templates/trait/traitDetail.tpl:44
-msgid "Informations générales"
-msgstr "General information"
-
-#: ../../../app/Views/templates/trait/traitChange.tpl:102
-#: ../../../app/Views/templates/trait/traitList.tpl:12
-#: ../../../app/Views/templates/trait/traitDetail.tpl:46
 #: ../../../app/Views/templates/trait/tracePairing.tpl:34
+#: ../../../app/Views/templates/trait/traitList.tpl:12
+#: ../../../app/Views/templates/trait/traitChange.tpl:102
+#: ../../../app/Views/templates/trait/traitDetail.tpl:46
 msgid "Station :"
 msgstr "Station :"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:114
-#: ../../../app/Views/templates/trait/traitDetail.tpl:50
-msgid "Début :"
-msgstr "Start :"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:37
+#: ../../../app/Views/templates/trait/traitList.tpl:15
+msgid "Choisissez..."
+msgstr "Choose..."
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:121
-#: ../../../app/Views/templates/trait/traitDetail.tpl:54
-msgid "Fin :"
-msgstr "End:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:48
+#: ../../../app/Views/templates/trait/traitList.tpl:29
+msgid "Du :"
+msgstr "From :"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:129
-#: ../../../app/Views/templates/trait/traitDetail.tpl:58
-msgid "Durée (mn) :"
-msgstr "Duration (mn):"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:52
+#: ../../../app/Views/templates/trait/tracePairing.tpl:66
+#: ../../../app/Views/templates/trait/traitList.tpl:33
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:36
+msgid "au :"
+msgstr "to:"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:137
-#: ../../../app/Views/templates/trait/traitDetail.tpl:62
-msgid "Coefficient de marée :"
-msgstr "Tidal range:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:59
+msgid "Traces importées"
+msgstr "Imported tracks"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:142
-msgid "marée montante"
-msgstr "rising tide"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:61
+msgid "Date d'import - du :"
+msgstr "Date of import - from:"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:144
-msgid "marée descendante"
-msgstr "ebb tide"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:74
+#: ../../../app/Views/templates/trait/traitList.tpl:25
+#: ../../../app/Views/templates/sturio/sturioList.tpl:23
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:28
+msgid "Rechercher"
+msgstr "Search"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:149
-#: ../../../app/Views/templates/trait/traitDetail.tpl:66
-msgid "Engin de pêche :"
-msgstr "Fish engine:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:90
+#: ../../../app/Views/templates/trait/traitList.tpl:56
+msgid "Date début"
+msgstr "Start date"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:161
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:83
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:50
-#: ../../../app/Views/templates/trait/traitDetail.tpl:70
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:241
-msgid "Commentaires :"
-msgstr "Comment:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:92
+msgid "N° de la trace à apparier"
+msgstr "Track number to match"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:167
-#: ../../../app/Views/templates/trait/traitDetail.tpl:74
-msgid "Manipulateurs :"
-msgstr "Manipulators:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:110
+msgid "Traces à apparier"
+msgstr "Tracks to match"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:181
-#: ../../../app/Views/templates/trait/traitDetail.tpl:84
-msgid "Coordonnées géographiques du trait"
-msgstr "Geographical coordinates of the trait"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:115
+msgid "Nom du fichier"
+msgstr "File name"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:184
-msgid "Point de début :"
-msgstr "Start point:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:116
+msgid "Nom saisi"
+msgstr "Name entered"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:194
-#: ../../../app/Views/templates/trait/traitChange.tpl:221
-msgid "Lat :"
-msgstr "Lat :"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:117
+msgid "Date d'import"
+msgstr "Date of import"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:203
-#: ../../../app/Views/templates/trait/traitChange.tpl:230
-msgid "Lon :"
-msgstr "Lon:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:118
+msgid "Nbre de points"
+msgstr "Number of points"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:216
-msgid "Point de fin :"
-msgstr "End point:"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:138
+msgid "Apparier les traces"
+msgstr "Match tracks"
 
-#: ../../../app/Views/templates/trait/traitChange.tpl:244
-msgid "Longueur du trait (milles nautiques) :"
-msgstr "Length of the trait (nautical miles):"
+#: ../../../app/Views/templates/trait/tracePairing.tpl:146
+msgid "Tapez le numéro de la trace à apparier, ou déplacez-là à la souris"
+msgstr "Type the number of track to match, or move it with the mouse"
 
-#: ../../../app/Views/templates/trait/traitSturioList.tpl:5
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:87
-msgid "Nouvel esturgeon"
-msgstr "New sturgeon"
+#: ../../../app/Views/templates/trait/traitList.tpl:48
+#: ../../../app/Views/templates/trait/traitTab.tpl:53
+msgid "Nouveau trait"
+msgstr "New trait"
 
-#: ../../../app/Views/templates/trait/traitSturioList.tpl:14
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:111
-#: ../../../app/Views/templates/sturio/sturioList.tpl:10
-#: ../../../app/Views/templates/sturio/sturioList.tpl:36
-msgid "Pittag"
-msgstr "Pittag"
+#: ../../../app/Views/templates/trait/traitList.tpl:57
+msgid "Date de fin"
+msgstr "End date"
 
-#: ../../../app/Views/templates/trait/traitSturioList.tpl:15
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:120
-msgid "HP tag"
-msgstr "HP tag"
+#: ../../../app/Views/templates/trait/traitList.tpl:58
+msgid "Durée"
+msgstr "Duration"
 
-#: ../../../app/Views/templates/trait/traitSturioList.tpl:16
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:129
-msgid "DST tag"
-msgstr "DST tag"
+#: ../../../app/Views/templates/trait/traitList.tpl:60
+#: ../../../app/Views/templates/trait/traitEelList.tpl:24
+#: ../../../app/Views/templates/sturio/sturioDetail.tpl:61
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:52
+msgid "Commentaires"
+msgstr "Comment"
+
+#: ../../../app/Views/templates/trait/traitList.tpl:67
+msgid "Afficher-modifier"
+msgstr "Display-edit"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:5
+msgid "Modifier les données physico-chimiques"
+msgstr "Edit physico-chemical data"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:10
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:20
+msgid "Température (°C) :"
+msgstr "Temperature (#C):"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:14
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:26
+msgid "Conductivité (mS/cm) :"
+msgstr "Conductivity (mS/cm) :"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:18
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:33
+msgid "Conductivité spécifique à 25 °C, en mS/cm :"
+msgstr "Specific conductivity at 25 °C, in mS/cm :"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:22
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:40
+msgid "Salinité :"
+msgstr "Salinity:"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:26
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:46
+msgid "Profondeur (m) :"
+msgstr "Depth (m):"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:30
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:53
+msgid "Profondeur de mesure de la sonde :"
+msgstr "Probe measure depth:"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:34
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:59
+msgid "Oxygene, en % de saturation :"
+msgstr "Oxygen, in saturation percentage:"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:38
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:65
+msgid "Oxygene, en mg/l :"
+msgstr "Oxygen, in mg/l:"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:42
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:71
+msgid "Turbidité, en NTU :"
+msgstr "Turbidity, in NTU:"
+
+#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:46
+#: ../../../app/Views/templates/trait/physicochimieChange.tpl:77
+msgid "pH :"
+msgstr "pH:"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:5
+msgid "Nouvelle anguille"
+msgstr "New eel"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:15
+msgid "Longueur totale (mm)"
+msgstr "Total length (mm)"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:16
+msgid "Longueur pectorale (mm)"
+msgstr "Pectoral length (mm)"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:17
+msgid "Diamètre horizontal œil (mm)"
+msgstr "Horizontal diameter eye (mm)"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:18
+msgid "Diamètre vertical œil (mm)"
+msgstr "Vertical diameter eye (mm)"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:19
+msgid "OI"
+msgstr "OI"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:20
+msgid "ILN"
+msgstr "ILN"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:21
+msgid "J"
+msgstr "J"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:22
+msgid "A"
+msgstr "To"
+
+#: ../../../app/Views/templates/trait/traitEelList.tpl:23
+msgid "Stade"
+msgstr "Stage"
 
 #: ../../../app/Views/templates/trait/traitSturioList.tpl:17
 #: ../../../app/Views/templates/trait/echantillonChange.tpl:207
@@ -1689,163 +1905,21 @@ msgstr "Weight (g)"
 msgid "cohorte"
 msgstr "cohort"
 
-#: ../../../app/Views/templates/trait/traitList.tpl:8
-#: ../../../app/Views/templates/trait/tracePairing.tpl:30
-msgid "N° du trait :"
-msgstr "Trait number:"
+#: ../../../app/Views/templates/trait/traitMap.tpl:66
+#: ../../../app/Views/templates/trait/traitChange.tpl:39
+#: ../../../app/Views/templates/trait/traitChange.tpl:57
+msgid "Début"
+msgstr "Start"
 
-#: ../../../app/Views/templates/trait/traitList.tpl:15
-#: ../../../app/Views/templates/trait/tracePairing.tpl:37
-msgid "Choisissez..."
-msgstr "Choose..."
-
-#: ../../../app/Views/templates/trait/traitList.tpl:25
-#: ../../../app/Views/templates/trait/tracePairing.tpl:74
-#: ../../../app/Views/templates/sturio/sturioList.tpl:23
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:28
-msgid "Rechercher"
-msgstr "Search"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:29
-#: ../../../app/Views/templates/trait/tracePairing.tpl:48
-msgid "Du :"
-msgstr "From :"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:33
-#: ../../../app/Views/templates/trait/tracePairing.tpl:52
-#: ../../../app/Views/templates/trait/tracePairing.tpl:66
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:36
-msgid "au :"
-msgstr "to:"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:56
-#: ../../../app/Views/templates/trait/tracePairing.tpl:90
-msgid "Date début"
-msgstr "Start date"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:57
-msgid "Date de fin"
-msgstr "End date"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:58
-msgid "Durée"
-msgstr "Duration"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:59
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:2
-#: ../../../app/Views/templates/trait/traitEelChange.tpl:63
-#: ../../../app/Views/templates/trait/echantillonChange.tpl:113
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:72
-#: ../../../app/Views/templates/trait/tracePairing.tpl:91
-#: ../../../app/Views/templates/sturio/sturioList.tpl:41
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:51
-msgid "Station"
-msgstr "Station"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:60
-#: ../../../app/Views/templates/trait/traitEelList.tpl:24
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:61
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:52
-msgid "Commentaires"
-msgstr "Comment"
-
-#: ../../../app/Views/templates/trait/traitList.tpl:67
-msgid "Afficher-modifier"
-msgstr "Display-edit"
+#: ../../../app/Views/templates/trait/traitMap.tpl:69
+#: ../../../app/Views/templates/trait/traitChange.tpl:44
+#: ../../../app/Views/templates/trait/traitChange.tpl:60
+msgid "Fin"
+msgstr "End"
 
 #: ../../../app/Views/templates/trait/physicochimieChange.tpl:1
 msgid "Modification des données physico-chimiques - trait n° "
 msgstr "Edit physico-chemical data - trait #"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:20
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:10
-msgid "Température (°C) :"
-msgstr "Temperature (#C):"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:26
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:14
-msgid "Conductivité (mS/cm) :"
-msgstr "Conductivity (mS/cm) :"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:33
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:18
-msgid "Conductivité spécifique à 25 °C, en mS/cm :"
-msgstr "Specific conductivity at 25 °C, in mS/cm :"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:40
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:22
-msgid "Salinité :"
-msgstr "Salinity:"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:46
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:26
-msgid "Profondeur (m) :"
-msgstr "Depth (m):"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:53
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:30
-msgid "Profondeur de mesure de la sonde :"
-msgstr "Probe measure depth:"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:59
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:34
-msgid "Oxygene, en % de saturation :"
-msgstr "Oxygen, in saturation percentage:"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:65
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:38
-msgid "Oxygene, en mg/l :"
-msgstr "Oxygen, in mg/l:"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:71
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:42
-msgid "Turbidité, en NTU :"
-msgstr "Turbidity, in NTU:"
-
-#: ../../../app/Views/templates/trait/physicochimieChange.tpl:77
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:46
-msgid "pH :"
-msgstr "pH:"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:6
-msgid "Nouvel échantillon"
-msgstr "New sample"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:16
-msgid "Espèce"
-msgstr "Species"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:17
-msgid "Nbre total"
-msgstr "Total number"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:18
-msgid "Poids total mesuré"
-msgstr "Measured total weight"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:19
-msgid "Poids total estimé"
-msgstr "Estimated total weight"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:20
-msgid "Nbre de poissons mesurés"
-msgstr "Number of measured fishes"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:21
-msgid "Nbre de poissons morts"
-msgstr "Number of death fishes"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:22
-msgid "Nbre de poissons conservés pour d'autres manips"
-msgstr "Number of fish kept for other manipulations"
-
-#: ../../../app/Views/templates/trait/echantillonList.tpl:23
-msgid "Destination"
-msgstr "Usage"
-
-#: ../../../app/Views/templates/trait/physicochimieDisplay.tpl:5
-msgid "Modifier les données physico-chimiques"
-msgstr "Edit physico-chemical data"
 
 #: ../../../app/Views/templates/trait/traitEelChange.tpl:62
 msgid "Création/modification d'une anguille - trait n° "
@@ -1907,11 +1981,81 @@ msgstr "Calculated value:"
 msgid "Longueur à la fourche (mm) :"
 msgstr "Fork length (mm):"
 
-#: ../../../app/Views/templates/trait/traitEelChange.tpl:157
-#: ../../../app/Views/templates/trait/echantillonChange.tpl:185
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:205
-msgid "Masse (g) :"
-msgstr "Weight (g):"
+#: ../../../app/Views/templates/trait/traitChange.tpl:79
+msgid "Création/Modification du trait"
+msgstr "Create/Edit a trait"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:99
+#: ../../../app/Views/templates/trait/traitDetail.tpl:44
+msgid "Informations générales"
+msgstr "General information"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:114
+#: ../../../app/Views/templates/trait/traitDetail.tpl:50
+msgid "Début :"
+msgstr "Start :"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:121
+#: ../../../app/Views/templates/trait/traitDetail.tpl:54
+msgid "Fin :"
+msgstr "End:"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:129
+#: ../../../app/Views/templates/trait/traitDetail.tpl:58
+msgid "Durée (mn) :"
+msgstr "Duration (mn):"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:137
+#: ../../../app/Views/templates/trait/traitDetail.tpl:62
+msgid "Coefficient de marée :"
+msgstr "Tidal range:"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:142
+msgid "marée montante"
+msgstr "rising tide"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:144
+msgid "marée descendante"
+msgstr "ebb tide"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:149
+#: ../../../app/Views/templates/trait/traitDetail.tpl:66
+msgid "Engin de pêche :"
+msgstr "Fish engine:"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:167
+#: ../../../app/Views/templates/trait/traitDetail.tpl:74
+msgid "Manipulateurs :"
+msgstr "Manipulators:"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:181
+#: ../../../app/Views/templates/trait/traitDetail.tpl:84
+msgid "Coordonnées géographiques du trait"
+msgstr "Geographical coordinates of the trait"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:184
+#: ../../../app/Views/templates/trait/traitDetail.tpl:86
+msgid "Point de début :"
+msgstr "Start point:"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:194
+#: ../../../app/Views/templates/trait/traitChange.tpl:221
+msgid "Lat :"
+msgstr "Lat :"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:203
+#: ../../../app/Views/templates/trait/traitChange.tpl:230
+msgid "Lon :"
+msgstr "Lon:"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:216
+#: ../../../app/Views/templates/trait/traitDetail.tpl:94
+msgid "Point de fin :"
+msgstr "End point:"
+
+#: ../../../app/Views/templates/trait/traitChange.tpl:244
+msgid "Longueur du trait (milles nautiques) :"
+msgstr "Length of the trait (nautical miles):"
 
 #: ../../../app/Views/templates/trait/traitDetail.tpl:39
 msgid "Modifier les données générales"
@@ -1920,6 +2064,39 @@ msgstr "Edit general data"
 #: ../../../app/Views/templates/trait/traitDetail.tpl:102
 msgid "Longueur du trait :"
 msgstr "Trait length:"
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:58
+msgid "Trait n° "
+msgstr "Trait #"
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:58
+msgid "Station "
+msgstr "Station "
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:67
+msgid "Détails"
+msgstr "Details"
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:74
+msgid "Physico-chimie"
+msgstr "Physico-chemical"
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:81
+msgid "Captures"
+msgstr "Catchs"
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:88
+#: ../../../app/Views/templates/trait/traitDebrisList.tpl:77
+msgid "Débris"
+msgstr "debris"
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:102
+msgid "Anguilles"
+msgstr "Eels"
+
+#: ../../../app/Views/templates/trait/traitTab.tpl:129
+msgid "Activer le survol des onglets :"
+msgstr "Activate tab hovering:"
 
 #: ../../../app/Views/templates/trait/echantillonChange.tpl:112
 msgid "Création/modification d'un échantillon - trait n° "
@@ -1973,237 +2150,82 @@ msgstr "Measured individuals"
 msgid "Masse (g)"
 msgstr "Weight (g)"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:17
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:20
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:22
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:160
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:288
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:303
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:314
-#: ../../../app/Views/templates/trait/traitDebrisList.tpl:12
-#: ../../../app/Views/templates/trait/traitDebrisList.tpl:95
-msgid "Sélectionnez"
-msgstr "Select"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:6
+msgid "Nouvel échantillon"
+msgstr "New sample"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:25
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:217
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:227
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:328
-msgid "inconnu"
-msgstr "unknown"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:16
+msgid "Espèce"
+msgstr "Species"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:70
-msgid "Création/modification d'un esturgeon"
-msgstr "Create/edit a sturgeon"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:17
+msgid "Nbre total"
+msgstr "Total number"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:71
-msgid "N°"
-msgstr "Number"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:18
+msgid "Poids total mesuré"
+msgstr "Measured total weight"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:71
-msgid "trait n° "
-msgstr "trait # "
+#: ../../../app/Views/templates/trait/echantillonList.tpl:19
+msgid "Poids total estimé"
+msgstr "Estimated total weight"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:99
-msgid "Marques"
-msgstr "Marks"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:20
+msgid "Nbre de poissons mesurés"
+msgstr "Number of measured fishes"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:104
-msgid "Lue"
-msgstr "Read"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:21
+msgid "Nbre de poissons morts"
+msgstr "Number of death fishes"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:105
-msgid "Posée"
-msgstr "Implemented"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:22
+msgid "Nbre de poissons conservés pour d'autres manips"
+msgstr "Number of fish kept for other manipulations"
 
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:106
-msgid "Marque"
-msgstr "Mark"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:141
-msgid "Age"
-msgstr "Age"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:143
-msgid "Cohorte :"
-msgstr "Cohort:"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:149
-msgid "Age :"
-msgstr "Age:"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:156
-msgid "Méthode de détermination :"
-msgstr "Determination method:"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:172
-msgid "Fiabilité de la détermination :"
-msgstr "Determination reliability:"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:179
-msgid "Age du lâcher :"
-msgstr "Release age:"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:189
-msgid "Mensurations"
-msgstr "Measurement"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:191
-msgid "Longueur fourche (cm) :"
-msgstr "Fork length (cm):"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:198
-msgid "Longueur totale (cm) :"
-msgstr "Total length (cm):"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:212
-msgid "État général"
-msgstr "General state"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:214
-msgid "Vivant ?"
-msgstr "Leave?"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:224
-msgid "Présence de parasites ?"
-msgstr "Presence of parasites?"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:234
-msgid "Nombre de captures :"
-msgstr "Number of catches:"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:254
-msgid "Prélèvements"
-msgstr "Samplings"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:258
-msgid "Ajouter une ligne"
-msgstr "Add a row"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:265
-#: ../../../app/Views/templates/sturio/sturioList.tpl:40
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:100
-msgid "Type"
-msgstr "Type"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:266
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:101
-msgid "Référence"
-msgstr "Reference"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:267
-msgid "Localisation"
-msgstr "Location"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:268
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:102
-msgid "Nageoire"
-msgstr "Fin"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:269
-msgid "Qté sang"
-msgstr "Blood quantity"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:270
-msgid "Mucus"
-msgstr "Mucus"
-
-#: ../../../app/Views/templates/trait/traitSturioChange.tpl:271
-#: ../../../app/Views/templates/sturio/sturioDetail.tpl:106
-msgid "Commentaire"
-msgstr "Comment"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:5
-msgid "Nouvelle anguille"
-msgstr "New eel"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:15
-msgid "Longueur totale (mm)"
-msgstr "Total length (mm)"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:16
-msgid "Longueur pectorale (mm)"
-msgstr "Pectoral length (mm)"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:17
-msgid "Diamètre horizontal œil (mm)"
-msgstr "Horizontal diameter eye (mm)"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:18
-msgid "Diamètre vertical œil (mm)"
-msgstr "Vertical diameter eye (mm)"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:19
-msgid "OI"
-msgstr "OI"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:20
-msgid "ILN"
-msgstr "ILN"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:21
-msgid "J"
-msgstr "J"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:22
-msgid "A"
-msgstr "To"
-
-#: ../../../app/Views/templates/trait/traitEelList.tpl:23
-msgid "Stade"
-msgstr "Stage"
+#: ../../../app/Views/templates/trait/echantillonList.tpl:23
+msgid "Destination"
+msgstr "Usage"
 
 #: ../../../app/Views/templates/trait/traitDebrisList.tpl:78
 msgid "Quantité"
 msgstr "Quantity"
 
-#: ../../../app/Views/templates/trait/tracePairing.tpl:22
-msgid "Apparier les traces GPX avec les traits"
-msgstr "Match GPX tracks with traits"
+#: ../../../app/Views/templates/cinna/cinnaImport.tpl:1
+msgid "Importation des fichiers CINNA"
+msgstr "Import of CINNA files"
 
-#: ../../../app/Views/templates/trait/tracePairing.tpl:28
-msgid "Traits à apparier"
-msgstr "Traits to match"
+#: ../../../app/Views/templates/cinna/cinnaImport.tpl:4
+msgid ""
+"Cette fonction vous permet d'importer les fichiers CINNA dans la base de "
+"données estuaire_phy, schéma CINNA"
+msgstr ""
+"This function allows you to import CINNA files into the estuaire_phy "
+"database, CINNA schema"
 
-#: ../../../app/Views/templates/trait/tracePairing.tpl:59
-msgid "Traces importées"
-msgstr "Imported tracks"
+#: ../../../app/Views/templates/cinna/cinnaImport.tpl:6
+msgid ""
+"Attention : l'opération n'est à réaliser qu'une seule fois pour chaque "
+"fichier : dans le cas contraire, les enregistrements seront en double."
+msgstr ""
+"Please note: you only need to perform this operation once for each file, "
+"otherwise the records will be duplicated."
 
-#: ../../../app/Views/templates/trait/tracePairing.tpl:61
-msgid "Date d'import - du :"
-msgstr "Date of import - from:"
+#: ../../../app/Views/templates/cinna/cinnaImport.tpl:8
+msgid ""
+"Après l'importation, veuillez noter les numéros des identifiants générés, "
+"avec le nom du fichier correspondant, pour pouvoir revenir en arrière si "
+"c'était nécessaire."
+msgstr ""
+"After importing, please make a note of the ID numbers generated, along with "
+"the name of the corresponding file, so that you can go back if necessary."
 
-#: ../../../app/Views/templates/trait/tracePairing.tpl:92
-msgid "N° de la trace à apparier"
-msgstr "Track number to match"
+#: ../../../app/Views/templates/cinna/cinnaImport.tpl:25
+msgid "Importer le(s) fichier(s)"
+msgstr "Import the file(s)"
 
-#: ../../../app/Views/templates/trait/tracePairing.tpl:110
-msgid "Traces à apparier"
-msgstr "Tracks to match"
-
-#: ../../../app/Views/templates/trait/tracePairing.tpl:115
-msgid "Nom du fichier"
-msgstr "File name"
-
-#: ../../../app/Views/templates/trait/tracePairing.tpl:116
-msgid "Nom saisi"
-msgstr "Name entered"
-
-#: ../../../app/Views/templates/trait/tracePairing.tpl:117
-msgid "Date d'import"
-msgstr "Date of import"
-
-#: ../../../app/Views/templates/trait/tracePairing.tpl:118
-msgid "Nbre de points"
-msgstr "Number of points"
-
-#: ../../../app/Views/templates/trait/tracePairing.tpl:138
-msgid "Apparier les traces"
-msgstr "Match tracks"
-
-#: ../../../app/Views/templates/trait/tracePairing.tpl:146
-msgid "Tapez le numéro de la trace à apparier, ou déplacez-là à la souris"
-msgstr "Type the number of track to match, or move it with the mouse"
+#: ../../../app/Views/templates/mapDefault.tpl:62
+msgid "Imprimer la carte"
+msgstr "Print the card"
 
 #: ../../../app/Views/templates/sturio/sturioList.tpl:1
 msgid "Recherche des esturgeons lâchés ou capturés"
@@ -2358,117 +2380,312 @@ msgstr "ONLY READING mode"
 msgid "Mode lecture seule :"
 msgstr "Only reading mode:"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:7
-msgid "Nom du module :"
-msgstr "Module name:"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:2
+msgid ""
+"Ce module est destiné à réaliser une sauvegarde exceptionnelle de la base de "
+"données"
+msgstr ""
+"This module is designed to realize an exceptional backup of the database"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:18
-msgid "Login concerné :"
-msgstr "Related login:"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:3
+msgid ""
+"En aucun cas, il se substitue à la procédure de sauvegarde automatique qui "
+"doit avoir été implémentée dans le serveur"
+msgstr ""
+"In no case does it replace the automated backup procedure that must have "
+"been implemented in the server"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:32
-msgid "du :"
-msgstr "from :"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:4
+msgid ""
+"La sauvegarde peut échouer si la taille de la base de données est trop "
+"importante."
+msgstr "The backup may fail if the size of the database is too large."
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:51
-msgid "Module"
-msgstr "Module"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:5
+msgid ""
+"Après avoir récupéré le fichier généré, assurez-vous qu'il contient bien les "
+"informations (fichier .sql dans le fichier compressé au format gzip)"
+msgstr ""
+"After downloading the generated file, make sure it contains the information "
+"(.sql file in the gzip compressed file)."
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:53
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:35
-msgid "Login"
-msgstr "Login"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:12
+msgid "Déclencher la sauvegarde"
+msgstr "Process to the backup"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:54
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/lastConnections.tpl:8
-msgid "Adresse IP"
-msgstr "IP address"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:33
+msgid "Afficher le code TOTP pour configurer un autre appareil"
+msgstr "Display the TOTP code to configure another device"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:76
-msgid "Traitement en cours..."
-msgstr "Processing..."
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:33
+msgid "Afficher le code TOTP"
+msgstr "Display the TOTP code"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:77
-msgid "Rechercher :"
-msgstr "Search:"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:36
+msgid "Mot de passe"
+msgstr "Password"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:78
-msgid "Afficher _MENU_ éléments"
-msgstr "Show _MENU_ entries"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:18
+msgid "Dernière version publiée"
+msgstr "Last published version"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:79
-msgid "Affichage de l'élément _START_ à _END_ sur _TOTAL_ éléments"
-msgstr "Showing _START_ to _END_ of _TOTAL_ entries"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:20
+msgid "Version actuelle : "
+msgstr "Current version: "
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:80
-msgid "Affichage de l'élément 0 à 0 sur 0 élément"
-msgstr "Showing 0 to 0 of 0 entries"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:21
+msgid "Dernière version publiée : "
+msgstr "Last version published: "
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:81
-msgid "(filtré de _MAX_ éléments au total)"
-msgstr "(filtered from _MAX_ total entries)"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:23
+msgid ""
+"Vous pouvez demander la mise à jour de votre plate-forme à vos "
+"administrateurs !"
+msgstr "You can ask your administrators to update your platform!"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:83
-msgid "Chargement en cours..."
-msgstr "Loading..."
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/system.tpl:8
+msgid "Nom de la variable"
+msgstr "Variable name"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:84
-msgid "Aucun élément à afficher"
-msgstr "No matching records found"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/system.tpl:9
+msgid "Contenu"
+msgstr "Content"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:85
-msgid "Aucune donnée disponible dans le tableau"
-msgstr "No data available in table"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:2
+msgid "Liste des groupes de logins"
+msgstr "List of groups of logins"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:87
-msgid "Premier"
-msgstr "First"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:6
+msgid "Nouveau groupe racine..."
+msgstr "New root group"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:88
-msgid "Précédent"
-msgstr "Previous"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:12
+msgid "Nom du groupe"
+msgstr "Name of the group"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:89
-msgid "Suivant"
-msgstr "Next"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:13
+msgid "Nombre de logins déclarés"
+msgstr "Number of logins declared"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:90
-msgid "Dernier"
-msgstr "Last"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:14
+msgid "Rajouter un groupe fils"
+msgstr "Add a child group"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:93
-msgid ": activer pour trier la colonne par ordre croissant"
-msgstr ": activate to sort column ascending"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:20
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:20
+msgid "Adresses enregistrées dans le presse-papiers"
+msgstr "Addresses saved in the clipboard"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:94
-msgid ": activer pour trier la colonne par ordre décroissant"
-msgstr ": activate to sort column descending"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:25
+msgid "Liste des logins déclarés dans le module de gestion des droits"
+msgstr "List of logins declared in the rights management module"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:98
-msgid "Afficher %d éléments"
-msgstr "Show %d entries"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:29
+msgid "Nouveau login..."
+msgstr "New login"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:99
-msgid "Tout afficher"
-msgstr "Display All"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:35
+msgid "Utilisateur"
+msgstr "User"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:250
-msgid "Valeur numérique..."
-msgstr "Numerical value..."
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:36
+msgid "Login employé"
+msgstr "Login used"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:296
-msgid "Confirmez-vous la suppression ?"
-msgstr "Do you confirm the deletion?"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:37
+msgid "Email"
+msgstr "Email"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:315
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:344
-msgid "Confirmez-vous cette opération ?"
-msgstr "Do you confirm this operation?"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:38
+msgid "Double identification activée ?"
+msgstr "Dual authentication activate?"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbstructure.tpl:1
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:44
-msgid "Structure de la base de données"
-msgstr "Database structure"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:63
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:73
+msgid "Adresses mails :"
+msgstr "Email addresses:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:3
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:5
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:4
+msgid "Retour à la liste des applications"
+msgstr "Back to the list of applications"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:5
+msgid "Liste des droits disponibles pour l'application"
+msgstr "List of available rights for the application"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:13
+msgid "Modifier..."
+msgstr "Edit"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:18
+msgid "Nouveau droit..."
+msgstr "New right"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:24
+msgid "Nom du droit d'accès"
+msgstr "Name of the access right"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:1
+msgid "Liste des applications disponibles dans le module de gestion des droits"
+msgstr "List of applications available in the rights management module"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:5
+msgid "Nouvelle application..."
+msgstr "New application"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:10
+msgid "Modifier"
+msgstr "Edit"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:11
+msgid "Nom de l'application"
+msgstr "Name of the application"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:1
+msgid "Modification d'un login (module de gestion des droits)"
+msgstr "Edit login (rights management module)"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:4
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:81
+msgid "Retour à la liste des logins"
+msgstr "Back to the list of logins"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:12
+msgid "Nom de l'utilisateur :"
+msgstr "Username:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:21
+msgid "Login utilisé :"
+msgstr "Login used:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:30
+msgid "Adresse email :"
+msgstr "Email address:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:38
+msgid "Désactiver l'identification à double facteur :"
+msgstr "Disable dual-factor identification:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:58
+msgid "Droits attribués"
+msgstr "Rights granted"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:2
+msgid "Modification du droit d'une application (module de gestion des droits)"
+msgstr "Modify the right of an application (rights management module)"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:7
+msgid "Retour à"
+msgstr "Back to"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:23
+msgid "Nom du droit utilisé dans l'application :"
+msgstr "Name of the right used in the application:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:31
+msgid "Groupes disposant du droit :"
+msgstr "Groups with the right:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:1
+msgid "Modification d'un groupe et rattachement des logins"
+msgstr "Edit the group and its attachments to the logins"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:4
+msgid "Retour à la liste des groupes"
+msgstr "Back to the list of groups"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:19
+msgid "Nom du groupe :"
+msgstr "Name of the group:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:25
+msgid "Groupe de rattachement"
+msgstr "Group of attachment"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:41
+msgid "Logins rattachés"
+msgstr "Logins attached"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:1
+msgid "Modification d'une application (module de gestion des droits)"
+msgstr "Modify the application (rights management module)"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:10
+msgid "Nom de l'application :"
+msgstr "Name of the application:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:8
+msgid "Activation de la double authentification"
+msgstr "Enabling dual authentication"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:12
+msgid ""
+"La double identification limite les risques d'usurpation de votre compte."
+msgstr ""
+"The double identification limits the risks of usurpation of your account."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:14
+msgid ""
+"Pour l'activer, vous devrez installer dans votre smartphone une application "
+"compatible avec l'identificationTOTP, par exemple FreeOTP+, Google "
+"Authenticator, etc."
+msgstr ""
+"To activate it, you will need to install in your smartphone an application "
+"that is compatible with the identification TOTP, e.g. FreeOTP, Google "
+"Authenticator, etc."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:16
+msgid ""
+"Si vous devez travailler dans une pièce à accès restreint (laboratoire "
+"protégé), vous pouvez également utiliser un logiciel qui s'installe dans "
+"votre ordinateur, comme Ente Auth pour Windows ou Authenticator pour Linux. "
+"Ces logiciels vous permettent d'échanger les clés d'un ordinateur à un "
+"autre, pensez simplement à chiffrer les informations quand vous les exportez."
+msgstr ""
+"If you need to work in a restricted-access room (like a secure lab), you can "
+"also use software that installs on your computer, such as Ente Auth for "
+"Windows or Authenticator for Linux. These programs allow you to exchange "
+"keys from one computer to another; just remember to encrypt the information "
+"when you export it."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:18
+msgid ""
+"Une fois l'application installée, scannez le QRCODE, puis tapez le code "
+"généré par l'application pour valider votre double identification."
+msgstr ""
+"Once the application has been installed, scan the QRCODE, then enter the "
+"code generated by the application to validate your dual identification."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:33
+msgid "Afficher le contenu du QRCODE pour une saisie manuelle"
+msgstr "Show the QRCODE content for a manual entry"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:40
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totpShowCode.tpl:31
+msgid "Fournisseur"
+msgstr "Supplier"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:44
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totpShowCode.tpl:35
+msgid "Compte"
+msgstr "Account"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:48
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totpShowCode.tpl:39
+msgid "Jeton"
+msgstr "Token"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:56
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:15
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totpShowCode.tpl:14
+msgid "Code généré par le logiciel TOTP :"
+msgstr "TOTP software generated code:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/news.tpl:1
+msgid "Liste des nouveautés"
+msgstr "List of news"
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginChangePassword.tpl:7
 msgid "Le pire"
@@ -2559,81 +2776,15 @@ msgstr ""
 "It must include at least 3 different types of characters\n"
 "(lowercase, uppercase, number, punctuation and other symbols)"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:25
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:90
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginAdmin.tpl:26
-msgid "Login :"
-msgstr "Login:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:33
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:151
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginAdmin.tpl:34
-msgid "Mot de passe :"
-msgstr "Password:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:49
-msgid "Conserver la connexion pendant"
-msgstr "Keep me signed in for"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:49
-msgid "heures"
-msgstr "hours"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:56
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/identMailInput.tpl:2
-msgid "Mot de passe oublié ?"
-msgstr "Forgot your password?"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:60
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginAdmin.tpl:46
-msgid "Se connecter"
-msgstr "Sign in"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:73
-msgid "ou :"
-msgstr "or:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:79
-msgid "Se connecter avec l'identification centralisée"
-msgstr "Log in withe the central identification"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:1
-msgid "Vérification du compte avec la double authentification"
-msgstr "Account verification with dual authentication"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:5
-msgid ""
-"Pour vérifier votre identification, veuillez taper le code TOTP que vous "
-"avez configuré dans votre smartphone"
-msgstr ""
-"To verify your identification, please enter the TOTP code that you have set "
-"up in your smartphone"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:15
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:22
-msgid "Code généré par le logiciel TOTP :"
-msgstr "TOTP software generated code:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:25
-msgid "Faire confiance à ce navigateur :"
-msgstr "Trust this browser :"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:32
-msgid ""
-"En cochant cette case, vous désactiverez la demande du code TOTP pour ce "
-"navigateur, sauf pour accéder aux fonctions d'administration, le cas échéant"
-msgstr ""
-"By ticking this box, you will disable the TOTP code request for this "
-"browser, except for access to the administration functions, where applicable."
-
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:78
 msgid "Saisie/modification d'un compte"
 msgstr "Add / edit an account"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:81
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:4
-msgid "Retour à la liste des logins"
-msgstr "Back to the list of logins"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:90
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:25
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginAdmin.tpl:26
+msgid "Login :"
+msgstr "Login:"
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:97
 msgid "Nom de famille :"
@@ -2671,6 +2822,12 @@ msgid ""
 "connexions"
 msgstr ""
 "The account is blocked, the password was not changed after 3 connections"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:151
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:33
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginAdmin.tpl:34
+msgid "Mot de passe :"
+msgstr "Password:"
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginsaisie.tpl:169
 msgid "Générez un mot de passe aléatoire"
@@ -2721,10 +2878,67 @@ msgstr "Active"
 msgid "Essais de connexion infructueux et date du dernier essai :"
 msgstr "Unsuccessful connection attempts and date of last attempt :"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:20
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:20
-msgid "Adresses enregistrées dans le presse-papiers"
-msgstr "Addresses saved in the clipboard"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:1
+msgid "Vérification du compte avec la double authentification"
+msgstr "Account verification with dual authentication"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:5
+msgid ""
+"Pour vérifier votre identification, veuillez taper le code TOTP que vous "
+"avez configuré dans votre smartphone"
+msgstr ""
+"To verify your identification, please enter the TOTP code that you have set "
+"up in your smartphone"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:25
+msgid "Faire confiance à ce navigateur :"
+msgstr "Trust this browser :"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totp.tpl:32
+msgid ""
+"En cochant cette case, vous désactiverez la demande du code TOTP pour ce "
+"navigateur, sauf pour accéder aux fonctions d'administration, le cas échéant"
+msgstr ""
+"By ticking this box, you will disable the TOTP code request for this "
+"browser, except for access to the administration functions, where applicable."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:49
+msgid "Conserver la connexion pendant"
+msgstr "Keep me signed in for"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:49
+msgid "heures"
+msgstr "hours"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:56
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/identMailInput.tpl:2
+msgid "Mot de passe oublié ?"
+msgstr "Forgot your password?"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:60
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginAdmin.tpl:46
+msgid "Se connecter"
+msgstr "Sign in"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:73
+msgid "ou :"
+msgstr "or:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/login.tpl:79
+msgid "Se connecter avec l'identification centralisée"
+msgstr "Log in withe the central identification"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totpShowCode.tpl:1
+msgid "Affichage de la clé TOTP"
+msgstr "Display of the TOTP key"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/totpShowCode.tpl:6
+msgid ""
+"Ce module vous permet de visualiser les paramètres de votre clé TOTP, pour "
+"pouvoir configurer un autre appareil le cas échéant"
+msgstr ""
+"This module allows you to view the settings of your TOTP key, so that you "
+"can configure another device if necessary."
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:25
 msgid "Liste des logins déclarés dans la base de données"
@@ -2733,6 +2947,11 @@ msgstr "List of logins declared in the database"
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:27
 msgid "Nouveau login"
 msgstr "New login"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:35
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:53
+msgid "Login"
+msgstr "Login"
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:36
 msgid "Nom - Prénom"
@@ -2762,11 +2981,6 @@ msgstr "Time of last unsuccessful attempt"
 msgid "Compte bloqué"
 msgstr "Account blocked"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/loginliste.tpl:73
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:63
-msgid "Adresses mails :"
-msgstr "Email addresses:"
-
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/ident/identMailInput.tpl:2
 msgid "lancement de la procédure de récupération"
 msgstr "start the recovery procedure"
@@ -2779,23 +2993,105 @@ msgstr "Enter your email address:"
 msgid "Recevoir un mail de récupération"
 msgstr "Receive a recovery email"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/maxAccessToModule.tpl:1
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/noRights.tpl:1
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:76
+msgid "Traitement en cours..."
+msgstr "Processing..."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:77
+msgid "Rechercher :"
+msgstr "Search:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:78
+msgid "Afficher _MENU_ éléments"
+msgstr "Show _MENU_ entries"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:79
+msgid "Affichage de l'élément _START_ à _END_ sur _TOTAL_ éléments"
+msgstr "Showing _START_ to _END_ of _TOTAL_ entries"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:80
+msgid "Affichage de l'élément 0 à 0 sur 0 élément"
+msgstr "Showing 0 to 0 of 0 entries"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:81
+msgid "(filtré de _MAX_ éléments au total)"
+msgstr "(filtered from _MAX_ total entries)"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:83
+msgid "Chargement en cours..."
+msgstr "Loading..."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:84
+msgid "Aucun élément à afficher"
+msgstr "No matching records found"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:85
+msgid "Aucune donnée disponible dans le tableau"
+msgstr "No data available in table"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:87
+msgid "Premier"
+msgstr "First"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:88
+msgid "Précédent"
+msgstr "Previous"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:89
+msgid "Suivant"
+msgstr "Next"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:90
+msgid "Dernier"
+msgstr "Last"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:93
+msgid ": activer pour trier la colonne par ordre croissant"
+msgstr ": activate to sort column ascending"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:94
+msgid ": activer pour trier la colonne par ordre décroissant"
+msgstr ": activate to sort column descending"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:98
+msgid "Afficher %d éléments"
+msgstr "Show %d entries"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:99
+msgid "Tout afficher"
+msgstr "Display All"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:250
+msgid "Valeur numérique..."
+msgstr "Numerical value..."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:296
+msgid "Confirmez-vous la suppression ?"
+msgstr "Do you confirm the deletion?"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:315
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/main_js.tpl:344
+msgid "Confirmez-vous cette opération ?"
+msgstr "Do you confirm this operation?"
+
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountBlocked.tpl:1
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/noRights.tpl:1
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/maxAccessToModule.tpl:1
 msgid "Problème potentiel de sécurité"
 msgstr "Potential safety problem"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/maxAccessToModule.tpl:2
-msgid ""
-"Le compte %1 a essayé d'accéder au module %2 le %3 en dépassant le nombre "
-"autorisé soit en une heure, soit en une journée."
-msgstr ""
-"Account %1 tried to access module %2 on %3, exceeding the authorised number "
-"in either one hour or one day."
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountBlocked.tpl:2
+msgid "Le compte %1 a été bloqué le %2 après trop de tentatives de connexion."
+msgstr "Account %1 was blocked on %2 after too many connection attempts."
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/maxAccessToModule.tpl:5
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/noRights.tpl:6
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountBlocked.tpl:4
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/noRights.tpl:4
+msgid "Adresse IP du poste concerné : %1"
+msgstr "IP address of the workstation concerned: %1"
+
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountBlocked.tpl:6
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/noRights.tpl:6
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/maxAccessToModule.tpl:5
 msgid ""
 "Vous recevez ce message parce que vous êtes administrateur de l'application"
 msgstr ""
@@ -2810,37 +3106,11 @@ msgstr ""
 "Account %1 tried to access module %2 on %3, exceeding the authorised number "
 "in either one hour or one day."
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/noRights.tpl:4
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountBlocked.tpl:4
-msgid "Adresse IP du poste concerné : %1"
-msgstr "IP address of the workstation concerned: %1"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:1
-msgid "Activation ou réactivation de votre compte"
-msgstr "Activating or reactivating your account"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:2
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/passwordLost.tpl:2
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/passwordChanged.tpl:2
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:2
 msgid "Bonjour %1 %2,"
 msgstr "Hello %1 %2,"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:4
-msgid "Votre compte vient d'être activé ou réactivé dans l'application %1"
-msgstr ""
-"Your account has just been activated or reactivated in the application %1"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:7
-msgid ""
-"Si vous n'êtes pas à l'origine de cette demande, veuillez contacter le "
-"responsable de l'application."
-msgstr ""
-"If you did not initiate this request, please contact the person responsible "
-"for the application."
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/mail.tpl:47
-msgid "Ne répondez pas à ce mail, qui est généré automatiquement"
-msgstr "Do not reply to this e-mail, which is generated automatically"
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/passwordLost.tpl:4
 msgid ""
@@ -2860,10 +3130,6 @@ msgstr "To reset your password, copy the following link into your browser:"
 msgid "Le lien restera valable jusqu'au %1."
 msgstr "The link will remain valid until %1."
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountBlocked.tpl:2
-msgid "Le compte %1 a été bloqué le %2 après trop de tentatives de connexion."
-msgstr "Account %1 was blocked on %2 after too many connection attempts."
-
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/passwordChanged.tpl:1
 msgid "Modification du mot de passe"
 msgstr "Password change"
@@ -2879,6 +3145,31 @@ msgid ""
 msgstr ""
 "If you did not initiate this operation, please contact the person "
 "responsible for the application."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:1
+msgid "Activation ou réactivation de votre compte"
+msgstr "Activating or reactivating your account"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:4
+msgid "Votre compte vient d'être activé ou réactivé dans l'application %1"
+msgstr ""
+"Your account has just been activated or reactivated in the application %1"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/accountActivate.tpl:7
+msgid ""
+"Si vous n'êtes pas à l'origine de cette demande, veuillez contacter le "
+"responsable de l'application."
+msgstr ""
+"If you did not initiate this request, please contact the person responsible "
+"for the application."
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/maxAccessToModule.tpl:2
+msgid ""
+"Le compte %1 a essayé d'accéder au module %2 le %3 en dépassant le nombre "
+"autorisé soit en une heure, soit en une journée."
+msgstr ""
+"Account %1 tried to access module %2 on %3, exceeding the authorised number "
+"in either one hour or one day."
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/newUser.tpl:2
 msgid ""
@@ -2902,207 +3193,91 @@ msgid ""
 msgstr ""
 "You are receiving this message because you are the application administrator."
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/header.tpl:35
-msgid "Mot de passe"
-msgstr "Password"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/mail/mail.tpl:47
+msgid "Ne répondez pas à ce mail, qui est généré automatiquement"
+msgstr "Do not reply to this e-mail, which is generated automatically"
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/footer.tpl:5
 msgid "Pour tout problème :"
 msgstr "For any problem:"
 
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbstructure.tpl:1
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:48
+msgid "Structure de la base de données"
+msgstr "Database structure"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:7
+msgid "Nom du module :"
+msgstr "Module name:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:18
+msgid "Login concerné :"
+msgstr "Related login:"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:32
+msgid "du :"
+msgstr "from :"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:51
+msgid "Module"
+msgstr "Module"
+
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/logList.tpl:54
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/lastConnections.tpl:8
+msgid "Adresse IP"
+msgstr "IP address"
+
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/lastConnections.tpl:1
 msgid "Dernières connexions enregistrées"
 msgstr "Last connections recorded"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:1
-msgid "Paramètres pérennes de l'application"
-msgstr "List of long-term parameters of the application"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:11
+msgid "Confirmez la suppression de la requête"
+msgstr "Do you confirm the deletion of the request?"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:9
-msgid "Paramètre"
-msgstr "Setting"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:55
+msgid "Description de la requête"
+msgstr "Description of the request"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:10
-msgid "Valeur"
-msgstr "Value"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:62
+msgid "Code SQL :"
+msgstr "SQL code:"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:25
-msgid "Liste des logins déclarés dans le module de gestion des droits"
-msgstr "List of logins declared in the rights management module"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:68
+msgid "Champs dates de la requête (séparés par une virgule) :"
+msgstr "Date fields of the request (separated by a comma):"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:29
-msgid "Nouveau login..."
-msgstr "New login"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:74
+msgid "date de création :"
+msgstr "date of creation:"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:35
-msgid "Utilisateur"
-msgstr "User"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:80
+msgid "par :"
+msgstr "by:"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:36
-msgid "Login employé"
-msgstr "Login used"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:86
+msgid "Date de dernière exécution :"
+msgstr "Date of last execution:"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:37
-msgid "Email"
-msgstr "Email"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:94
+msgid "Enregistrer"
+msgstr "Save"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginList.tpl:38
-msgid "Double identification activée ?"
-msgstr "Dual authentication activate?"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:96
+msgid "Enregistrer et exécuter"
+msgstr "Save and run"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:2
-msgid "Modification du droit d'une application (module de gestion des droits)"
-msgstr "Modify the right of an application (rights management module)"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:97
+msgid "Exécuter"
+msgstr "Run"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:5
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:4
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:3
-msgid "Retour à la liste des applications"
-msgstr "Back to the list of applications"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:98
+msgid "Exécuter avec export CSV direct"
+msgstr "Execute with direct CSV export"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:7
-msgid "Retour à"
-msgstr "Back to"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:23
-msgid "Nom du droit utilisé dans l'application :"
-msgstr "Name of the right used in the application:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/acoChange.tpl:31
-msgid "Groupes disposant du droit :"
-msgstr "Groups with the right:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:1
-msgid "Modification d'un groupe et rattachement des logins"
-msgstr "Edit the group and its attachments to the logins"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:4
-msgid "Retour à la liste des groupes"
-msgstr "Back to the list of groups"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:19
-msgid "Nom du groupe :"
-msgstr "Name of the group:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:25
-msgid "Groupe de rattachement"
-msgstr "Group of attachment"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupChange.tpl:41
-msgid "Logins rattachés"
-msgstr "Logins attached"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:1
-msgid "Activation de la double authentification"
-msgstr "Enabling dual authentication"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:5
-msgid ""
-"La double identification limite les risques d'usurpation de votre compte."
-msgstr ""
-"The double identification limits the risks of usurpation of your account."
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:7
-msgid ""
-"Pour l'activer, vous devrez installer dans votre smartphone une application "
-"compatible avec l'identificationTOTP, par exemple FreeOTP, Google "
-"Authenticator, etc."
-msgstr ""
-"To activate it, you will need to install in your smartphone an application "
-"that is compatible with the identification TOTP, e.g. FreeOTP, Google "
-"Authenticator, etc."
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/otpCreate.tpl:9
-msgid ""
-"Une fois l'application installée, scannez le QRCODE, puis tapez le code "
-"généré par l'application pour valider votre double identification."
-msgstr ""
-"Once the application has been installed, scan the QRCODE, then enter the "
-"code generated by the application to validate your dual identification."
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:1
-msgid "Modification d'une application (module de gestion des droits)"
-msgstr "Modify the application (rights management module)"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliChange.tpl:10
-msgid "Nom de l'application :"
-msgstr "Name of the application:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:1
-msgid "Modification d'un login (module de gestion des droits)"
-msgstr "Edit login (rights management module)"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:12
-msgid "Nom de l'utilisateur :"
-msgstr "Username:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:21
-msgid "Login utilisé :"
-msgstr "Login used:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:30
-msgid "Adresse email :"
-msgstr "Email address:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:38
-msgid "Désactiver l'identification à double facteur :"
-msgstr "Disable dual-factor identification:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/loginChange.tpl:58
-msgid "Droits attribués"
-msgstr "Rights granted"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:5
-msgid "Liste des droits disponibles pour l'application"
-msgstr "List of available rights for the application"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:13
-msgid "Modifier..."
-msgstr "Edit"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:18
-msgid "Nouveau droit..."
-msgstr "New right"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliDisplay.tpl:24
-msgid "Nom du droit d'accès"
-msgstr "Name of the access right"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:2
-msgid "Liste des groupes de logins"
-msgstr "List of groups of logins"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:6
-msgid "Nouveau groupe racine..."
-msgstr "New root group"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:12
-msgid "Nom du groupe"
-msgstr "Name of the group"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:13
-msgid "Nombre de logins déclarés"
-msgstr "Number of logins declared"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/groupList.tpl:14
-msgid "Rajouter un groupe fils"
-msgstr "Add a child group"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:1
-msgid "Liste des applications disponibles dans le module de gestion des droits"
-msgstr "List of applications available in the rights management module"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:5
-msgid "Nouvelle application..."
-msgstr "New application"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:10
-msgid "Modifier"
-msgstr "Edit"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/droits/appliList.tpl:11
-msgid "Nom de l'application"
-msgstr "Name of the application"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:131
+msgid "Aucun résultat n'a été retourné par la requête"
+msgstr "No results were returned by the query"
 
 #: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestList.tpl:1
 msgid "Liste des requêtes SQL"
@@ -3132,112 +3307,25 @@ msgstr "Run the request"
 msgid "Dupliquer la requête"
 msgstr "Duplicate the request"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:11
-msgid "Confirmez la suppression de la requête"
-msgstr "Do you confirm the deletion of the request?"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:1
+msgid "Paramètres pérennes de l'application"
+msgstr "List of long-term parameters of the application"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:51
-msgid "Description de la requête"
-msgstr "Description of the request"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:9
+msgid "Paramètre"
+msgstr "Setting"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:58
-msgid "Code SQL :"
-msgstr "SQL code:"
+#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/dbparamListChange.tpl:10
+msgid "Valeur"
+msgstr "Value"
 
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:64
-msgid "Champs dates de la requête (séparés par une virgule) :"
-msgstr "Date fields of the request (separated by a comma):"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:70
-msgid "date de création :"
-msgstr "date of creation:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:76
-msgid "par :"
-msgstr "by:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:82
-msgid "Date de dernière exécution :"
-msgstr "Date of last execution:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:90
-msgid "Enregistrer"
-msgstr "Save"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:92
-msgid "Enregistrer et exécuter"
-msgstr "Save and run"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:93
-msgid "Exécuter"
-msgstr "Run"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/request/requestChange.tpl:126
-msgid "Aucun résultat n'a été retourné par la requête"
-msgstr "No results were returned by the query"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:2
-msgid ""
-"Ce module est destiné à réaliser une sauvegarde exceptionnelle de la base de "
-"données"
-msgstr ""
-"This module is designed to realize an exceptional backup of the database"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:3
-msgid ""
-"En aucun cas, il se substitue à la procédure de sauvegarde automatique qui "
-"doit avoir été implémentée dans le serveur"
-msgstr ""
-"In no case does it replace the automated backup procedure that must have "
-"been implemented in the server"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:4
-msgid ""
-"La sauvegarde peut échouer si la taille de la base de données est trop "
-"importante."
-msgstr "The backup may fail if the size of the database is too large."
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:5
-msgid ""
-"Après avoir récupéré le fichier généré, assurez-vous qu'il contient bien les "
-"informations (fichier .sql dans le fichier compressé au format gzip)"
-msgstr ""
-"After downloading the generated file, make sure it contains the information "
-"(.sql file in the gzip compressed file)."
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/backup.tpl:12
-msgid "Déclencher la sauvegarde"
-msgstr "Process to the backup"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/news.tpl:1
-msgid "Liste des nouveautés"
-msgstr "List of news"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:18
-msgid "Dernière version publiée"
-msgstr "Last published version"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:20
-msgid "Version actuelle : "
-msgstr "Current version:"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:21
-msgid "Dernière version publiée : "
-msgstr "Last version published: "
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/lastRelease.tpl:23
-msgid ""
-"Vous pouvez demander la mise à jour de votre plate-forme à vos "
-"administrateurs !"
-msgstr "You can ask your administrators to update your platform!"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/system.tpl:8
-msgid "Nom de la variable"
-msgstr "Variable name"
-
-#: ../../../vendor/equinton/ppci/src/Views/templates/ppci/utils/system.tpl:9
-msgid "Contenu"
-msgstr "Content"
+#~ msgid ""
+#~ "La requête ne peut pas contenir d'ordres de modification de la base de "
+#~ "données ni porter sur des tables contenant des informations "
+#~ "confidentielles"
+#~ msgstr ""
+#~ "The request must not contain any database modification commands or relate "
+#~ "to tables containing confidential information"
 
 #~ msgid "Nouvelle version ?"
 #~ msgstr "New version?"

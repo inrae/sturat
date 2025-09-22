@@ -182,13 +182,13 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public string $version = "v25.0.1";
+    public string $version = "v25.0.2";
     /**
      * versionDate - don't change here, but in function setParameters() below
      *
      * @var string
      */
-    public string $versionDate = "15/05/2025";
+    public string $versionDate = "22/09/2025";
     /**
      * Number of the database version
      *
@@ -215,6 +215,11 @@ class App extends BaseConfig
      */
     public $privateKey = ROOTPATH . "id_sturat";
     public $pubKey = ROOTPATH . "id_sturat.pub";
+
+    /**
+     * Program ogr2ogr to import gpx traces
+     */
+    public $ogr2ogr = "/usr/bin/ogr2ogr";
     /**
      * List of locales date formats
      *
@@ -310,7 +315,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $APP_help_address = "https://forgemia.inra.fr/eabx-public/sturat2/-/issues/new";
+    public $APP_help_address = "https://github.com/inrae/sturat/issues/new/choose";
     /**
      *
      * @var string

@@ -63,7 +63,8 @@ class Tracegpx extends PpciLibrary
                 $dbparam["hostname"],
                 $dbparam["database"],
                 $dbparam["username"],
-                $dbparam["password"]
+                $dbparam["password"],
+                $this->appConfig->ogr2ogr
             );
             return true;
         } catch (PpciException $e) {

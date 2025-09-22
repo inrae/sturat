@@ -6,8 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [4.5.5] - 2024-11-21
+## [4.5.6] - 2025-08-26
+- Fixed that modifiers called like function would be compiled to modifier name instead of calling the registered callback [#1100](https://github.com/smarty-php/smarty/issues/1100)
+- Replace SMARTY_VERSION constant with $smarty.version in debug.tpl [#1073](https://github.com/smarty-php/smarty/issues/1073)
 
+
+- Fixed escaping of array/object keys in debug_print_var
+
+## [4.5.5] - 2024-11-21
 
 - Support the deprecations introduced in PHP 8.4 and added tests for PHP 8.4 [#1084](https://github.com/smarty-php/smarty/pull/1084)
 
@@ -1316,7 +1322,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  - bugfix Smarty_CacheResource_Keyvaluestore did use different keys on read/writes and clearCache() calls (Issue 169)
 
  13.03.2014
- - bugfix clear change of 27.1.2014 did not work when specifing cache_id or compile_id  (forum topic 24868 and 24867)
+ - bugfix clearXxx() change of 27.1.2014 did not work when specifing cache_id or compile_id  (forum topic 24868 and 24867)
 
  - 3.1.17 -
  08.03.2014

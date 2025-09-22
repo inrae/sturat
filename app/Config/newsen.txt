@@ -1,5 +1,9 @@
 News
 ====================
+Version v25.0.2 of 22 September 2025
+------------------------------
+- Added controls when importing GPX lines
+
 Version v25.0.1 of 15 May 2025
 ------------------------------
 - upgrading the framework and third-party libraries
