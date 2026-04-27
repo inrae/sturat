@@ -1,5 +1,10 @@
 Nouveautés
 ============
+Version v25.0.3 du 27 avril 2026
+--------------------------------
+- la création d'une station ne fonctionnait pas
+- mise à niveau des bibliothèques tierces
+
 Version v25.0.2 du 22 septembre 2025
 ------------------------------
 - ajout de contrôles lors de l'importation des traits GPX
