@@ -20,6 +20,8 @@ class Station extends PpciLibrary
         $this->keyName = "station_id";
         if (isset($_REQUEST[$this->keyName])) {
             $this->id = $_REQUEST[$this->keyName];
+        } else {
+            $this->id = 0;
         }
     }
 

@@ -1,5 +1,10 @@
 News
 ====================
+Version v25.0.3, 27 April 2026
+--------------------------------
+- Creating a station was not working
+- Third-party libraries updated
+
 Version v25.0.2 of 22 September 2025
 ------------------------------
 - Added controls when importing GPX lines
